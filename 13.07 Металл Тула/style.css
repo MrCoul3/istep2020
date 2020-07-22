@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+p, li {
+    font-family: Open Sans;
+}
+
+h1 {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 100%;
+}
+
+h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 40%;
+    color: #303030;
+}
+h3, h4 {
+    font-family: Open Sans;
+    font-weight: bold;
+}
+
+.title {
+    padding: 0 0 51px 67px;
+}
+
+.title p {
+    padding-top: 50px;
+}
+
+.white-color {
+    color: #FFFFFF;
+}
+
+.black-color {
+    color: #303030;
+}
+
+.width-property {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.padding-property {
+    padding: 0 0 51px 67px;
+}
+
+.flex-container {
+    display: flex;
+    width: 1140px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    font-family: 'Russo One', sans-serif;
+    display: block;
+    width: 211px;
+    height: 50px;
+    text-decoration: none;
+}
+
+.wrap {
+    display: flex;
+    width: 1140px;
+}
+
+
+/* -------------HEADER-------------- */
+
+/*HEADER: верхняя часть header'а - темная линия с E-mail адресом */
+
+header {
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.black-line {
+    background: #242424;
+    
+}
+.flex-container--heigth-property {
+    height: 40px;
+}
+
+.black-line span {
+    font-family: Open Sans;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 12px;
+}   
+
+.black-line p {
+    font-family: Open Sans;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.black-line p::before {
+    content: url(icons/mail-icon.svg);
+    padding-right: 10px;
+}
+
+/* HEADER: меню навигации -------------- */
+nav {
+    padding: 20px 0 20px 0;
+    
+}
+
+.menu-item-design {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40%;
+    color: #303030;
+}
+
+.button--red {
+    background: #FF4545;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+}
+
+.nav-underline {
+    width: 1140px;
+    margin: 0 auto;
+    border: 3px solid #FF4545;
+}
+
+ /* HEADER: меню ПРАЙС ТРУБНЫЙ ПРОКАТ ЛИСТОВОЙ ПРОКАТ */
+
+.header-price-menu {
+    padding: 20px 0 20px 0;
+}
+.button--red-price {
+    width: 100px;
+}
+
+.button--white {
+    background: white;
+    border: 2px solid #FF4545;
+    box-sizing: border-box;
+    color: #FF4545;
+    text-align: center;
+    line-height: 46px;
+}
+
+.telephone {
+    display: block;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 70%;
+    color: #303030;
+}
+
+.telephone::before {
+    content: url(icons/phone-icon.svg);
+    padding-right: 10px;
+}
+
+/* ------ОСНОВНОЙ КОНТЕНТ------ */
+
+      /* Блок со слайдером  */
+.block-whith-slider {
+    background: url(images/main-image-whith-worker.png);
+    background-repeat: no-repeat;
+}
+
+.block-whith-slider h1 {
+    color: white;
+    padding-bottom: 50px;
+}
+
+.block-whith-slider-content {
+    padding: 60px 0 0px 68px;    
+    /* padding: 60px 0 70px 68px;    */
+}
+
+.button--red-catalog {
+    width: 195px;
+    height: 70.28px;
+    font-size: 25px;
+    line-height: 66px;
+}
+
+        /*  элементы слайдера */
+
+.slider-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 70px 18px 70px;
+
+}
+
+.circle-items {
+    display: flex;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: #A8A8A8;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.circle--active {
+    background: #FF4545;
+}
+
+/* Блок с инструкцией на красном фоне  */
+
+.red-instruction-block {
+    padding: 80px 0 120px 0;
+
+}
+
+.outer-rectangle {
+    display: flex;
+    height: 340px;
+    background: rgba(255, 69, 69, 0.5);
+}
+
+.inner-rectangle {
+    width: 1150px;
+    height: 320px;
+    margin: auto;
+    border: 10px solid #FFFFFF;
+    box-sizing: border-box;
+    background: url(icons/shield-and-swords-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inner-rectangle__content {
+    text-align: center;
+    padding-top: 74px;
+}
+
+.inner-rectangle__content p {
+    padding: 20px 0 30px 0;
+    color: #303030;
+
+}
+
+.inner-rectangle__list {
+    padding-left: 247px;
+}
+
+.inner-rectangle__list li {
+    color: #303030;
+}
+
+
+/* ------ КАТАЛОГ МЕТАЛЛОПРОКАТА ------- */
+
+
+
+.catalog-of-metal-products__long-product {
+    background: url(images/catalog-image_01.png);
+    height: 328px;
+    margin-bottom: 30px;
+}
+
+.catalog-of-metal-products-container {
+    padding: 30px 71px 30px 70px;
+}
+
+.catalog-of-metal-products-container h2 {
+    padding-bottom: 27px;
+}
+
+.button-catalog-of-metal {
+    display: flex;
+    width: 240px;
+    /* padding: 40px 0; */
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 23px;
+    color: #303030;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    /* line-height: 100px; */
+
+}
+.button-catalog-of-metal:hover span {
+    color: white;
+}
+
+.button-catalog-of-metal:hover {
+    background: #FF4545;
+    /* color: white; */
+}
+.button-catalog-of-metal span {
+    margin: auto;
+}
+
+.flex-container--for-buttons {
+    flex-wrap: wrap;
+    width: inherit;
+}
+
+.catalog-of-metal-products__pipe-rolling-product {
+    background: url(images/catalog-image_02.png);
+    height: 328px;
+    margin-bottom: 30px;
+}
+
+.catalog-of-metal-products__sheet-hire-product {
+    background: url(images/catalog-image_03.png);
+    height: 328px;
+    margin-bottom: 100px;
+}
+
+
+/* СПЕЦПРЕДЛОЖЕНИЯ */
+.special-offer-container {
+    margin-top: 56px;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 380px;
+    background: #FFFFFF;
+    border: 2px solid #FF4545;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.product-card h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #303030;
+    padding-top: 18px;
+}
+.product-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.product-card p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #303030;
+}
+
+.quick-order {
+    display: flex;
+    /* position: relative;
+    top: 50px; */
+    width: 250px;
+    height: 68px;
+    background: #FF4545;
+}
+.quick-order h3 {
+    margin: auto;
+}
+
+
+
+.advantages {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    background: url(images/advantages-img.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 670px;
+}
+
+.title-center-position {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.advantages h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+.flex-container__element {
+    display: flex;
+}
+.flex-container__element--for-advantages {
+    width: 165px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.flex-container__element--for-advantages img {
+    margin-bottom: 15px;
+}
+.flex-container__element--for-news img {
+    margin-bottom: 20px;
+}
+
+/* Новости */
+
+.flex-container__element--for-news {
+    max-width: 350px;
+    flex-direction: column;
+}
+.flex-container__element--for-news h3 {
+    font-size: 24px;
+    line-height: 100%;
+}
+.flex-container__element--for-news p {
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(48, 48, 48, 0.6);
+    padding-top: 5px;   
+    padding-bottom: 50px;
+}
+
+.news a {
+    font-family: Open Sans;
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(48, 48, 48, 0.6);
+    border-bottom: 2px solid rgba(48, 48, 48, 0.6);
+}
+
+
+/* Контакты  */
+
+.contacts {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.contacts .flex-container {
+    align-items: start;
+    flex-direction: column;
+    
+}
+.flex-container__element--for-contacts {
+    align-items: center;
+    margin: 20px 0;
+}
+
+.flex-container__element--for-contacts > img {
+    margin-right: 10px;
+}
+
+.flex-container__element--for-contacts p, .flex-container__element--footer p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 10 0%;
+    color: #303030;
+}
+
+.flex-container__element--for-contacts p span {
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.flex-container__element--social-net a {
+    margin: 0 20px 0 0;
+}
+
+/* FOOTER -----------*/
+ 
+footer {
+    background: #C4C4C4;
+}
+.flex-container--for-footer {
+    height: 377px;
+    align-items: start;
+    padding-top: 46px;
+    justify-content: start;
+}
+
+
+.flex-container__element--footer img {
+    margin-bottom: 30px;
+}
+
+.flex-container__element--footer  h3 {
+    font-size: 24px;
+    color: #FF4545;
+    margin-bottom: 15px;
+}
+
+.flex-container__element--text-style > a {
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 18px;
+    color: #303030;
+    margin: 2px 0;
+}
+.flex-container__element--footer {
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.rectangle {
+    border: 3px solid #FF4545;
+    height: 191px;
+    width: 272px;
+    padding: 20px;
+}
+
+input[type="mail"], .flex-container__element--footer span, .flex-container__element--footer label {
+    width: 222px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+input[type="mail"] {
+    margin: 5px 0;
+    outline: thin;
+    height: 20px;
+}
+input[type="mail"]:focus {
+    color: black;
+}
+
+.flex-container__element--footer span {
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.flex-container__element--footer label {
+    cursor: pointer;
+    font-weight: bold;
+    color: #303030;
+    display: inline-block;
+    margin: 10px 0 20px 0;
+}
+#select-option {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+
+
+.rectangle .button {
+    /* display: block; */
+    display: flex;
+    width: 140px;
+    height: 30px;
+    background: #FF4545;
+}
+
+.rectangle .button span {
+    margin: auto;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-left: 15px;
+}
+
+
+
+footer .black-line .flex-container {
+    height: 60px;
+}
+footer .black-line .flex-container .wrap span:first-child {
+    margin-right: 60px;
+}
+footer .black-line .flex-container .wrap span:last-child {
+        margin-left: 20px;
+}
+.payment-method-block {
+    display: flex;
+    justify-content: start;
+    
+}
