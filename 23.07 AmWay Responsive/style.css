@@ -15,22 +15,50 @@ h3 {
 
 }
 
-p {
+p, a {
     font-family: Source Sans Pro;
     font-weight: 400;
     font-size: 0.89rem;
+    margin-bottom: 50px;
     
 }
+a {
+    text-decoration: none;  
+}
+
+.button {
+    display: block;
+    color: white;
+    width: 229px;
+    height: 36px;
+    background: #034580;
+    text-align: center;
+    line-height: 36px;
+
+}   
+
+.button-center-position {
+    margin: 0 auto;
+}
+.button:hover {
+    background: #005FB5;
+}
+
 section {
     margin: 0 auto;
 }
-.fix-width {
+
+
+/* _______________________________________ */
+
+
+.fix-width-1200 {
     max-width: 1200px;
     
 }
 
 .flex-wrap {
-    margin: 15px 0;
+    margin: 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +74,9 @@ section {
     background: #F6F5FF;
     border-radius: 25px;
 }
+.margin-property {
+    margin: 0 15% 0 0;
+}
 
 /* _____________________________________ */
 
@@ -58,7 +89,7 @@ section {
 }
 @media screen and (max-width: 1200px) {
     .background-property {
-        margin: 15px 2.8%;
+        margin: 0px 2.8%;
     }
 }
 @media screen and (max-width: 768px) {
@@ -75,17 +106,111 @@ section {
         text-align: center;
         width: 350px;
     }
+    
+    .flex-wrap__element--picture {
+        order: 1;
+    }
+    
+}
+@media screen and (max-width: 412px) {
     h3 {
         font-size: 1.5rem;
     }
     p {
         font-size: 0.83333rem;
     }
-    .flex-wrap__element--picture {
-        order: 1;
+}
+@media screen and (max-width: 320px) {
+    h3 {
+        font-size: 1.5rem;
     }
-    
+    p {
+        font-size: 0.83333rem;
+    }
 }
 
 
+/* ___________________________ */
 
+
+.fix-width-1920 {
+    max-width: 1920px;
+    background: #407FFE;
+}
+
+
+.fix-width-1920 .flex-wrap__element--text {
+    width: 440px;
+    margin-left: 0;
+    color: white;
+}
+@media screen and (max-width: 1920px) {
+    .fix-width-1920 .flex-wrap__element--text {
+        /* width: 440px; */
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .fix-width-1920 .flex-wrap__element--text {
+        text-align: left;
+        margin: 0 15px;
+        width: auto;
+    }
+        
+}
+
+
+/* _____________________________________________ */
+
+
+.all-stars {
+    background: url(images/frame_07_all-stars.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 435px;
+}
+
+.container-all-stars {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 90px;
+    
+
+}
+.container-all-stars p {
+    margin-bottom: 20px;
+}
+.container-all-stars h3, .container-all-stars p  {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+
+    .all-stars { 
+        background: #6E4AC3;
+        height: auto;
+    }
+
+    .container-all-stars {
+        width: 400px;
+        margin: 0 auto;
+        padding-top: 0;
+    
+    }
+
+    .container-all-stars::before {
+        content: url(images/megafon.png);
+    }
+
+}
+
+@media screen and (max-width: 401px) {
+
+    .container-all-stars {
+        width: auto;
+        margin: 0 auto;
+        
+    
+    }
+}
