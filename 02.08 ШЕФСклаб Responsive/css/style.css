@@ -1,0 +1,297 @@
+@font-face {
+    font-family: circe ;
+    src: url(fonts/circe.ttf);
+}
+
+@font-face {
+    font-family: TTNorms-Bold;
+    src: url(fonts/TTNorms-Bold.ttf);
+}
+* {
+    margin: 0;
+}
+.font-size-14, .font-size-16, .font-size-18 {
+    font-family: circe;
+}
+
+.font-size-14  {
+    font-size: 14px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.font-size-18 {
+    font-size: 18px;
+}
+.font-style-tel-num {
+    font-family: circe;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    white-space: nowrap;
+}
+
+.width-property-1170px {
+    width: 1170px;
+}
+
+h1 {
+    font-family: TT Norms;
+    font-weight: bold;
+    font-size: 48px;
+    white-space: nowrap;
+}
+/* Header ---------------- */
+header {
+    height: 80px;
+    margin: 0 auto;
+    border-bottom: 2px solid #E8EAE7;
+}
+
+header,
+.flex-container,
+nav, 
+.sign-in-button {
+    display: flex;
+    align-items: center;
+}
+
+header .flex-container {
+    justify-content: space-around;
+    margin: auto;
+}
+
+.container--logo {
+    white-space: nowrap;
+    flex-grow: 3;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+}
+
+li {
+    /* margin: 0 4.166666%; */
+    margin: 0 2vw;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #464243;
+}
+
+.font-style-tel-num {
+    margin-right: 1vw;
+}
+.phone-button, .login-button, .menu-icon {
+    display: none;
+}
+
+.container--logo span, 
+.container--sign-in span {
+    color: #333333;
+}
+
+
+nav {
+    flex-grow: 4;
+}
+
+header .font-style-tel-num {
+    flex-grow: 1;
+}
+.container--sign-in {
+    flex-grow: 1;
+    
+}
+
+.sign-in-button {
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    background: #FAFAFA;
+    border-radius: 134px;
+}
+
+.user-icon {
+    margin-right: 1vw;
+}
+
+@media screen and (max-width: 1440px) {
+
+    .container--logo {
+        flex-grow: 0;
+    }
+    .container--logo span {
+        display: none;
+    }
+    nav {
+        flex-grow: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .flex-container {
+        justify-content: space-between;
+    }
+
+    .container--logo {
+        flex-grow: 22;
+    }
+    nav, .phone-number {
+        display: none;
+    }
+   .phone-button {
+    display: initial;
+    
+   }
+   .user-icon, .container--sign-in a {
+       display: none;
+   }
+   .login-button {
+       display: initial;
+   }
+   header .font-style-tel-num {
+    flex-grow: 0;
+    display: flex;
+    flex-grow: 2;
+   }
+   .container--sign-in {
+       flex-grow: 0;
+       align-items: center;
+       flex-grow: 2;
+   }
+   .menu-icon {
+       display: initial;
+       flex-grow: 4;
+   }
+
+}
+
+/* End of Header ---------------- */
+
+/* Banner ----------------------- */
+
+
+.banner {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.banner > .flex-container {
+    align-items: start;
+    /* height: 500px; */
+    width: auto;
+    background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
+    border-radius: 15px;
+}
+
+.banner-left-element {
+    width: 629px;
+}
+
+.banner-right-element {
+    background: #9BA850;
+    border-radius: 15px;
+}
+.banner-right-element img {
+    padding-right: 15px;
+}
+
+.banner .container {
+    margin: 40px 0 40px 70px;
+}
+
+.promotion-button {
+    display: flex;
+    width: 74px;
+    height: 30px;
+    background: #FF794F;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.promotion-button span {
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.banner-left-element h1 {
+    color: white;
+}
+
+.banner-left-element p {
+    color: #F0F1EE;
+    margin: 20px 0 30px 0;
+}
+
+.button-big {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
+    border-radius: 134px;
+}
+.button-big span {
+    margin: auto;
+    color: white;
+    font-family: Circe;
+    font-weight: bold;
+    font-size: 18px;
+}
+.button-big--white {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+.button-big--white span {
+    color: #333333;
+}
+
+.banner-slider {
+    margin-top: 40px;
+}
+
+.radio {
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+}
+
+#radio-one + label {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background: #000;
+    border-radius: 10px;
+}
+#radio-two + label {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background: #000;
+    border-radius: 10px;
+}
+
+.radio:checked + label {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background: rgb(248, 0, 0);
+    border-radius: 10px;
+}
