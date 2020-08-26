@@ -354,7 +354,9 @@ label {
     line-height: 20px;
     color: #6D7077;
 }
-
+.how-it-works .radio-buttons-group {
+    display: none;
+}
 /* ____________________________________ */
 
 /* Menu Choice */
