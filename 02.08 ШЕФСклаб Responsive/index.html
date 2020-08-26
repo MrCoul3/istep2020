@@ -141,6 +141,7 @@
 
             <div class="arrow-buttons flex-box">
                 <a class="arrow-buttons__item arrow-buttons__item--left"><img src="icons/arrow-left.svg" alt=""></a>
+                <!-- на маленьком экране стрелка маленькая, а на большом она увеличивается, при этом у кругляшка есть белый фон, что не позволяет сделать стрелку фоном. как сделать правильно ? можно ли применить zoom ?  -->
                 <a class="arrow-buttons__item arrow-buttons__item--right"><img src="icons/arrow-right.svg" alt=""></a>
             </div>
 
@@ -156,7 +157,8 @@
             <div class="menu-cards flex-box">
 
                 <div class="menu-cards__item flex-box column">
-                    <img src="images/menu-cards-image-small__1.png" alt="">
+                    
+                    <div class="wrap first-card-image"></div>
                     <div class="container">
 
                         
@@ -174,14 +176,14 @@
                                 <div class="details-string__item details-string__item--time">25 мин</div>
                                 <div class="details-string__item details-string__item--chef">Готовить легко<a href=""><img src="icons/details-string-icon-3-after.svg" alt=""></a></div>
                                 <div class="border"></div>
-                                <div class="details-string__item details-string__item--cooking-for">Готовить  <p>на <strong>1 - 2 день</strong></p></div>
+                                <div class="details-string__item details-string__item--cooking-for">Готовить  <br class="shift">на <strong>1 - 2 день</strong></div>
                                 <a class="select-button flex-box"><p>Выбрано</p><span href=""><img src="icons/select-button__check-mark.svg" alt=""></span></a>
                             </div>
                         
                     </div>
                 </div>
                 <div class="menu-cards__item flex-box column">
-                    <img src="images/menu-cards-image-small__1.png" alt="">
+                    <div class="wrap second-card-image"></div>
                     <div class="container">
 
                         

@@ -151,19 +151,92 @@
 
     .how-it-works .radio-buttons-group {
         display: flex;
+        position: static;
+        justify-content: center;
+        margin: 40px 0 79px 0;
+
     }
 
-    
+
     .how-it-works input[type='radio']:checked+label {
         background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;
         width: 12px;
         height: 12px;
         border-radius: 12px;
     }
+
     .how-it-works label {
         width: 8px;
         height: 8px;
         background: #DDDEDB;
     }
+
+    /* end of how it works  */
+
+    /* menu-choice  */
+    .menu-choice {
+        padding: 0 20px;
+    }
+    .menu-choice>.container {
+        width: auto;
+
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .menu-choice>.container>p {
+        font-size: 16px;
+    }
+
+    .arrow-buttons__item {
+        /* width: 48px;
+        height: 48px; */
+        zoom: 1.333;
+    }
+    .type-of-menu-buttons {
+        margin: 0 5px 30px;
+    }
+    .type-of-menu-buttons__item {
+        font-size: 18px;
+        padding: 13px 28px;
+        margin-right: 20px;
+    }
+    .menu-cards__item > .wrap {
+        width: 354px;
+        height: 220px;
+        overflow: hidden;
+    }
+    .menu-cards__item {
+        width: 354px;
+        height: 480px;
+        margin-right: 20px;
+    }
+    .details-string__item--weight {
+        order: 3;
+    }
+    .details-string__item--time{
+        order: 4;
+    }
+    .details-string__item--chef {
+        order: 0;
+    }
+    .border {
+        order: 2;
+        width: 314px;
+    }
+    .details-string__item--cooking-for {
+        order: 1;
+        width: auto;
+    }
+    .details-string__item--cooking-for > .shift {
+        display: none;
+    }
+    .select-button {
+        order: 5;
+    }   
+    
 
 }

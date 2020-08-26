@@ -443,7 +443,22 @@ label {
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
 }
+.menu-cards__item > .wrap {
+    width: 290px;
+    height: 180px;
+    overflow: hidden;
+}
 
+.first-card-image {
+    background: url(images/menu-cards-image-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.second-card-image {
+    background: url(images/menu-cards-image-2.png);
+    background-position: center;
+}
 .menu-cards .container {
     margin: 0 20px;
 }
