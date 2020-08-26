@@ -1,0 +1,145 @@
+@media screen and (min-width: 767px) {
+
+    /* Header */
+    
+    header .wrap {
+        margin: 0 24px;
+        align-items: center;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .font-style-tel-num {
+        display: unset;
+    }
+
+    .nav-medium-screen,
+    .sign-in-button {
+        display: flex;
+    }
+    .sign-in-button > span {
+        font-family: Circe;
+    }
+/* end of header______________________________ */
+
+    /* MAIN  */
+    /* Banner */
+
+    .nav-small-screen {
+        display: none;
+    }
+
+    .banner {
+        margin: 30px 0 10px;
+    }
+
+    .leaf {
+        z-index: 5;
+        width: 80.06px;
+        height: 115.4px;
+        right: 2px;
+    }
+
+    .tomato {
+        background-image: url(images/tomato.png);
+        width: 90px;
+        height: 100px;
+        left: 312px;
+        top: 33px;
+    }
+
+    .pepper {
+        background-image: url(images/chili_paper.png);
+        width: 190px;
+        height: 164px;
+        bottom: 14px;
+        left: 255px;
+    }
+
+    /* Banner 768 */
+    .banner-content {
+        padding: 40px 0 0 40px;
+    }
+
+    .banner-content>p {
+        font-size: 18px;
+    }
+
+    .banner .wrap {
+        flex-direction: row;
+        background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
+        margin: 0 24px;
+    }
+
+    .promotion-button {
+        font-size: 14px;
+        width: 74px;
+        height: 30px;
+    }
+
+    .banner>.wrap>img {
+        max-width: 551px;
+        width: 153vw;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .slider-button {
+        position: absolute;
+    }
+
+    .slider-button-l {
+        top: 325px;
+    }
+
+    .slider-button-r {
+        right: 3px;
+        top: 325px;
+    }
+
+    .buttons-buy-and-menu {
+        display: flex;
+        position: relative;
+        bottom: 194px;
+        padding-left: 64px;
+    }
+
+    .button-big {
+        display: flex;
+    }
+
+    .radio-buttons-group {
+        position: relative;
+        bottom: 70px;
+        left: 55px;
+        z-index: 3;
+    }
+
+    label {
+        background: #FFFFFF;
+        opacity: 0.5;
+    }
+
+    input[type='radio']:checked+label {
+        background: #FFFFFF;
+        opacity: 1;
+    }
+
+/* end of Banner __________________________ */
+
+/* How it works  */
+    .how-it-works {
+        padding: 0 40px 0;
+    }
+    .how-it-works .wrap {
+        flex-direction: row;
+        align-items: center;
+    }
+    .how-it-works .wrap__element {
+        margin-right: 50px;
+        width: auto;
+    }
+}

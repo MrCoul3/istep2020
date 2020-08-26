@@ -42,6 +42,7 @@
     color: #333333;
     white-space: nowrap;
 }
+
 .hidden {
     visibility: hidden;
 }
@@ -225,14 +226,6 @@ nav a {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
-.slider-button-l {
-    /* left: 0; */
-}
-
-.slider-button-r {
-    /* right: 0; */
-}
-
 .slider-button>img {
     margin: auto;
 }
@@ -385,11 +378,9 @@ label {
 }
 
 
-
 .arrow-buttons {
     position: relative;
     justify-content: space-between;
-    /* margin: 0 10px; */
     top: -80px;
 }
 
@@ -400,6 +391,7 @@ label {
     border: 1px solid #DDDEDB;
     display: flex;
 }
+
 .arrow-buttons__item img {
     margin: auto;
 }
@@ -449,9 +441,11 @@ label {
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
 }
+
 .menu-cards .container {
-   margin: 0 20px; 
+    margin: 0 20px;
 }
+
 .hashtag-block {
     margin: 15px 0;
     justify-content: space-between;
@@ -478,7 +472,7 @@ label {
 
 .details-string {
     justify-content: space-between;
-    border-bottom: 1px solid #DDDEDB;
+    flex-wrap: wrap;
 }
 
 .details-string__item {
@@ -493,144 +487,60 @@ label {
     top: 3px;
     padding-right: 5px;
 }
+
 .details-string__item--weight::before {
     content: url(icons/details-string-icon-1.svg)
 }
+
 .details-string__item--time::before {
     content: url(icons/details-string-icon-2.svg)
 }
+
 .details-string__item--chef::before {
     content: url(icons/details-string-icon-3.svg)
 }
+
 .details-string__item--chef a {
     position: relative;
     top: 4px;
 }
 
+.border {
+    width: 250px;
+    border-bottom: 1px solid #DDDEDB;
+    margin: 15px 0 20px 0;
+}
+
+.details-string__item--cooking-for {
+    width: 100px;
+}
+
+.select-button {
+    /* justify-content: space-around; */
+    width: 140px;
+    height: 44px;
+    background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;
+    border-radius: 26px;
+    align-items: center;
+}
+.select-button > p {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0 9px 0 20px;
+}
+
+.select-button > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    background: #747840;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
 .arrow-buttons--for-menu-cards {
-    top: -240px;
+    top: -250px;
 }
-@media screen and (min-width: 767px) {
 
-    /* Header 768 */
-    header .wrap {
-        margin: 0 24px;
-        align-items: center;
-    }
-
-
-    h1 {
-        font-size: 40px;
-    }
-
-    .font-style-tel-num {
-        display: unset;
-    }
-
-    .nav-medium-screen,
-    .sign-in-button {
-        display: flex;
-    }
-
-    .nav-small-screen {
-        display: none;
-    }
-
-    .banner {
-        margin: 30px 0 10px;
-    }
-
-    .leaf {
-        z-index: 5;
-        width: 80.06px;
-        height: 115.4px;
-        right: 2px;
-    }
-
-    .tomato {
-        background-image: url(images/tomato.png);
-        width: 90px;
-        height: 100px;
-        left: 312px;
-        top: 33px;
-    }
-
-    .pepper {
-        background-image: url(images/chili_paper.png);
-        width: 190px;
-        height: 164px;
-        bottom: 14px;
-        left: 255px;
-    }
-
-    /* Banner 768 */
-    .banner-content {
-        padding: 40px 0 0 40px;
-    }
-
-    .banner-content>p {
-        font-size: 18px;
-    }
-
-    .banner .wrap {
-        flex-direction: row;
-        background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
-        margin: 0 24px;
-    }
-
-    .promotion-button {
-        font-size: 14px;
-        width: 74px;
-        height: 30px;
-    }
-
-    .banner>.wrap>img {
-        max-width: 551px;
-        width: 153vw;
-        position: static;
-        margin: 0 auto;
-    }
-
-    .slider-button {
-        position: absolute;
-    }
-
-    .slider-button-l {
-        top: 325px;
-    }
-
-    .slider-button-r {
-        right: 10px;
-        top: 325px;
-    }
-
-    .buttons-buy-and-menu {
-        display: flex;
-        position: relative;
-        bottom: 194px;
-        padding-left: 64px;
-    }
-
-    .button-big {
-        display: flex;
-    }
-
-    .radio-buttons-group {
-        position: relative;
-        bottom: 70px;
-        left: 55px;
-        z-index: 3;
-    }
-
-    label {
-        background: #FFFFFF;
-        opacity: 0.5;
-    }
-
-    input[type='radio']:checked+label {
-        background: #FFFFFF;
-        opacity: 1;
-    }
-
-
-}
