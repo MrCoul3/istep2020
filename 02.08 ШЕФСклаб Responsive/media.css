@@ -5,6 +5,8 @@
     header .wrap {
         margin: 0 24px;
         align-items: center;
+        max-width: 1170px;
+        margin: auto;
     }
 
 
@@ -36,6 +38,7 @@
 
     .banner {
         margin: 30px 0 10px;
+        padding: 0 24px;
     }
 
     .leaf {
@@ -73,7 +76,8 @@
     .banner .wrap {
         flex-direction: row;
         background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
-        margin: 0 24px;
+        max-width: 1170px;
+        margin: auto;
     }
 
     .promotion-button {
@@ -88,25 +92,33 @@
         position: static;
         margin: 0 auto;
     }
+    .slider {
+        max-width: 1170px;
+        position: relative;
+        margin: auto   ;
+    }
 
     .slider-button {
         position: absolute;
+        top: -280px;
     }
 
-    .slider-button-l {
-        top: 325px;
-    }
+    
 
     .slider-button-r {
-        right: 3px;
-        top: 325px;
+        right: -22px;
+        
+    }
+    .slider-button-l {
+        left: -22px;
     }
 
     .buttons-buy-and-menu {
         display: flex;
         position: relative;
-        bottom: 194px;
-        padding-left: 64px;
+        bottom: 220px;
+        justify-content: center;
+        left: -330px;
     }
 
     .button-big {
@@ -115,9 +127,10 @@
 
     .radio-buttons-group {
         position: relative;
-        bottom: 70px;
-        left: 55px;
+        bottom: 80px;
+        left: -486px;
         z-index: 3;
+        margin: auto;
     }
 
     label {
@@ -142,6 +155,7 @@
         flex-direction: row;
         position: relative;
         overflow: hidden;
+        justify-content: center;
     }
 
     .how-it-works .wrap__element {
@@ -177,6 +191,7 @@
     .menu-choice {
         padding: 0 20px;
     }
+
     .menu-choice>.container {
         width: auto;
 
@@ -191,52 +206,238 @@
         font-size: 16px;
     }
 
+    .arrow-buttons--for-menu-cards {
+        top: -290px;
+        right: -20px;
+    }
+
     .arrow-buttons__item {
         /* width: 48px;
         height: 48px; */
         zoom: 1.333;
     }
+
     .type-of-menu-buttons {
         margin: 0 5px 30px;
+        justify-content: center;
     }
+
     .type-of-menu-buttons__item {
         font-size: 18px;
         padding: 13px 28px;
         margin-right: 20px;
     }
-    .menu-cards__item > .wrap {
+
+    .menu-cards {
+        /* justify-content: center; */
+    }
+
+    .menu-cards .wrap>a {
+        left: 280px;
+    }
+
+    .menu-cards__item>.wrap {
         width: 354px;
         height: 220px;
         overflow: hidden;
     }
+
     .menu-cards__item {
         width: 354px;
         height: 480px;
         margin-right: 20px;
     }
+
+    .hashtag-block {
+        justify-content: start;
+    }
+
+    .hashtag-block>a {
+        margin-right: 10px;
+    }
+
+    .details-string__item {
+        font-size: 14px;
+    }
+
     .details-string__item--weight {
         order: 3;
+
     }
-    .details-string__item--time{
+
+    .details-string__item--weight::before {
+        content: url(icons/details-string-icon-1-big.svg);
+        top: 6px
+    }
+
+    .details-string__item--time {
         order: 4;
     }
+
+    .details-string__item--time::before {
+        content: url(icons/details-string-icon-2-big.svg);
+        top: 6px;
+    }
+
     .details-string__item--chef {
         order: 0;
     }
+
     .border {
         order: 2;
         width: 314px;
     }
+
     .details-string__item--cooking-for {
         order: 1;
         width: auto;
     }
-    .details-string__item--cooking-for > .shift {
+
+    .details-string__item--cooking-for>.shift {
         display: none;
     }
+
     .select-button {
         order: 5;
-    }   
-    
+    }
 
+
+}
+
+@media screen and (min-width: 1170px) {
+    .menu-cards {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    /* header */
+
+    header .wrap {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .logo {
+        flex-grow: 4;
+    }
+
+    .logo::after {
+        content: "Сервис доставки отборных продуктов";
+        position: absolute;
+        width: 150px;
+        top: 18px;
+        font-family: Circe;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .nav-medium-screen {
+        flex-grow: 2;
+    }
+
+    .font-style-tel-num {
+        flex-grow: 1;
+    }
+
+    /* banner  */
+    h1 {
+        font-size: 48px;
+        width: 480px;
+    }
+
+    .banner>.wrap {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .banner>.wrap>img {
+        margin-right: 0;
+    }
+
+    .leaf {
+        right: 700px;
+    }
+
+    .tomato {
+        top: 180px;
+        left: 536px;
+    }
+
+    .pepper {
+        bottom: 46px;
+        left: 490px;
+    }
+
+    .banner-content {
+        padding: 40px 0 0 70px;
+    }
+
+    .buttons-buy-and-menu {
+        padding-left: 0;
+        justify-content: center;
+        right: 330px;
+    }
+
+    .slider {
+        max-width: 1170px;
+        position: relative;
+        margin: auto;
+    }
+
+    .slider-button {
+        top: -275px;
+    }
+
+    .slider-button-r {
+        right: -22px;
+    }
+
+    .slider-button-l {
+        left: -22px;
+    }
+
+    .slider .radio-buttons-group {
+        justify-content: center;
+        margin: auto;
+        left: -480px;
+    }
+
+    /* How it works  */
+
+    .how-it-works>.wrap {
+        justify-content: center;
+    }
+
+    h1 {
+        width: auto;
+    }
+
+    .how-it-works>.radio-buttons-group {
+        display: none;
+    }
+
+    /* Menu-choice */
+
+    .arrow-buttons {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .type-of-menu-buttons {
+        justify-content: center;
+    }
+
+    .menu-cards {
+        justify-content: center;
+    }
+
+    .menu-cards__item {
+        width: 370px;
+    }
+
+    .arrow-buttons--for-menu-cards {
+        right: 0;
+    }
 }

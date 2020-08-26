@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: TTNorms-Bold;
-    src: url(fonts/TTNorms-Bold.ttf);
+    font-family: TTNorms;
+    src: url(/fonts/TTNorms-Bold.ttf);
 }
 
 * {
@@ -52,7 +52,7 @@ a {
 }
 
 h1 {
-    font-family: TT Norms;
+    font-family: TTNorms;
     font-weight: bold;
     font-size: 30px;
     color: white;
@@ -68,7 +68,7 @@ h2 {
 }
 
 h3 {
-    font-family: TT Norms;
+    font-family: TTNorms;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
@@ -96,7 +96,9 @@ nav {
     display: flex;
 
 }
-
+.logo {
+    position: relative;
+}
 .nav-small-screen a {
     margin: auto;
     padding: 0 7.5px;
@@ -194,6 +196,7 @@ nav a {
 }
 
 .banner-content>p {
+    font-family: Circe;
     color: #F0F1EE;
     margin-top: 10px;
     font-size: 16px;
@@ -354,9 +357,11 @@ label {
     line-height: 20px;
     color: #6D7077;
 }
+
 .how-it-works .radio-buttons-group {
     display: none;
 }
+
 /* ____________________________________ */
 
 /* Menu Choice */
@@ -384,6 +389,9 @@ label {
     position: relative;
     justify-content: space-between;
     top: -80px;
+    max-width: 1170px;
+    margin: auto;
+    max-width: 1094px;
 }
 
 .arrow-buttons__item {
@@ -425,7 +433,7 @@ label {
     color: #A1A75C;
     font-family: Circe;
     font-style: normal;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
 }
@@ -436,6 +444,20 @@ label {
     border: none;
 }
 
+.menu-cards .wrap>a {
+    top: 10px;
+    left: 220px;
+    font-family: Circe;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: relative;
+    padding: 4px 12px;
+    background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+
 .menu-cards__item {
     width: 290px;
     height: 463px;
@@ -443,7 +465,8 @@ label {
     background: #FFFFFF;
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
 }
-.menu-cards__item > .wrap {
+
+.menu-cards__item>.wrap {
     width: 290px;
     height: 180px;
     overflow: hidden;
@@ -455,10 +478,12 @@ label {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .second-card-image {
     background: url(images/menu-cards-image-2.png);
     background-position: center;
 }
+
 .menu-cards .container {
     margin: 0 20px;
 }
@@ -490,6 +515,7 @@ label {
 .details-string {
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .details-string__item {
@@ -540,13 +566,14 @@ label {
     border-radius: 26px;
     align-items: center;
 }
-.select-button > p {
+
+.select-button>p {
     font-size: 18px;
     color: #FFFFFF;
     margin: 0 9px 0 20px;
 }
 
-.select-button > span {
+.select-button>span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -560,4 +587,3 @@ label {
 .arrow-buttons--for-menu-cards {
     top: -250px;
 }
-
