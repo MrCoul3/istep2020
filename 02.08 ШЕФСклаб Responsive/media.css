@@ -38,7 +38,7 @@
 
     .banner {
         margin: 30px 0 10px;
-        padding: 0 24px;
+        padding: 0 40px;
     }
 
     .leaf {
@@ -112,23 +112,27 @@
     .slider-button-l {
         left: -22px;
     }
-
+/* 767 */
     .buttons-buy-and-menu {
         display: flex;
         position: relative;
         bottom: 220px;
-        justify-content: center;
-        left: -330px;
+        /* justify-content: center; */
+        left: 40px;
+        max-width: 1170px;
+        margin: auto;
+
     }
 
     .button-big {
         display: flex;
+        position: relative;
+        /* left: 100px; */
     }
-
+/* 768 */
     .radio-buttons-group {
         position: relative;
         bottom: 80px;
-        left: -486px;
         z-index: 3;
         margin: auto;
     }
@@ -155,7 +159,7 @@
         flex-direction: row;
         position: relative;
         overflow: hidden;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     .how-it-works .wrap__element {
@@ -303,6 +307,11 @@
 
 
 }
+@media screen and (min-width: 1060px) {
+    .how-it-works .wrap {
+        justify-content: center;
+    }
+}
 
 @media screen and (min-width: 1170px) {
     .menu-cards {
@@ -373,11 +382,12 @@
     .banner-content {
         padding: 40px 0 0 70px;
     }
-
+/* 1440 */
     .buttons-buy-and-menu {
         padding-left: 0;
         justify-content: center;
-        right: 330px;
+        right: 302px;
+        left: unset;
     }
 
     .slider {
