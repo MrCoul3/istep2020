@@ -96,9 +96,11 @@ nav {
     display: flex;
 
 }
+
 .logo {
     position: relative;
 }
+
 .nav-small-screen a {
     margin: auto;
     padding: 0 7.5px;
@@ -249,7 +251,7 @@ input[type='radio']:checked+label {
     border-radius: 15px;
 }
 
-label {
+input[type='radio']+label {
     background: #DDDEDB;
     width: 10px;
     height: 10px;
@@ -586,4 +588,109 @@ label {
 
 .arrow-buttons--for-menu-cards {
     top: -250px;
+}
+
+/* footer */
+footer {
+    padding: 0 15px;
+}
+footer>.wrap {
+    max-width: 1170px;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+footer .wrap__container {
+    padding-top: 30px;
+}
+
+.tel-num {
+    display: block;
+    margin-bottom: 18px;
+
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    color: #333333;
+}
+
+footer .wrap__container p {
+    margin: 5px 20px 5px 0;
+    color: #646365;
+}
+footer .wrap__container p > a {
+    color: #646365;
+
+}
+
+footer .wrap__container p,
+input[type='email']+label {
+    white-space: nowrap;
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+footer .wrap__container--tel>p {
+    color: #464243;
+    margin: 10px 0;
+    
+}
+
+footer .wrap__container>h2 {
+    margin-bottom: 5px;
+}
+
+footer .wrap__container>.flex-box {
+    flex-wrap: wrap;
+}
+
+.wrap__container--email-adress {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+input[type='email'] {
+    display: none;
+}
+
+input[type='email']+label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    width: 100%;
+    color: #878786;
+    background: #FFFFFF;
+    border: 1px solid #CDCFD5;
+    border-radius: 64px;
+    /* text-align: left; */
+    /* line-height: 44px; */
+    padding: 0 4px 0 20px;
+    margin-top: 10px;
+}
+input[type='email']+label span {
+    display: block;
+    
+}
+#telegram-button {
+    display: none;
+}
+
+#telegram-button + label {
+    display: flex;
+    align-items: center;
+}
+
+.social-net-container {
+    margin: 30px 0 40px 0;
+}
+.social-net-container a {
+    margin-right: 15px;
 }

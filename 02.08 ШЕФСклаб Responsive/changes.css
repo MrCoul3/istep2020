@@ -1,0 +1,29 @@
+footer for 768 and 1440
+
+footer>.wrap {
+    flex-direction: column; !!!
+    padding: 0 16px; !!!
+}
+
+footer .wrap__container p {
+    margin: 5px 20px 5px 0;!!!
+    font-family: Circe;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #646365;
+}
+input[type='email']+label {
+    display: block;
+    height: 44px;
+    width: 100%;
+    color: #878786;
+    background: #FFFFFF;
+    border: 1px solid #CDCFD5;
+    border-radius: 64px;
+    text-align-last: left;
+    line-height: 44px;
+    padding-left: 20px;
+    margin-top: 10px;!!!
+}
