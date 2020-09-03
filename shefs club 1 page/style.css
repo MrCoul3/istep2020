@@ -268,6 +268,7 @@ input[type='radio']+label {
     box-sizing: border-box;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));
     border-radius: 134px;
+    cursor: pointer;
 }
 
 .button-big span {
@@ -594,9 +595,12 @@ input[type='radio']+label {
 footer {
     padding: 0 15px;
 }
+footer > .grid-box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 footer>.wrap {
     max-width: 1170px;
-    flex-direction: column;
     margin-top: 8px;
 }
 
@@ -650,11 +654,12 @@ footer .wrap__container>h2 {
 footer .wrap__container>.flex-box {
     flex-wrap: wrap;
 }
-
+.sub-flex-box {
+    display: flex;
+}
 .wrap__container--email-adress {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 input[type='email'] {
     display: none;
