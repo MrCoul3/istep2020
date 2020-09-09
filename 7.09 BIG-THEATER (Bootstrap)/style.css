@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-body {
-    background-image: url(images/main-image.png);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    max-width: 1920px;
-    /* margin: 0 auto; */
-}
 
-header .nav-link {
+/* fonts */
+
+.fixed-panel-info,
+.nav-item {
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
@@ -16,14 +13,183 @@ header .nav-link {
     line-height: 25px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+/* fixed-panel */
+.fixed-panel {
+    width: 150px;
+    height: 1045px;
+    background: rgba(51, 51, 51, 0.75);
+    position: fixed;
+}
+
+.fixed-panel>.wrap {
+    display: flex;
+    position: absolute;
+    top: 385px;
+    left: -220px;
+    width: 576px;
+    transform: rotate(-90deg);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fixed-panel-social-nets {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.social-net {
+    display: block;
+    transform: rotate(90deg);
+    margin-right: 30px;
+}
+
+.insta {
+    background-image: url(icons/instagram.svg);
+    width: 26px;
+    height: 26px;
+}
+
+.insta:hover {
+    background-image: url(icons/instagram--active.svg);
+}
+
+.facebook {
+    background: url(icons/facebook.svg);
+    width: 15px;
+    height: 26px;
+}
+
+.facebook:hover {
+    background-image: url(icons/facebook--active.svg);
+}
+
+.vk {
+    background: url(icons/vk.svg);
+    width: 26px;
+    height: 14px;
+}
+
+.vk:hover {
+    background-image: url(icons/vk--active.svg);
+}
+
+.youtube {
+    background: url(icons/youtube.svg);
+    width: 26px;
+    height: 18px;
+}
+
+.youtube:hover {
+    background-image: url(icons/youtube--active.svg);
+}
+
+.fixed-panel-line {
+    width: 80px;
+    height: 3px;
+    background: #C4C4C4;
+    margin: 0 40px 0 30px;
+}
+
+.fixed-panel-info {
+    margin: 0;
+    color: #c4c4c4;
+    white-space: nowrap;
+}
+
+/* fixed-panel END */
+
+/* First screen with navbar */
+
+.first-screen {
+    background-image: url(images/main-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.nav-item {
+    color: #fff;
+    margin-top: 50px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #D1A954;
+    color: #fff;
+}
+
+.nav-item--tel {
+    font-size: 16px;
+}
+
+.first-screen__text {
+    padding-top: 307px;
+}
+.first-screen h1,
+.poster-btn {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: #FFFFFF;
 }
 
-.left-bar {
-    background: rgba(51, 51, 51, 0.75);
-    height: 1045px;
+.first-screen h1+p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 50px 0;
 }
 
-.col-1 {
-    width: 150px;
+.poster-btn {
+    display: block;
+    font-size: 18px;
+    width: 160px;
+    height: 50px;
+    background: #D1A954;
+    text-align: center;
+    line-height: 54px;
+    text-decoration: none;
+}
+.poster-btn:hover {
+    color: #fff;
+}
+
+.first-screen__slider {
+    padding-top: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-screen__slider > img, .slider-buttons  {
+    margin: auto;
+}
+
+.slider-buttons {
+    width: 370px;
+}
+
+/* media  */
+
+@media screen and (min-width: 992px) {
+    section {
+        padding-left: 176px;
+        padding-right: 94px;
+    }
 }

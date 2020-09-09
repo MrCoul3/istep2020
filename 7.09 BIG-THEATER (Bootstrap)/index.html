@@ -4,34 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Theater</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="container-fluid">
-        <div class="row">
-            <div class="col-1 p-0 left-bar ">
-                
+
+    <div class="fixed-panel d-md-none d-lg-block d-xl-block">
+        <div class="wrap">
+            <div class="fixed-panel-social-nets">
+                <a class="social-net insta" href="http://instagram.com/"></a>
+                <a class="social-net facebook" href="http://facebook.com/"></a>
+                <a class="social-net vk" href="http://vk.com/"></a>
+                <a class="social-net youtube" href="http://youtube.com/"></a>
             </div>
-            <div class="col-11 p-0">
-                <header>
-                    <div class="navbar navbar-dark bg-transparent">
-                        <div class="container d-flex justify-content-between">
-                            <a href="#">Home</a>
-                        </div>
+            <div class="fixed-panel-line"></div>
+            <p class="fixed-panel-info">контактная информация</p>
+        </div>
+    </div>
+    
+    <section class="first-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 col-lg-12 justify-content-lg-center">
+                    <nav class="d-lg-flex d-xl-flex justify-content-between d-md-none d-sm-none d-none">
+                        <a class="nav-item" href="#">Главная</a>
+                        <a class="nav-item" href="#">о театре</a>
+                        <a class="nav-item" href="#">Наши постановки</a>
+                        <a class="nav-item" href="#">партнеры театра</a>
+                        <a class="nav-item" href="#">контакты</a>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-lg-12 d-flex justify-content-xl-end justify-content-lg-center justify-content-md-end">
+                    <a class="nav-item nav-item--tel" href="tel:74951234567">+7 495 123-45-67</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="first-screen__text col-xl-6 ">
+                    <h1>большой театр</h1>
+                    <p>Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</p>
+                    <a class="poster-btn" href="#">афиша</a>
+                </div>
+                <div class="first-screen__slider col-xl-6 ">
+                    <img src="images/slider-container.png" alt="">
+                    <div class="slider-buttons d-flex justify-content-between">
+                        <img src="icons/Arrow-l.svg" alt="">
+                        <img src="icons/Arrow-r.svg" alt="">
                     </div>
-                </header>
+                </div>
             </div>
         </div>
-        
+
     </section>
-    
         
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -40,6 +71,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-</body>
-
 </html>
