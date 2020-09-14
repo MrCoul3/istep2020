@@ -1,0 +1,32 @@
+.recomendation {
+    width: 90%;
+    height: 40vw;
+    background: #5538C8;
+    /* margin: 0 auto; */
+    margin: 80px auto;
+    position: relative;
+    z-index: 5;
+}
+.recomends {
+    float: left;
+    width: 50%;
+
+}
+.recomends h1, h2 {
+    color: #fff;
+    margin: 5vw 0;
+    padding: 3vw;
+
+
+}
+.recomends h1  {
+    font-size: 5vw;  
+    line-height: 1.4;
+}
+.recomends h2  {
+    font-family: poppins-ExtraLight, Arial, sans-serif;
+    line-height: 1.8;
+    text-align: justify;
+
+}
+

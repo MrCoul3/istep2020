@@ -1,0 +1,310 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(241, 241, 241);
+    /* background: yellow; */
+    scroll-behavior: smooth;
+}
+h1 {
+    color: #5538C8;
+    font-size: 6vw;
+    font-family: Poppins-Bold, Arial, sans-serif;
+}
+h2 {
+    color: #5538C8;
+    font-size: 1.5vw;
+    font-family: Poppins-Bold, Arial, sans-serif;
+
+}
+.wrap {
+    z-index: 3;
+    position: relative;
+    width: 100%;    
+}
+.bg {
+    background-image: url(../img/002.jpg);
+    z-index: 1;
+    position: fixed;
+    top: 80px;
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: top, center;
+    height: 100%;
+    width: 100%;
+}
+.menu {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background: rgb(241, 241, 241);
+
+}
+.menu p {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    left: 10vw;
+}
+.menu p a {
+    color: #5538C8;
+    font-size: 16px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: 700;
+    transition: .5s linear;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+}
+.menu p a:hover {color: rgba(160, 151, 153, 0.719)}
+
+/* Блок горизонтального меню */
+.menu ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 10vw;
+    top: 40px;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 0 8px;
+}
+.menu ul li a {
+    font-family: Poppins-Regular, sans-serif;
+    color: #323232; 
+    transition: color .4s ease;
+    font-size: 13.5px;
+    text-decoration: none;
+
+}
+.menu ul li a:hover {
+    color: #5538C8;
+}
+/* Блок Home------------------------------------ */
+
+.home {
+    height: 500px;
+    /* background: rgb(111, 161, 111); */
+    /* top: 120px;
+    left: 200px; */
+
+
+}
+.home p {
+    margin: 0;
+    padding-top: 8vw;
+    padding-left: 10vw;
+    color: rgb(255, 255, 255);
+
+}
+.span1 {
+    font-size: 6vw;
+    font-family: Poppins-Bold, sans-serif;
+}
+.span2 {
+    font-size: 4vw;
+    font-family: Poppins-extraLight, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+input[value='Contact me'] {
+    color: white;
+    background: rgb(163, 23, 182);
+    border-radius: 30px;
+    border-width: 0;
+    height: 55px;
+    width: 170px;
+    font-size: 18px;
+    margin-top: 20px;
+    outline: none;
+}
+input[value='Contact me']:hover {
+    background: rgb(194, 119, 178);
+    transition: .2s linear;
+}
+
+
+
+/* warapper ---------------------*/
+.wrapper {
+    background: rgb(241, 241, 241);
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    /* height: 3000px; */
+}
+.wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* ____________________________________ */
+.aboutMe {
+    background: rgb(241, 241, 241);
+    padding-top: 70px;
+    height: 65vw;
+    text-align: left;
+
+}
+.aboutMe h1 {
+    /* padding-left: 150px; */
+    background: rgb(241, 241, 241);
+    text-align: center;
+    margin: 0;
+    padding: 0 20px 5vw; 
+
+
+}
+.imgSvetlana {
+    width: 75%;
+    position: relative;
+    background: white;
+    margin: 0px auto;
+
+}
+.imgSvetlana img {
+    float: right;
+    width: 37%;
+    padding-top: 20px;
+
+} 
+.text {
+    float: right;
+    width: 63%;
+    height: 40vw;
+    background: white;
+    margin: 0;
+    /* padding-bottom: 10px; */
+}
+.text p {
+    padding: 35px; 
+    margin: 0;
+    font-family: poppins-Light, Arial, sans-serif;
+    font-size: 1.5vw;
+    line-height: 1.8;
+    color: #323232;
+
+}
+/* Tutoring------------------------------------ */
+.tutoring {
+    position: relative;
+    text-align: center;
+    background: rgb(241, 241, 241);
+    /* background: rgb(228, 161, 18); */
+    width: 93%;
+    margin: 0 auto; 
+}
+.tutoring h1 {
+    margin: 0px;
+    padding: 0 20px 5vw; 
+    background: rgb(241,241,241); 
+    
+}
+.tutoringBlocksWrap {
+    background: #fff;
+}
+.tutoringBlocks {
+    float: left;
+    width:49%;
+    background: #fff;
+    height: 25vw;
+    font-family: Poppins-Light, Arial, sans-serif;
+    font-size: 1.7vw;
+
+}
+
+.tutoringBlocks h2 {
+    margin:20px 0  10px 0;
+    font-size: 1.8vw;
+    color: #5538C8;
+
+
+}
+.tutoringBlocks h3 {
+    margin:70px 0  10px 0;
+    font-weight: normal;
+    font-size: inherit;
+    font-family: poppins-Regular;
+    margin-bottom: 10px;
+
+}
+
+
+.tutoringBlocks p {
+    padding: 0px 5vw;
+    margin: 0;
+}
+.tutoring hr {
+    margin: auto auto;
+    width: 45%;
+    transform: rotate(90deg);
+    border-width: 0.5px;
+    border-color: rgba(85, 56, 200, 0.342);
+}
+.span3 {
+    display: block;
+    font-family: poppins-Regular;
+    margin-bottom: 10px;
+}
+input[value='Learn More'] {
+    color: white;
+    background: rgb(253, 131, 105);
+    border-radius: 30px;
+    border-width: 0;
+    height: 55px;
+    width: 170px;
+    font-size: 18px;
+    margin: 50px  0px 0;
+    outline: none;
+}
+input[value='Learn More']:hover {
+    background: rgb(241, 175, 160);
+    transition: .2s linear;
+}
+footer {
+    text-align: center;
+    padding: 100px 0 20px 0;
+    font-family: Poppins-Light, Arial, sans-serif;
+    font-size: 1.6vw;
+    color: #323232;
+}
+footer a {
+    text-decoration: none;
+    color: #5538C8;
+}
+/* Шрифты------------------------ */
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url('fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('fonts/Poppins-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('fonts/Poppins-SemiBold.woff') format('woff');
+    /* font-weight: normal; */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('fonts/Poppins-Bold.woff') format('woff');
+    /* font-weight: normal; */
+    font-style: normal;
+}

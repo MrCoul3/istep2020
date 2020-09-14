@@ -1,0 +1,358 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 66px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+
+}
+h4, p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+h4 {
+    font-weight: 600;
+    font-size: 24px;
+}
+p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    font-style: normal;
+}
+
+header {
+    background: url(images/header-image.png);
+    display: flex;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;  
+}
+.header__left-conteiner {
+    margin: 100px 0 0 0;
+}
+header h1, header h4, header p {
+    color: white; 
+}
+
+header h4 {
+    margin-bottom: 190px;
+}
+header h1 {
+    margin-bottom: 25px;
+}
+header h1::after {
+    content: url(icons/icon-A.svg);
+    margin-left: 45px;
+    vertical-align: middle;
+}
+
+
+.download {
+    display: flex;
+    /* margin-top: 190px; */
+    align-items: center;
+    justify-content: space-around;
+    width: 365px;
+}
+
+
+.header__right-conteiner {
+    margin-top: 75px;
+    width: 525px;
+    height: 525px;
+    background-image: url(images/smart-phone.png);
+    
+}
+
+.header__right-conteiner a {
+    position: relative;
+    left: 230px;
+    top: 200px;
+}
+
+
+
+
+
+.page-2-three-steps-to-success {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.page-2__left-container {
+   margin: 190px 0 0 120px;
+}
+.page-2__left-container h2 {
+    margin-bottom: 35px;
+}
+.page-2__left-container h2 + p {
+    margin-bottom: 88px;
+}
+
+.page-2__right-container__block-1 {
+    /* margin-left: 20px; */
+    margin-bottom: -120px;
+}
+.page-2__right-container__block-2 {
+    margin-left: 200px;
+    margin-bottom: -120px;
+}
+.page-2__right-container__block-3 {
+    /* margin-left: 20px; */
+}
+.block-property {
+    display: flex;
+    align-items: center;
+}
+.red-text-color {
+    color: #D13855;
+}
+.green-text-color {
+   color:  #91BE48;
+}
+.blue-text-color {
+    color: #2C5074;
+}
+
+
+
+
+
+
+
+
+.page-3-new-amway-start {
+    background: linear-gradient(244.05deg, #B8B042 -0.27%, #B8B042 -0.26%, #559F54 100%);
+    height: 800px;
+    
+}
+
+.page-3-new-amway-start h2 {
+    text-align: center;
+    color: white;
+    padding: 60px 0 40px;
+    
+}
+.page-3-new-amway-start h3 {
+    color: white;
+    padding-bottom: 73px;
+}
+.page-3__blocks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.page-3__left-block {
+    width: 400px;
+}
+
+.page-3__right-block {
+    width: 400px;
+}
+
+
+
+
+.page-3__left-block__chat-1 {
+    width: 203px;
+    height: 85px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+.page-3__left-block__chat-2 {
+    background: #fff;
+    border-radius: 10px;
+    margin: 60px 0 80px 40px;
+    width: 348px;
+    height: 85px;
+    
+}
+.page-3__left-block__chat-3 {
+    background: #fff;
+    border-radius: 10px;
+    width: 212px;
+    height: 85px;
+    
+}
+
+
+.page-3__right-block__chat-4 {
+    background: #fff;
+    border-radius: 10px;
+    height: 85px;
+    width: 372px;
+    margin-bottom: 40px;
+   
+    
+    
+}
+.page-3__right-block__chat-5 {
+    background: #fff;
+    border-radius: 10px;
+    height: 85px;
+    margin: 60px 0 80px 100px;
+    width: 227px;
+    
+}
+.page-3__right-block__chat-6 {
+    background: #fff;
+    border-radius: 10px;
+    height: 85px;
+    width: 372px;
+}
+
+
+.page-3__chat__triangle {
+    border-radius: 10px;
+}
+.page-3__chat__triangle::after {
+    content: '';
+    border: 20px solid transparent;
+    border-left: 0px solid white;
+    border-top: 20px solid white;
+    position: relative;
+    top: 105px;
+    left: 30px;
+}
+.page-3__blocks p {
+    /* margin: auto; */
+    position: relative;
+    right: -25px;
+}
+
+
+
+.page-4-wait-for-updates {
+    background: linear-gradient(180deg, #5B63D9 0%, #3BAEE4 100%);
+    display: flex;
+    justify-content: space-around;
+}
+.page-4__wait-for-updates-block {
+    align-self: center;
+    width: 451px;
+}
+.page-4__wait-for-updates-block h2, .page-4__wait-for-updates-block p {
+    color: white;
+}
+.page-4__wait-for-updates-block p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+.page-4__function-list-blocks {
+    width: 400px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 105px;
+    position: relative;
+    right: 20px;
+    
+    
+}
+.page-4__function-list-blocks div, .inner {
+    height: 70px;
+    display: flex;
+}
+.page-4__function-list-blocks > div {
+    border-radius: 10px;
+    background: white;
+}
+.page-4__function-list-blocks p, .inner img {
+    margin: auto;
+}
+.inner {
+    width: 48px;
+    border-radius: 10px 0 0 10px;
+}
+
+.smart-search-block {
+    width: 236px;
+}
+.smart-search-block .inner {
+    background: #94D9BB;
+}
+.new-block {
+    width: 236px;
+}
+.new-block .inner {
+    background: #3BAEE4;
+}
+.new-block span {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+
+}
+.calculator-block {
+    width: 195px;
+}
+.calculator-block .inner {
+    background: #DF488B;
+}
+.calendar-block {
+    width: 254px;
+}
+.calendar-block .inner {
+    background: #5B63D9;
+}
+.check-list-block {
+    width: 293px;
+}
+.check-list-block .inner {
+    background: #FDD130;
+}
+.page-4__function-list-blocks__block p {
+    margin: auto 0 auto 60px;
+}
+
+
+.page-5-start-your-way {
+    display: flex;
+}
+
+.page-5__main-image {
+    background: url(images/page-5_main-image.png);
+    width: 797.77px;
+    height: 680.43px;
+    position: relative;
+    left: 100px;
+}
+.page-5__main-text-block {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+.page-5__main-text-block > p {
+    margin: 31px 0 45px 0;
+
+}

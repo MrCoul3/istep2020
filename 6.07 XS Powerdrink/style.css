@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+p {
+    font-family: Source Sans Pro;
+}
+a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro';
+}
+
+header {
+    background: #342367;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 87px;
+    width: 90%;
+    margin: auto;
+}
+
+
+.header-menu-block {
+    margin: 0 31px;
+    white-space: nowrap;
+}
+.header-menu-block a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 20px;
+}
+.header-content-icons-block {
+    display: flex;
+}
+
+main {
+    background: linear-gradient(180deg, #352368 0%, #352368 0.01%, #211740 94.45%);
+
+}
+.main-page {
+    background: linear-gradient(180deg, rgba(255, 73, 73, 0.3) 0%, rgba(132, 132, 132, 0) 100%);
+}
+
+/* блок с геометрическими фигурами */
+
+.main-page-some-icons-block {
+    display: flex;
+}
+.main-page-some-icons-block img {
+    position: relative;
+}
+
+.cross-image {
+    top: 115px;
+    left: 10%;
+}
+.triangle-orange {
+    top: 39px;
+    left: 20%;
+}
+.rectangle-peorple {
+    top: 19px;
+    left: 58%;
+}
+.triangle-orange-mini {
+    top: 227px;
+    left: 70%;
+}
+.rectangle-yellow {
+    top: 477px;
+    left: 10%;
+}
+.cross-image-large {
+    top: 546px;
+    left: 30%;
+}
+/* ---------------------------- */
+
+.main-page-content {
+    background: url(images/xs-image.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 300px;
+    position: relative;
+    z-index: 1;
+   
+}
+.main-page-content__container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-page-content__container--top {
+    position: relative;
+    top: -90px;
+    margin-bottom: 100px;
+}
+.main-page-content__element {
+    white-space: nowrap;
+    position: relative;
+}
+
+.main-page-content__element--left-block {
+    top: 227px;
+}
+
+.button {
+    display: block;
+    display: flex;
+    width: 200px;
+    height: 45px;
+    background: #E54B31;
+    margin-top: 45px;
+    
+}
+.button a {
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.main-page-content__element--right-block {
+    top: 400px;
+    left: -30px;
+}
+.main-page-content__conteiner--about {
+    
+}
+.main-page-content__conteiner--about p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+    width: 60%;
+    margin-left: 200px;
+}
+
+.main-page-photo {
+    background: url(images/main-photo.png);
+    position: relative;
+    bottom: 200px;
+    z-index: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.main-page-photo-content {
+    box-sizing: border-box;
+    padding: 125px 0 0 75px;
+    /* width: 375px; */
+    width: 420px;
+}
+.main-page-photo-content p {
+    padding-top: 35px;
+    font-size: 22px;
+    line-height: 120%;
+
+}
+#footnote {
+    padding-bottom: 48px;
+    font-size: 14px; 
+}
+h2 {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #31215F;
+}
+.main-page-content__container--taste-life {
+    position: relative;
+    top: 750px;
+}
+
+
+
+
+
+/* страница - "6 уникальных вкусов" */
+.six-unique-tastes-page {
+    background: url(images/six-unique-tastes.png);
+    background-repeat: no-repeat;
+
+}
+.six-unique-tastes-page-content, .radiola-magnesium-page-content, .closes-and-accessories-page-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 140px 0;
+}
+.signature {
+    padding-top: 22px;
+    color: white;
+}
+.button--yellow {
+    background: #E8D313;
+    
+}
+.button--yellow a {
+    color: black;
+}
+
+
+/* страница - радиола и магний */
+
+.radiola-magnesium-page {
+    background: url(images/radiola-and-magnesium-image.png);
+    background-repeat: no-repeat;
+}
+.radiola-magnesium-page-content {
+    
+}
+.container {
+    margin-left: 75%;
+}
+.button--peorple {
+    background: #4F5BB8;
+}
+.button--yellow a {
+    color: black;
+}
+
+
+
+/* страница одежда и аксессуары  */
+
+.closes-and-accessories-page {
+    background: url(images/clothes-and-accessories-image.png);
+    background-repeat: no-repeat;
+}
+
+/* Мы в социальных сетях */
+
+.social-networks-page {
+    width: 80%;
+    padding: 100px 0 60px 0;
+    margin: 0 auto;
+}
+
+.images-grid {
+    padding-top: 60px;
+}
+.image-grid__block {
+    display: flex;
+}
+.image-grid-element {
+    height: 300px;
+    width: 300px;
+}
+.element-one {
+    background: url(images/social-network-images/soc-net-img_01.png);
+    
+}
+.element-two {
+    background: url(images/social-network-images/soc-net-img_02.png);
+    
+}
+.right-bottom-text {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+    text-align: right;
+    position: relative;
+    top: 270px;
+    padding-right: 20px;
+}
+.element-three {
+    background: url(images/social-network-images/soc-net-img_03.png);
+}
+.element-four {
+    background: url(images/social-network-images/soc-net-img_04.png);
+}
+.flex-container {
+    display: flex;
+}
+.image-grid__block--mid-left-block {
+    flex-direction: column;
+}
+.element-five {
+    background: url(images/social-network-images/soc-net-img_05.png);
+}
+.element-six {
+    background: url(images/social-network-images/soc-net-img_06.png);
+}
+.element-center {
+    background: #FEBC2D;
+    width: 600px;
+    height: 600px;
+}
+.element-center__text-decoration {
+    padding: 70px 0 0 45px;
+}
+.element-center__text-decoration > p {
+    padding-top: 30px;
+    width: 475px;
+}
+.image-grid__block--mid-block p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+}
+.flex-container--property {
+    padding-top: 205px;
+    align-items: center;
+}
+.we-are-in-instagram {
+    padding-right: 30px;
+}
+.element-seven {
+    background: url(images/social-network-images/soc-net-img_07.png);
+    height: 600px;
+}
+.element-eight {
+    background: url(images/social-network-images/soc-net-img_08.png);
+}
+.element-nine {
+    background: url(images/social-network-images/soc-net-img_09.png);
+    width: 900px;
+}
+
+.footer-elements {
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-elements__element  {
+    padding-top: ;
+}
+
+.footer-elements__element--first-element {
+font-weight: 500;
+font-size: 13px;
+line-height: 120%;
+letter-spacing: -0.01em;
+color: #918BA0;
+padding: 60px 0 22px 0;
+}
+
+.footer-elements__element--second-element {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #918BA0;
+    padding-bottom: 47px;
+}
+.footer-elements__element--second-element span {
+    font-size: 14px;
+    line-height: 120%;
+    
+}

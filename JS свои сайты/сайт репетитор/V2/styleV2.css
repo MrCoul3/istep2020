@@ -1,0 +1,186 @@
+html, body {
+    background: rgb(241,241, 241);
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+a {
+    text-decoration: none;
+}
+.header {
+    background: rgb(241,241, 241);
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid black; */
+    position: fixed;
+    z-index: 4;
+    left: 0px;
+    top: 0px;
+}
+ 
+.header p {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+.header p a {
+    color: #5538C8;
+    font-size: 16px;
+    font-family: Poppins-Regular, sans-serif;
+    font-weight: 700;
+    transition: .5s linear;
+    letter-spacing: 1.3px;
+}
+.header p a:hover {color: rgba(160, 151, 153, 0.719)}
+
+/* Блок горизонтального меню */
+.header ul {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 50px;
+    top: 40px;
+}
+.header ul li {
+    display: inline-block;
+    padding: 0 8px;
+}
+.header ul li a {
+    font-family: Poppins-Regular, sans-serif;
+    color: #323232;
+    transition: color .4s ease;
+    font-size: 13.5px;
+}
+.header ul li a:hover {
+    color: #5538C8;
+}
+
+.frontImage {
+    background-image: url(img/002.jpg);
+    position: fixed;
+    height: 400px;
+    width: 100%;
+    z-index: 1;
+    margin: 0 20px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* right: 10px;
+    left: 15px; */
+
+}
+
+/* Текст */
+.container1 {
+    height: 600px;
+    margin: 0 20px;
+    /* background: white; */
+    /* position: relative; */
+    z-index: 2;
+    /* background-image: url(background.png) */
+    /* width: 800px; */
+    padding: 100px 0 0 80px;
+    color: rgb(255, 255, 255);
+    position: relative;
+
+}
+
+.span1 {
+    font-size: 90px;
+    font-family: Poppins-SemiBold, sans-serif;
+}
+.span2 {
+    font-size: 50px;
+    font-family: Poppins-Regular, sans-serif;
+    
+}
+input[value='Contact me'] {
+    color: white;
+    background: rgb(163, 23, 182);
+    border-radius: 30px;
+    border-width: 0;
+    height: 55px;
+    width: 170px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+input[value='Contact me']:hover {
+    background: rgb(194, 119, 178);
+    transition: .2s linear;
+
+}
+
+.aboutMe {
+    /* width: 100vw; */
+    background:rgb(241,241, 241);
+    /* background: red; */
+    position: absolute;
+    z-index: 3;
+    /* padding: 0 auto; */
+    margin: 0 0px 0 10px;
+}
+.aboutMe::after {
+    content: '';
+    display: block;
+    clear: both;
+    
+}
+
+.aboutMe h1 {
+    color: rgb(85, 56, 200);
+    font-family: Poppins-SemiBold, sans-serif;
+    font-size: 80px;
+    /* display: block;
+    left: 350px; */
+    /* padding-left: 20%;  */
+    }
+    .aboutMe img {
+        /* min-width: 200px; */
+        width: 350px;
+        padding-left: 100px; 
+        float: left;
+        /* position: relative;
+        top: 200px;
+        left: 100px; */
+        margin: 0 0 0 50px ;
+        
+
+        }
+    .aboutMe p {
+        float: left;
+        /* position: relative;
+        left: 600px;
+        top: 200px; */
+        width: 30%;
+        height: 446.6px;
+        background: white;
+        margin: 0;
+        padding: 10px 30px;
+        color: rgba(119, 115, 116, 0.911);
+        font-family: Poppins-Regular, sans-serif;
+        font-size: 1.5vw;
+        letter-spacing: 0.5px;
+
+    }
+
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: url('fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+    

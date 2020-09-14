@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #215F9C;
+}
+
+/* _____ ШРИФТЫ ____ */
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+/* ____________ header ______________ */
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1167px;
+    margin: 0 auto;
+}
+
+nav > a:nth-child(2)::after,  nav > a:nth-child(3)::after{
+    content: url(icons/triangle-icon.svg);
+    margin-left: 10px;
+}
+
+.nav__icons-block {
+    display: flex;
+    align-items: center;
+}
+.nav__icons-block a {
+    margin: 0 10px;
+    
+}
+/* _____ END OF HEADER ___________ */
+
+/* _______ MAIN CONTENT _____ */
+
+.delivery-on-weekends {
+    background: url(images/background-delivery-on-weekends.png);
+    background-repeat: no-repeat;
+    height: 650px;
+}
+.delivery-on-weekends__main-block {
+    width: 1167px;
+    padding: 140px 0;
+    margin: 0 auto;
+}
+.delivery-on-weekends__main-block p {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #FFFFFF;
+    padding: 41px 0;
+}
+.main-block-button {
+    width: 326px;
+    height: 69px;
+    background: #F59C04;
+    border-radius: 2px;
+    display: block;
+    display: flex;
+}
+.main-block-button span {
+    margin: auto;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.main-block-button span::before {
+    content: url(icons/box-icon-in-button.svg);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/* Блок иконок с текстом. Сделано с помощью background */
+
+.delivery-on-weekends__footer-wrap {
+    height: 105px;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-wrap-elements {
+    width: 1167px;
+    margin: 0 auto  ;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-wrap-elements > div {
+    display: flex;
+    background-repeat: no-repeat;
+}
+.footer-wrap-elements span {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-left: 50px;
+    position: relative;
+    bottom: 2px;
+}
+
+
+.footer-wrap-elements__element-one {
+    background: url(icons/cross-icon.svg);
+}
+.footer-wrap-elements__element-two {
+    background: url(icons/courier-icon.svg);
+}
+.footer-wrap-elements__element-three {
+    background: url(icons/calendar-icon.svg);
+}
+.footer-wrap-elements__element-four {
+    background: url(icons/fire-icon.svg);
+}
+
+
+.main-content-details {
+    width: 1167px;
+    margin: 0 auto;
+}
+
+.main-content-details__breadcrumbs {
+    display: flex;
+    justify-content: start;
+    margin: 35px 0;
+}
+.main-content-details__breadcrumbs a {
+    margin-right: 10px;
+    color: #BABAB8;
+}
+
+/* Рисую треугольник для меню "хлебных крошек" */
+.triangle-right {
+    width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #BABAB8;
+    border-bottom: 5px solid transparent;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.main-content-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.main-content-details__description-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.main-content-details__description-text > div {
+    background-repeat: no-repeat;
+    width: 500px;
+    margin-top: 55px;
+}
+.main-content-details__description-text h3, .main-content-details__description-text p {
+    color: #3F4247;
+}
+.main-content-details__description-text h3, h2 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.main-content-details__description-text > div > p:nth-child(2) {
+    margin: 7px 0 24px 50px;
+}
+.main-content-details__description-text >div > p:nth-child(3), .main-content-details__description-text > div > p:nth-child(4) {
+    margin: 0 0 12px 0;
+}
+.main-content-details__description-text a {
+    text-decoration: underline;
+    color: #006699;
+}
+.description-text__element-one {
+    background: url(icons/calendar-2-icon.svg);
+}
+.description-text__element-two {
+    background: url(icons/map-icon.svg);
+}
+.description-text__element-three {
+    background: url(icons/balloons-icon.svg);
+}
+.description-text__element-four {
+    background: url(icons/cargo-icon.svg);
+}
+.description-text__element-five {
+    background: url(icons/planet-icon.svg);
+}
+.description-text__element-six {
+    background: url(icons/support-icon.svg);
+}
+
+
+
+.registration-page {
+    background: linear-gradient(270deg, #0C436C 0%, #0E5185 51.56%, #0D436F 100%);
+}
+
+.registration-page__title {
+    text-align: center;
+    padding-top: 60px;
+}
+.registration-page__title hr {
+    width: 86px;
+    border: 5px solid #F89700;
+    margin: 15px auto 90px;
+    background-color: #F89700;
+}
+
+.registration-page__title h2 {
+    color: white;
+    font-size: 24px;
+}
+.registration-page__flex-container {
+    display: flex;
+    justify-content: space-around;
+    width: 1167px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+/* .registration-page__numbered-list {
+    display: flex;
+} */
+.numbered-list__items p, .numbered-list__items span {
+    color: white;
+    font-size: 16px;
+}
+.numbered-list__items p {
+    font-weight: 500;
+}
+.numbered-list__items span {
+    font-weight: 300;
+}
+.numbered-list__items {
+    display: flex;
+    margin-bottom: 35px;
+
+}
+.numbered-list__items::before {
+    content: "";
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 15px;
+
+}
+.numbered-list__items--one::before {
+    content: "1";
+}
+.numbered-list__items--two::before {
+    content: "2";
+}
+.numbered-list__items--three::before {
+    content: "3";
+}
+.numbered-list__items--four::before {
+    content: "4";
+}
+.numbered-list__items--five::before {
+    content: "5";
+}
+
+
+
+.registration-page__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    
+}
+.form-item {
+    position: relative;
+}
+.registration-page__form input {
+    height: 50px;
+    width: 600px;
+    margin-bottom: 25px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.form-item input:focus + label {
+    display: none;
+}
+.form-item label {
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    color: #99999B;
+}
+.form-item label span {
+    color: #E39A3B;
+}
+.double-input-field {
+    display: flex;
+    justify-content: space-between;
+
+}
+.double-input-field input {
+    width: 288px;
+}
+.triangle-down {
+    width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #808080;
+    display: inline;
+    position: relative;
+    left: 550px;
+    bottom: 5px;
+}
+
+#button {
+    width: 280px;
+    height: 60px;
+    background: #F59C02;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;    
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.label-button {
+    position: relative;
+    top: 45px;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+footer {
+    width: 1167px;
+    margin: 0 auto;
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    margin: 60px 20px 40px 0px;
+}
+.footer-item a {
+    text-decoration: underline;
+}
+.footer-item--to-become-a-client  {
+    width: 200px;
+}
+.footer-item--adress a, .footer-item--to-become-a-client a {
+    color: #245A76;
+    font-size: 16px;
+    
+}
+.footer-item--adress a {
+    line-height: 30px;
+    font-size: 14px
+}
+.footer-item--phone a {
+    color: #3C4349;
+}
+.footer-item--adress p:first-child {
+    color: #414149;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.paragraph-special-property {
+    color: #C0BBB7; 
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    
+}
+
+.paragraph-special-property a {
+    color: #C0BBB7; 
+}
+.paragraph-special-property--text-align {
+    text-align: right;
+}
+.footer-item--phone a {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-item--phone-for-int-shops  {
+    margin-right: 0;
+    width: 214px;
+}
+
+.facebook-twitter-icons-property {
+    width: 40px;
+    margin:0 10px 50px 0;
+    /* height: 40px; */
+}

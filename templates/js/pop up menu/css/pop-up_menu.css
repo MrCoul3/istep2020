@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+
+.button {
+    position: fixed;
+    left: 230px;
+    z-index: 1;
+    background-image: url(../images/menu-button.png);
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
+}
+.button-close {
+    position: relative;
+    right: -190px;
+    background-image: url(../images/cross.png);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+menu {
+    position: fixed;
+    height: 120vw;
+    width: 300px;
+    background: rgb(219, 46, 46);
+    transition: all ease 0.1s;
+}
+
+.hide {
+    margin-left: -300px;
+}
+
+nav {
+    padding: 30px 0  ;
+    transition: all ease 0.75s;
+    width: 200px;
+    min-height: 400px;
+
+}
+li {
+    margin: 0 20px 20px 20px;
+    list-style: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+li:hover {
+    color: rgba(19, 245, 245, 0.952);
+    transition: .5s linear;
+}
