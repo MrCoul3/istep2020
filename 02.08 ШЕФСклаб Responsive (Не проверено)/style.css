@@ -4,7 +4,7 @@
 }
 
 @font-face {
-    font-family: TTNorms;
+    font-family: TT Norms;
     src: url(/fonts/TTNorms-Bold.ttf);
 }
 
@@ -52,7 +52,7 @@ a {
 }
 
 h1 {
-    font-family: TTNorms;
+    font-family: TT Norms;
     font-weight: bold;
     font-size: 30px;
     color: white;
@@ -68,7 +68,7 @@ h2 {
 }
 
 h3 {
-    font-family: TTNorms;
+    font-family: TT Norms;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
