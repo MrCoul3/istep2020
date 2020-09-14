@@ -1,0 +1,540 @@
+@media screen and (min-width: 767px) {
+
+    /* Header */
+
+    header .wrap {
+        margin: 0 24px;
+        align-items: center;
+        max-width: 1170px;
+        margin: auto;
+    }
+
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .font-style-tel-num {
+        display: unset;
+    }
+
+    .nav-medium-screen,
+    .sign-in-button {
+        display: flex;
+    }
+
+    .sign-in-button>span {
+        font-family: Circe;
+    }
+
+    /* end of header______________________________ */
+
+    /* MAIN  */
+    /* Banner */
+
+    .nav-small-screen {
+        display: none;
+    }
+
+    .banner {
+        margin: 30px 0 10px;
+        padding: 0 40px;
+    }
+
+    .leaf {
+        z-index: 5;
+        width: 80.06px;
+        height: 115.4px;
+        right: 2px;
+    }
+
+    .tomato {
+        background-image: url(images/tomato.png);
+        width: 90px;
+        height: 100px;
+        left: 312px;
+        top: 33px;
+    }
+
+    .pepper {
+        background-image: url(images/chili_paper.png);
+        width: 190px;
+        height: 164px;
+        bottom: 14px;
+        left: 255px;
+    }
+
+    /* Banner 768 */
+    .banner-content {
+        padding: 40px 0 0 40px;
+    }
+
+    .banner-content>p {
+        font-size: 18px;
+    }
+
+    .banner .wrap {
+        flex-direction: row;
+        background: linear-gradient(180deg, #A3B25A 0%, #9DAB53 53.86%, #9DAB53 100%);
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .promotion-button {
+        font-size: 14px;
+        width: 74px;
+        height: 30px;
+    }
+
+    .banner>.wrap>img {
+        max-width: 551px;
+        width: 153vw;
+        position: static;
+        margin: 0 auto;
+    }
+    .slider {
+        max-width: 1170px;
+        position: relative;
+        margin: auto   ;
+    }
+
+    .slider-button {
+        position: absolute;
+        top: -280px;
+    }
+
+    
+
+    .slider-button-r {
+        right: -22px;
+        
+    }
+    .slider-button-l {
+        left: -22px;
+    }
+/* 767 */
+    .buttons-buy-and-menu {
+        display: flex;
+        position: relative;
+        bottom: 220px;
+        /* justify-content: center; */
+        left: 40px;
+        max-width: 1170px;
+        margin: auto;
+
+    }
+
+    .button-big {
+        display: flex;
+        position: relative;
+        /* left: 100px; */
+    }
+/* 768 */
+    .radio-buttons-group {
+        position: relative;
+        bottom: 80px;
+        z-index: 3;
+        margin: auto;
+    }
+
+    input[type='radio'] + label {
+        /* background: #FFFFFF; */
+        opacity: 0.5;
+    }
+
+    input[type='radio']:checked+label {
+        background: #FFFFFF;
+        opacity: 1;
+    }
+
+    /* end of Banner __________________________ */
+
+    /* How it works  */
+    .how-it-works {
+        padding: 0 40px 0;
+        margin: 0 auto;
+    }
+
+    .how-it-works .wrap {
+        flex-direction: row;
+        position: relative;
+        overflow: hidden;
+        /* justify-content: center; */
+    }
+
+    .how-it-works .wrap__element {
+        margin-right: 50px;
+        min-width: 200px;
+    }
+
+    .how-it-works .radio-buttons-group {
+        display: flex;
+        position: static;
+        justify-content: center;
+        margin: 40px 0 79px 0;
+
+    }
+
+
+    .how-it-works input[type='radio']:checked+label {
+        background: linear-gradient(0deg, #A1A75C, #A1A75C), #65BF4F;
+        width: 12px;
+        height: 12px;
+        border-radius: 12px;
+    }
+
+    .how-it-works label {
+        width: 8px;
+        height: 8px;
+        background: #DDDEDB;
+    }
+
+    /* end of how it works  */
+
+    /* menu-choice  */
+    .menu-choice {
+        padding: 0 20px;
+    }
+
+    .menu-choice>.container {
+        width: auto;
+
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    .menu-choice>.container>p {
+        font-size: 16px;
+    }
+
+    .arrow-buttons--for-menu-cards {
+        top: -290px;
+        right: -20px;
+    }
+
+    .arrow-buttons__item {
+        /* width: 48px;
+        height: 48px; */
+        zoom: 1.333;
+    }
+
+    .type-of-menu-buttons {
+        margin: 0 5px 30px;
+        justify-content: center;
+    }
+
+    .type-of-menu-buttons__item {
+        font-size: 18px;
+        padding: 13px 28px;
+        margin-right: 20px;
+    }
+
+    .menu-cards .wrap>a {
+        left: 280px;
+    }
+
+    .menu-cards__item>.wrap {
+        width: 354px;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .menu-cards__item {
+        width: 354px;
+        height: 480px;
+        margin-right: 20px;
+    }
+
+    .hashtag-block {
+        justify-content: start;
+    }
+
+    .hashtag-block>a {
+        margin-right: 10px;
+    }
+
+    .details-string__item {
+        font-size: 14px;
+    }
+
+    .details-string__item--weight {
+        order: 3;
+
+    }
+
+    .details-string__item--weight::before {
+        content: url(icons/details-string-icon-1-big.svg);
+        top: 6px
+    }
+
+    .details-string__item--time {
+        order: 4;
+    }
+
+    .details-string__item--time::before {
+        content: url(icons/details-string-icon-2-big.svg);
+        top: 6px;
+    }
+
+    .details-string__item--chef {
+        order: 0;
+    }
+
+    .border {
+        order: 2;
+        width: 314px;
+    }
+
+    .details-string__item--cooking-for {
+        order: 1;
+        width: auto;
+    }
+
+    .details-string__item--cooking-for>.shift {
+        display: none;
+    }
+
+    .select-button {
+        order: 5;
+    }
+
+    /* footer 768px--------------------------------------------------- */
+    footer {
+        padding: 0;
+    }
+    footer > .grid-box {
+        padding: 0 20px;
+        grid-template-rows: 25% 25%;
+        /* grid-template-columns: 30% 50%; */
+        grid-template-columns: repeat(2, auto);
+    }
+    footer .wrap__container > .flex-box  {
+        flex-wrap: nowrap;
+    }
+    .tel-num {
+        font-size: 18px;
+
+    }
+    .wrap__container--tel {
+        margin-right: 40px;
+        grid-column-start: 1;
+
+    }
+    .wrap__container--about {
+        grid-column-start: 2;
+        
+    }
+    .wrap__container--for-clients {
+        grid-column-start: 2;
+    }
+    .wrap__container--email-adress {
+        grid-column-start: 2;
+        flex-direction: row;
+    }
+    .social-net-container {
+        grid-row-start: 3;
+        margin: unset;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1060px) {
+    .how-it-works .wrap {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .menu-cards {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    /* header */
+
+    header .wrap {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .logo {
+        flex-grow: 4;
+    }
+
+    .logo::after {
+        content: "Сервис доставки отборных продуктов";
+        position: absolute;
+        width: 150px;
+        top: 18px;
+        font-family: Circe;
+        font-size: 14px;
+        color: #333333;
+    }
+
+    .nav-medium-screen {
+        flex-grow: 2;
+    }
+
+    .font-style-tel-num {
+        flex-grow: 1;
+    }
+
+    /* banner  */
+    h1 {
+        font-size: 48px;
+        width: 480px;
+    }
+
+    .banner>.wrap {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .banner>.wrap>img {
+        margin-right: 0;
+    }
+
+    .leaf {
+        right: 700px;
+    }
+
+    .tomato {
+        top: 180px;
+        left: 536px;
+    }
+
+    .pepper {
+        bottom: 46px;
+        left: 490px;
+    }
+
+    .banner-content {
+        padding: 40px 0 0 70px;
+    }
+/* 1440 */
+    .buttons-buy-and-menu {
+        padding-left: 0;
+        justify-content: center;
+        right: 302px;
+        left: unset;
+    }
+
+    .slider {
+        max-width: 1170px;
+        position: relative;
+        margin: auto;
+    }
+
+    .slider-button {
+        top: -275px;
+    }
+
+    .slider-button-r {
+        right: -22px;
+    }
+
+    .slider-button-l {
+        left: -22px;
+    }
+
+    .slider .radio-buttons-group {
+        justify-content: center;
+        margin: auto;
+        left: -480px;
+    }
+
+    /* How it works  */
+
+    .how-it-works>.wrap {
+        justify-content: center;
+    }
+
+    h1 {
+        width: auto;
+    }
+
+    .how-it-works>.radio-buttons-group {
+        display: none;
+    }
+
+    /* Menu-choice */
+
+    .arrow-buttons {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    .type-of-menu-buttons {
+        justify-content: center;
+    }
+
+    .menu-cards {
+        justify-content: center;
+    }
+
+    .menu-cards__item {
+        width: 370px;
+    }
+
+    .arrow-buttons--for-menu-cards {
+        right: 0;
+    }
+
+    /* footer 1440 */
+
+    footer {
+        display: flex;
+    }
+    footer > .grid-box {
+        padding: 0 20px 50px;
+        grid-template-rows: 20% 10%;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 40px;
+    }
+
+    footer>.wrap {
+        margin: auto;
+    }
+
+    .wrap__container--tel {
+        margin-right: 40px;
+        grid-column-start: 1;
+
+    }
+    footer .wrap__container--about > .flex-box {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    footer .wrap__container--for-clients > .flex-box {
+        flex-direction: column;
+    }
+    .wrap__container--about .sub-flex-box {
+        flex-direction: column;
+    }
+    
+    .wrap__container--about {
+        grid-column-start: 2;
+    }
+    .wrap__container--for-clients {
+        grid-column-start: 3;
+    }
+    .wrap__container--email-adress {
+        grid-column-start: 4;
+        flex-direction: column;
+        }
+
+    .social-net-container {
+        grid-column-start: 4;
+        grid-row-start: 5;
+        margin: unset;
+    }
+    
+}
+    

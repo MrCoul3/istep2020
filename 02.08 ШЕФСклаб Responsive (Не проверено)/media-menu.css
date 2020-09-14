@@ -1,0 +1,407 @@
+@media screen and (max-width: 1439px) {
+
+    /* Footer [768 - 1440] start */
+    header .wrap__container>p {
+        display: none;
+    }
+
+    nav>ul {
+        padding-inline-start: 0;
+    }
+
+    nav>ul li {
+        margin: 0 15px;
+    }
+
+    /* Footer [768 - 1440] end */
+
+    /* Main menu-tabs [768 - 1440] start */
+
+    .menu-tabs {
+        padding: 60px 5px 0px;
+    }
+
+    .menu-tabs-title>p {
+        font-size: 16px;
+        color: #464243;
+    }
+
+    .menu-tabs-buttons a {
+        margin: 30px 8px 0px 8px;
+        padding: 13px 28px;
+    }
+
+    .arrow-buttons {
+        top: -150px;
+        padding: 0 10px 0;
+    }
+
+    /* Main menu-tabs [768 - 1440] end */
+
+    /* Main Menu-cards [768 - 1440] Start */
+    .menu-cards>.wrap {
+        padding: 30px 20px 0;
+    }
+
+    .menu-cards-filters {
+        justify-content: center;
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .menu-cards-filters form label {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .menu-cards-buttons a {
+        width: 354px;
+        margin-top: 20px;
+    }
+
+    .num-of-dishes {
+        flex-grow: 2;
+    }
+
+    .num-or-persons {
+        flex-grow: 5;
+    }
+
+    .price {
+        flex-grow: 2;
+    }
+
+    .menu-cards-buttons {
+        flex-grow: 5;
+    }
+
+    .menu-cards .grid-container {
+        margin: 0 auto;
+        margin-top: 32px;
+        margin-bottom: 60px;
+        display: grid;
+        grid-gap: 20px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 728px;
+    }
+
+    .menu-cards-card {
+        width: 354px;
+        height: 480px;
+    }
+
+    .menu-cards-card>.img-container {
+        width: 354px;
+        height: 220px;
+    }
+
+    .menu-cards-card>.img-container>a {
+        left: 287px;
+    }
+
+    .cards>.menu-cards-card:nth-child(7),
+    .cards>.menu-cards-card:nth-child(8),
+    .cards>.menu-cards-card:nth-child(9) {
+        display: none;
+    }
+
+    footer .grid-container {
+        max-width: 768px;
+        padding: 0 20px;
+        margin: 40px auto;
+        grid-gap: 0 40px;
+        grid-template-rows: 40% 40%;
+        grid-template-areas:
+            "tel about "
+            "soc-net clients "
+            "soc-net email  ";
+    }
+
+    .left-block,
+    .right-block,
+    .wrap__container--for-clients>.flex,
+    .wrap__container--email-adress>.flex {
+        flex-direction: row;
+    }
+
+    input[type="email"] {
+        margin: 0;
+    }
+
+    footer .wrap__container p {
+        margin: 5px 15px 5px 0;
+    }
+    .social-net-container {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Footer [320 - 768] start */
+
+    header>.wrap {
+        justify-content: unset;
+    }
+
+    nav>ul,
+    .header-tel-num,
+    .log-in-button>a {
+        display: none;
+    }
+
+    nav {
+        order: 3;
+        flex-grow: 0;
+    }
+
+    nav:after {
+        content: url(icons/menu.svg);
+
+    }
+
+    header .wrap__container {
+        flex-grow: 1;
+    }
+
+    .log-in-button {
+        flex-grow: 0;
+        margin-right: 25px;
+    }
+
+    .log-in-button:before {
+        content: url(icons/phone.svg);
+        margin-right: 10px;
+    }
+
+    .log-in-button::after {
+        content: url(icons/login.svg);
+    }
+
+    /* Footer [320 - 768] end */
+
+    /* Main  Menu-tabs [320 - 768] start */
+
+    .menu-tabs {
+        padding: 40px 10px 0px;
+        overflow: hidden;
+    }
+
+    .menu-tabs-title>h1 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    .menu-tabs-title>p {
+        color: #6D7077;
+        font-size: 14px;
+        line-height: 20px;
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .menu-tabs-buttons a {
+        margin: 30px 7px 0px 0px;
+        font-size: 16px;
+        font-weight: normal;
+        padding: 12px 21px;
+    }
+
+    .arrow-buttons {
+        top: -162px;
+        padding: 0;
+    }
+
+    .arrow-buttons img {
+        zoom: 0.67777;
+    }
+
+    /* Main  Menu-tabs [320 - 768] end */
+
+    /* Main  Menu-Cards [320 - 768] start */
+    .menu-cards>.wrap {
+        padding: 30px 15px 0;
+    }
+
+    .menu-cards>.wrap {
+        padding: 30px 15px 0;
+    }
+
+    .menu-cards-filters {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        display: grid;
+        grid-template-areas:
+            "num-of-dishes num-or-persons"
+            "price price"
+            "menu-cards-buttons menu-cards-buttons";
+    }
+
+    .menu-cards-filters form {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: initial;
+        width: 135px;
+        height: 40px;
+        border: 1px solid #CECFCD;
+        border-radius: 64px;
+        background: #FFFFFF;
+        color: #464243;
+        font-family: circe;
+        font-size: 18px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .dropdown-menu+label {
+        background: url(icons/dropdown-arrow.svg);
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        align-self: center;
+        position: relative;
+        left: -30px;
+    }
+
+    .num-of-dishes {
+        grid-area: num-of-dishes;
+        justify-self: end;
+    }
+
+    .num-or-persons {
+        grid-area: num-or-persons;
+        justify-self: start;
+    }
+
+    .price {
+        grid-area: price;
+        margin: 0 auto;
+        justify-self: center;
+        margin-top: 20px;
+    }
+
+    .menu-cards-buttons {
+        justify-self: center;
+        flex-direction: column;
+        grid-area: menu-cards-buttons;
+    }
+
+    .menu-cards-buttons a {
+        width: 290px;
+        height: 50px;
+    }
+
+    .menu-cards-buttons .active {
+        margin-left: 0;
+    }
+
+    .grid-container {
+        margin-top: 32px;
+        display: grid;
+        grid-gap: 20px 20px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .menu-cards-card>.img-container>a {
+        left: 223px;
+    }
+
+    .cards>.menu-cards-card:nth-child(5),
+    .cards>.menu-cards-card:nth-child(6),
+    .cards>.menu-cards-card:nth-child(7),
+    .cards>.menu-cards-card:nth-child(8),
+    .cards>.menu-cards-card:nth-child(9) {
+        display: none;
+    }
+
+    .menu-cards-card {
+        width: 290px;
+        height: 463px;
+    }
+
+
+    .menu-cards-card>.img-container {
+        width: 290px;
+        height: 180px;
+    }
+
+    .details-string__item--chef {
+        order: 3;
+        font-size: 12px;
+    }
+
+    .details-string__item--cooking-for {
+        order: 5;
+    }
+
+    .shift {
+        display: unset;
+    }
+
+    .border {
+        order: 4;
+    }
+
+    .details-string__item--weight {
+        order: 1;
+        font-size: 12px;
+    }
+
+    .details-string__item--weight::before {
+        content: url(icons/details-string-icon-1.svg)
+    }
+
+    .details-string__item--time {
+        order: 2;
+        font-size: 12px;
+    }
+
+    .details-string__item--time::before {
+        content: url(icons/details-string-icon-2.svg)
+    }
+
+    .select-button {
+        order: 6;
+    }
+
+    footer .grid-container {
+        justify-items: start;
+        max-width: 768px;
+        padding: 0 15px;
+        margin: 40px auto;
+        /* grid-gap: 30px 0; */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "tel"
+            "about"
+            "clients "
+            "email"
+            "soc-net";
+    }
+
+    .wrap__container--email-adress>.flex, .wrap__container--about>.flex {
+        flex-direction: column;
+    }
+    .wrap__container--about>.flex, .wrap__container--for-clients>.flex {
+        flex-wrap: wrap;
+    }
+
+    .wrap__container {
+        margin-bottom: 30px;
+    }
+
+    .email-input {
+        margin-bottom: 0;
+    }
+
+    .social-net-container {
+        margin: 0;
+    }
+}

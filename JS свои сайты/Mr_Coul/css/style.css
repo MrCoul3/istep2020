@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background: url(../images/bg.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    font-family: sans-serif;
+    /* background-color: rgba(92, 92, 92, 0.507); */
+    /* background: linear-gradient(45deg, #EECFBA, #C5DDE8); */
+    background: linear-gradient(130deg, rgba(0, 0, 0, 0.61), rgba(0, 172, 252, 0.541));
+}

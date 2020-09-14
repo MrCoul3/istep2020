@@ -4,31 +4,41 @@
     position: relative;
     scroll-behavior: smooth;
 }
-.menu {
-  position: fixed;
-  right: 30px;
-  top: 10px;
-  z-index: 1;
-  
+
+
+
+.button {
+    position: fixed;
+    left: 230px;
+    z-index: 1;
+    background-image: url(../images/menu-button.png);
+    background-size: contain;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+
 }
 .button-close {
-}
-img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-   
-}
-menu {
     position: relative;
+    right: -190px;
+    background-image: url(../images/cross.png);
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+menu {
+    position: fixed;
     height: 120vw;
-    width: 75vw;
+    width: 300px;
     background: rgb(219, 46, 46);
-    transition: all ease 1s;
+    transition: all ease 0.1s;
 }
+
 .hide {
-    margin-left: -75vw;
+    margin-left: -300px;
 }
+
 nav {
     padding: 30px 0  ;
     transition: all ease 0.75s;

@@ -1,0 +1,36 @@
+html {
+    margin-top: 12vw;
+}
+.learnMore {
+    width: 85%;
+    margin: 0px auto;
+    position: relative;
+
+}
+.learnMore h1 {
+    margin: 0;
+    line-height: 7.9vw;
+    font-size: 6.2vw;
+}
+.inform {
+    background: #fff;
+    /* width: 100%; */
+    height: 500px;
+}
+.menu {
+    height: 9vw;
+}
+.learnMore p {
+    margin: 0;
+    padding-top: 10px;
+    font-family: poppins-ExtraLight, Arial, sans-serif;
+    font-size: 2vw;
+}
+
+hr {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #5538C8;
+    width: 80%;
+    margin: 100px auto;
+}
