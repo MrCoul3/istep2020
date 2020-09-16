@@ -1,0 +1,93 @@
+/* Fonts Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+ a {
+    text-decoration: none;
+}
+
+nav a {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* fonts - end */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    max-width: 989px;
+    margin: 0 auto;
+}
+
+.container {
+     max-width: 1220px;
+}
+
+.flex-box {
+    display: flex;
+}
+
+.j-cont-sb {
+    justify-content: space-between;
+}
+
+.a-items-center {
+    align-items: center;
+}
+
+.f-d-column {
+    flex-direction: column;
+}
+
+a {
+    text-decoration: ;
+}
+
+
+/* Header Start ___________ */
+
+header {
+    width: 100%;
+    background-color: #0165A6;
+}
+
+nav {
+    height: 70px;
+}
+
+
+nav a {
+    display: block;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 20px;
+}
+
+/* EnD of Header_______________ */
+
+/* Start Of Banner _________________________________ */
+
+
+.banner {
+}
+
+.banner--container {
+    background-image: url(images/banner-main.png);
+    margin: 0 auto;
+    height: 532.2px;
+
+
+}   
+
+.banner-tel {
+    display: block;
+    position: relative;
+    left: 912px;
+    top: 184px;
+}
