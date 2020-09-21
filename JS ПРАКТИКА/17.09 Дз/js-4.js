@@ -1,17 +1,17 @@
 // доп задание в обменик валют давай добавим еще одну валюту "евро". Т.е. наш обменик может менять рубль-евро, евро-рубль, евро-доллар и тд.
 
-const USD_EUR_RATE = 0.85;
-      EUR_USD_RATE = 1 / USD_EUR_RATE;
-      USD_RUB_RATE = 76;
-      RUB_USD_RATE = 1 / USD_RUB_RATE;
-      EUR_RUB_RATE = 90;
+const USD_EUR_RATE = 0.85,
+      EUR_USD_RATE = 1 / USD_EUR_RATE,
+      USD_RUB_RATE = 76,
+      RUB_USD_RATE = 1 / USD_RUB_RATE,
+      EUR_RUB_RATE = 90,
       RUB_EUR_RATE = 1 / EUR_RUB_RATE;
-let currencyBuy;
-let сurrencySell;
-let sumOfCash;
-let operationInfo;
-let agreement;
-let course;
+let currencyBuy,
+сurrencySell,
+sumOfCash,
+operationInfo,
+agreement,
+course;
 
 function enterCurrency() {
     currencyBuy = prompt("Введите название обмениваемой валюты: USD, EUR, RUB?", "USD");
