@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
- a {
+a {
     text-decoration: none;
 }
 
@@ -12,6 +12,8 @@ nav a {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+
 
 /* fonts - end */
 
@@ -26,7 +28,9 @@ nav a {
 }
 
 .container {
-     max-width: 1220px;
+    /* width: 1220px; */
+    max-width: 1220px;
+    margin: 0 auto;
 }
 
 .flex-box {
@@ -45,6 +49,10 @@ nav a {
     flex-direction: column;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 a {
     text-decoration: ;
 }
@@ -55,6 +63,10 @@ a {
 header {
     width: 100%;
     background-color: #0165A6;
+}
+
+.header--wrap {
+    margin: 0 auto;
 }
 
 nav {
@@ -74,20 +86,163 @@ nav a {
 /* Start Of Banner _________________________________ */
 
 
-.banner {
-}
-
 .banner--container {
     background-image: url(images/banner-main.png);
     margin: 0 auto;
     height: 532.2px;
+    padding: 0 64px 0 116px; 
+}
 
-
-}   
+.banner-wrap {
+}
 
 .banner-tel {
-    display: block;
+    display: flex;
     position: relative;
-    left: 912px;
-    top: 184px;
+    justify-content: flex-end;
+    top: 273px;
+    
+}
+
+/* End Of Banner ________ */
+
+/* Start of specifications_______________________ */
+
+
+.specifications--container {
+    margin: 0 auto;
+}
+
+.specifications-items {
+    max-width: 820px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+
+}
+
+.specifications-items img {
+    margin-right: 15px;
+}
+
+.specifications-items p {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #1F4F85;
+}
+
+/* End of specifications___*/
+
+/* Start of work-mode ______________________ */
+
+.work-mode--container {
+    overflow: hidden;
+}
+
+.work-mode__main-text {
+    max-width: 615px;
+}
+
+.work-mode__arrows {
+    position: relative;
+    top: 134.135px;
+}
+
+.work-mode__slider {
+    width: 1540px;
+    margin-left: 50px;
+}
+
+.slider-item {
+    padding: 30px 35px 33px 32px;
+}
+
+.slider-item--clean {
+    width: 402px;
+    height: 215px;
+    background: #C0E7FF;
+    border-radius: 20px;
+}
+
+.slider-item--white {
+    width: 326px;
+    height: 215px;
+    background: #FEECDC;
+    border-radius: 20px;
+}
+
+.slider-item--polish {
+    width: 362px;
+    height: 152px;
+    background: #D2D7FD;
+    border-radius: 20px;
+}
+
+.slider-item--soft {
+    width: 360px;
+    height: 215px;
+    background: #C5FDE6;
+    border-radius: 20px;
+}
+
+.radio-buttons-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']:checked+label {
+    background-image: url(icons/checked-btn.svg);
+}
+
+input[type='radio']+label {
+    background: #DDDEDB;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+/* End of work-mode __ */
+
+/* Start of mobile-app ______________________ */
+
+
+.mobile-app--container {
+    position: relative;
+}
+
+.mobile-app {
+    height: 622px;
+    background: #AFF0BF;
+}
+
+
+.app-button {
+    width: 214px;
+}
+
+.mobile-app__main-image {
+    position: absolute;
+    top: 59px;
+}
+
+.mobile-app__main-image--phone {
+    right: 176px;
+}
+
+.mobile-app__main-image--brush {
+    right: 0;
+}
+.mobile-app__content {
+    max-width: 547px;
 }
