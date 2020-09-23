@@ -157,7 +157,7 @@ nav a {
     margin-left: 50px;
 }
 
-.slider-item {
+.work-mode__slider .slider-item {
     padding: 30px 35px 33px 32px;
 }
 
@@ -245,4 +245,12 @@ input[type='radio']+label {
 }
 .mobile-app__content {
     max-width: 547px;
+}
+
+/* End of mobile-app ______________________ */
+
+/* Start of line-of-products */
+
+.line-of-products__slider {
+    /* overflow: hidden; */
 }
