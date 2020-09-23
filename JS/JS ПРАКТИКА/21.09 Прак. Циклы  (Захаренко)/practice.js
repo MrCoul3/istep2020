@@ -1,35 +1,35 @@
 // ###### 21.09 Практика на парах (Захаренко) ########## \\
 // ##################################################### \\
-// switchFunc();
-// function switchFunc() {
-//     let month = prompt("Введите месяц", "1");
-//     switch (month) {
-//         case "1":
-//             alert("Jan");
-//             break;
-//         case "2":
-//             alert("Feb");
-//             break;
-//         case "3":
-//             alert("Mar");
-//             break;
-//         case "4":
-//             alert("Apr");
-//             break;
-//         case "5":
-//             alert("May");
-//             break;
-//         case "6":
-//             alert("June");
-//             break;
-//         case "7":
-//             alert("July");
-//             break;
-//         default:
-//             alert("Введите число от 1 до 12");
-//             switchFunc();
-//     }
-// }
+switchFunc();
+function switchFunc() {
+    let month = prompt("Введите месяц", "1");
+    switch (month) {
+        case "1":
+            alert("Jan");
+            break;
+        case "2":
+            alert("Feb");
+            break;
+        case "3":
+            alert("Mar");
+            break;
+        case "4":
+            alert("Apr");
+            break;
+        case "5":
+            alert("May");
+            break;
+        case "6":
+            alert("June");
+            break;
+        case "7":
+            alert("July");
+            break;
+        default:
+            alert("Введите число от 1 до 12");
+            switchFunc();
+    }
+}
 
 
 
@@ -170,12 +170,14 @@
 // Запросить число и проверить простое ли оно.
 // Делится только на себя и  на единицу.
 
-let x = parseInt(prompt("Введите число", "10"));
-let result = true;
-for (let i = x - 1; i > 1; i--) {
-    if ((x % i) == 0) {
-        result = false;
-        break;
-    }
-}
-alert((result) ? 'Число простое' : 'Число не простое');
+// let x = parseInt(prompt("Введите число", "10"));
+// let result = true;
+// for (let i = x - 1; i > 1; i--) {
+//     if ((x % i) == 0) {
+//         result = false;
+//         break;
+//     }
+// }
+// alert((result) ? 'Число простое' : 'Число не простое');
+
+//________________________________________________
