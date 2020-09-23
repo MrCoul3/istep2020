@@ -1,0 +1,32 @@
+.my-flex-container {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-items: baseline; */
+    /* align-items: flex-start; */
+    width: 80%;
+    height: 500px;
+    background: gray;
+    /* flex-wrap: wrap; */
+}
+
+.my-flex-block {
+    /* width: 100px; */
+    /* height: 100px; */
+    background: red;
+    margin: 2px;
+    flex-grow: 2;
+    
+    
+}
+
+.my-flex-block:nth-child(1) {
+    background: blue;
+    flex-grow: 4;
+}
+.my-flex-block:nth-child(2) {
+    background: green;
+    /* flex-basis: 300px; */
+}

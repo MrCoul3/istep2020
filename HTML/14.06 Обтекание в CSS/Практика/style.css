@@ -1,0 +1,106 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+}
+.rectangle {
+    width: 100%;
+}
+.line {
+    height: 10px;
+    background: linear-gradient(0deg, #5479B2, #5479B2), linear-gradient(0deg, #5479B2, #5479B2), #5479B2;
+}
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 169px;
+    background: #8EA7CC;
+}
+.logo {
+    white-space: nowrap;
+    margin: 0 40px;
+}
+.logo::after {
+    content: url(/icons/phone-1.svg);
+}
+
+.logo span {
+    font-size: 72px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.logo span:nth-child(odd) {
+    color: white;
+}
+.logo span:nth-child(even) {
+    color: #5479B2;
+}
+
+
+
+
+nav {
+    /* background: rgb(184, 133, 133); */
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    /* margin-right: 100px; */
+
+}
+
+nav a {
+    margin: 0px 20px;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+/* Класс, делающий активным пункт меню (задаем тому элементу меню, который должен 
+быть активным  */
+.active {
+    color: white;
+    border-bottom: 9px solid white;
+    /* line-height: 6px;
+    padding-bottom: 6px; */
+}
+
+
+
+
+main {
+    width: 1080px;
+    margin: 65px auto;
+}
+.image-1 {
+    float: left;
+    margin-right: 32px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-bottom: 63px;
+    line-height: 18px;
+    
+}
+.main-title::after {
+    content: "\2606";
+    margin-left: 29px;
+    color: #6284B8;
+    font-size: 80px;
+}
+
+main p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #353535;
+
+}

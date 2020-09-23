@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+/* Задаю ширину активной области  */
+main {
+    width: 1410px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+/* ---------------------- Шапка ---------- */
+.header-content {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.header-content-block {
+    display: flex;
+    width: 306px;
+
+}
+
+
+/* ИКОНКИ К ТЕКСТУ ТЕГОМ <img>  */
+.header-content-block img {
+    padding-bottom: 15px;
+    padding-right: 30px;
+}
+
+.header-content-block p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #303030;
+}
+
+.popular-categories {
+    margin: 200px 0;
+}
+
+h2 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #303030;
+    margin-right: 20px;
+}
+
+h2 + a {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    color: #F2C94C;
+    
+    
+}
+.popular-categories-title {
+    display: flex;
+
+
+}
+.popular-categories-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.popular-categories-cards p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: auto;
+    
+}
+.popular-categories-cards div {
+    display: flex;
+    width: 330px;
+    height: 560px;
+}
+.popular-categories-cards div:nth-child(1) {
+    background-image: url(img/Rectangle-1.png)
+}
+.popular-categories-cards div:nth-child(2) {
+    background-image: url(img/Rectangle-2.png)
+}
+.popular-categories-cards div:nth-child(3) {
+    background-image: url(img/Rectangle-3.png)
+}
+.popular-categories-cards div:nth-child(4) {
+    background-image: url(img/Rectangle-4.png)
+}
+
+
+
+.advertising-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 200px 0;
+}
+.advertising-blocks-banner-1 {
+    background-image: url(img/adver-1.png);
+}
+.advertising-blocks-banner-2 {
+    background-image: url(img/adver-2.png);
+}
+.advertising-blocks-banner-3 {
+    background-image: url(img/adver-3.png);
+}
+.advertising-blocks div {
+    width: 450px;
+    height: 153px;
+}
+.advertising-blocks p {
+    margin-left: 38px;
+    margin-top: 32px;
+}
+.advertising-blocks-title-1 {
+    
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: white;
+}
+.advertising-blocks-title-2 {
+    
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.blog {
+    display: flex;
+}
+
+.youtube-block {
+    margin-right: 30px;
+    
+}
+
+.youtube-block-title, .blog-block-title {
+    display: flex;
+    margin: 20px 0;
+
+}
+.blog-block-cards {
+    display: flex;
+    width: 810px;
+    justify-content: space-between;
+}
+.blog-card {
+    width: 248.74px;
+    height: 348px;
+    border: 1px solid #EEEEEE;
+    
+}
+
+.blog-card:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: line-height 0.2s;
+}
+
+.whith-shadow {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.blog-card-image {
+    background-image: url(img/blog-card-1.png);
+    background-repeat: no-repeat;
+    height: 156px;
+}
+
+.blog-card-main-text {
+    margin-left: 16px;
+    position: relative;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    color: #303030;
+    
+}
+.blog-card-main-text p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #868686;
+    position: absolute;
+    top: 84px;
+}
+
+.about-shop {
+    margin: 200px 0;
+}
+.about-shop__main-text {
+    margin: 56px 0;
+}
+.about-shop__main-text h2  {
+    text-align: center;
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 20px 0;
+}
+
+.about-shop__main-text p {
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 125%;
+    text-align: justify;
+    color: #6D6D6D;
+
+}
+
+.about-shop__advantages {
+    display: flex;
+    justify-content: space-around;
+}
+.advantages__block {
+    text-align: center;
+}
+
+.advantages__block h3 {
+    color: #303030;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantages__block p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 19px;
+    color: #6D6D6D;
+    font-weight: 300;
+}
+
+/* #more-detailed-button {
+    display: block;
+    margin: 64px auto;
+    background: #FFE601;
+    border-radius: 2px;
+    width: 197px;
+    height: 44px;
+    border: 0px;
+    color: #303030;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Roboto';
+} */
+
+.button {
+    display: block;
+    width: 197px;
+    height: 44px;
+    background: #FFE601;
+    border-radius: 2px;
+    /* outline: none; */
+    margin: 20px auto;
+    line-height: 44px;
+    color: #303030;
+
+}
+.button:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    background: #ffe601c2;
+    transition: linear 0.1s;
+}
+.button:active {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+/* ИКОНКИ К ТЕКСТУ ПСЕВДОКЛАССАМИ  */
+/* -------------------------------------- */
+/* .header-content-block:nth-child(1)::before { */
+    /* content: url(/icons/delivery-truck.svg); */
+    /* margin: 15px 22px; */
+    /* position: absolute; */
+    /* top: 15px; */
+    
+    
+}
+/* .header-content-block:nth-child(2)::before { */
+    /* content: url(/icons/warehouse.svg); */
+    /* position: absolute; */
+    /* top: 2px; */
+    /* margin: 4px 22px; */
+}
+/* .header-content-block:nth-child(3)::before { */
+    /* content: url(/icons/vaping.svg); */
+    /* margin: 6px 22px; */
+    /* position: absolute; */
+    /* top: 2px; */
+}
+/* .header-content-block:nth-child(4)::before { */
+    /* content: url(/icons/group.svg); */
+    /* margin: 8px 22px; */
+    /* position: absolute;
+    top: 2px; */
+}
+/* ---------------------------------------- */
