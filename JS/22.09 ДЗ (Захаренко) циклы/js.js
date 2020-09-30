@@ -132,11 +132,12 @@ let x = prompt('Введите число');
 let y = prompt("На сколько сдвинуть");
 let result = '';
 for (let i = 1;  i <= y;  i++) {
-   for (let j = i; j < x.length; j++) {
-
+   result = "";
+   for (let j = 1; j < x.length; j++) {
       result += x[j];
    }
    result += x[0];
+   x = result;
     
 }
 alert(result);
