@@ -8,7 +8,7 @@
 //     if (n == 1) {
 //         return x;
 //     } else {
-//         return x * exponentiation(x, n - 1);
+//         return exponentiation(x, n - 1) * x;
 //     }
 // }
 
@@ -23,10 +23,24 @@
 
 // 3. Написать функцию для поиска максимальной цифры в числе.
 
+function getMaxNum(number) {
+    let lastNum = number % 10;
+
+    if (!max || ) {
+        max = lastNum
+    }
+}
+
 // 4. Написать функцию, которая определяет простое ли переданное число. 
-function simpleNum(x) {
-    for (let i = 1; i <= x; i++) {
-        x
+function simpleNum(x, i) {
+    i = i || (x - 1);
+    if (i == 1) {
+        return "число простое";
+    }
+    if ((x % i) == 0) {
+        return "число не простое";
+    } else {
+       return simpleNum(x, i -1)
     }
 }
 
