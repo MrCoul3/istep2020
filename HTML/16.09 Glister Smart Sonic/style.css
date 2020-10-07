@@ -90,10 +90,14 @@ nav a {
     background-image: url(images/banner-main.png);
     margin: 0 auto;
     height: 532.2px;
-    padding: 0 64px 0 116px; 
+    /* padding: 0 64px 0 116px; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .banner-wrap {
+    margin: 94.22px 0 0 115px;
 }
 
 .banner-tel {
@@ -101,7 +105,8 @@ nav a {
     position: relative;
     justify-content: flex-end;
     top: 273px;
-    
+    right: 80px;
+
 }
 
 /* End Of Banner ________ */
@@ -147,14 +152,18 @@ nav a {
     max-width: 615px;
 }
 
-.work-mode__arrows {
+.arrows {
     position: relative;
+}
+
+.work-mode__arrows {
     top: 134.135px;
 }
 
 .work-mode__slider {
     width: 1540px;
     margin-left: 50px;
+    transition: all ease 1s;
 }
 
 .work-mode__slider .slider-item {
@@ -243,6 +252,7 @@ input[type='radio']+label {
 .mobile-app__main-image--brush {
     right: 0;
 }
+
 .mobile-app__content {
     max-width: 547px;
 }
@@ -251,6 +261,81 @@ input[type='radio']+label {
 
 /* Start of line-of-products */
 
-.line-of-products__slider {
-    /* overflow: hidden; */
+.line-of-products__container {
+    overflow: hidden;
 }
+
+.slider__item {
+    margin-right: 40px;
+}
+
+.line-of-products__arrows {
+    top: 310px;
+}
+
+/* End of line-of-products ______________________ */
+
+/* Start of recomend-expert */
+
+.recomend-banners {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recomend-banners__item-text {
+    width: 470px;
+    border: 3px solid #E2E2E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 47.6px;
+}
+
+.recomend-banners__item-text--time-to-brush {
+    height: 189px;
+}
+
+.recomend-banners__item-video {
+    width: 470px;
+    height: 291.2px;
+    background: #C0E7FF;
+    border-radius: 20px;
+    margin-bottom: 47.6px;
+}
+
+.recomend-banners .margin-top {
+    margin-top: -110px;
+}
+
+.recomend-banners__item-text--fresh-breath {
+    height: 299px;
+}
+
+.recomend-banners__item-text--why {
+    height: 289px;
+}
+
+.recomend-banners__item-text--how {
+    height: 179px;
+}
+
+/* End of recomend-expert ______________________ */
+
+/* Start of proper-care */
+
+.proper-care--container {
+    overflow: hidden;
+}
+
+.proper-care__arrows {
+
+}
+.proper-care-slider {
+    justify-content: space-between;
+}
+
+.proper-care-slider__item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* End of proper-care ______________________ */

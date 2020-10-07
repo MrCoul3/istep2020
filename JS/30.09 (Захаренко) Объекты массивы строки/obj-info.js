@@ -1,5 +1,5 @@
 //Объекты  Массивы Строки 
-https://learn.javascript.ru/object
+// https://learn.javascript.ru/object
 
 
 
@@ -85,30 +85,3 @@ https://learn.javascript.ru/object
 
 
 
-
-
-
-// ПРАКТИКА 
-
-let rectangle = {
-    point1: {
-        x: 2,
-        y: 5
-    }
-    point2 : {
-        x: 7,
-        y: 3
-    }
-};
-
-// rectangle.point2.y // координата y второй точки 
-
-function rectangleInfo(obj) {
-    document.write("Точка 1, координата x = " + obj.point1.x + "<br>");
-    document.write("Точка 1, координата y = " + obj.point1.y + "<br>");
-    document.write("Точка 2, координата x = " + obj.point2.x + "<br>");
-    document.write("Точка 2, координата y = " + obj.point2.y);
-
-}
-
-rectangleInfo(rectangle);
