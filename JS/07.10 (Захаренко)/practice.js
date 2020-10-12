@@ -193,3 +193,5 @@ function getIndex(array, name) {
 }
 
 // document.write(getIndex(fruits, "lemon"));
+
+

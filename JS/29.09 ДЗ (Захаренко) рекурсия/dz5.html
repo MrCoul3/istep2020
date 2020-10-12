@@ -1,0 +1,78 @@
+<script>
+	/*Рекурсия*/
+	
+	/*1. Написать функцию возведения числа в степень.*/
+	
+	function power(x, y){
+		if (y == 1) {
+			return x;
+		}
+		let result = power(x, y - 1) * x;
+		//document.write('Вычисляем ' + x + ' в степени ' + (y - 1) + ' и умножаем на ' + x + ' = ' +result+ '<br>');
+		return result;
+	}
+	
+	//alert( power(2, 10) );
+	
+	/*
+	2. Написать функцию поиска наибольшего общего делителя.
+	*/
+	
+	function getMaxDivider(x, y){
+		if (y == 0) {
+			return x;
+		}
+		
+		return getMaxDivider(y, x % y);
+	}
+	
+	//alert( getMaxDivider(9, 90) );
+	
+	/*3. Написать функцию для поиска максимальной цифры в числе.*/
+	// 7654
+	function getMaxNumber(number, max){
+		let lastNumber = number % 10;
+		
+		if (!max || lastNumber > max) {
+			max = lastNumber;
+		}
+		
+		if (number > 9) {
+			return getMaxNumber((number - lastNumber)/10, max);
+		} else {
+			return (max > number)? max: number;
+		}
+	}
+	
+	//alert( getMaxNumber(12658329565768454) );
+	
+	/*
+	4. Написать функцию, которая определяет простое ли переданное число.
+	*/
+	
+	function isSimple(x, i){
+		i = i || (x - 1);
+		
+		if (i == 1) {
+			return 'число простое';
+		}
+		
+		if (x % i == 0) {
+			return 'число не простое';
+		} else {
+			return isSimple(x, i - 1);
+		}
+	}
+	alert(isSimple(8));
+	alert(isSimple(7));
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>

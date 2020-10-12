@@ -1,0 +1,217 @@
+<script>
+	
+	
+	/*
+	Создать массив из 10 случайных чисел и написать несколько функций для работы с ним.
+	*/
+	
+	let arr = [];
+	for (let i = 0; i < 10; i++) {
+		arr.push( parseInt(Math.random() * 100) );
+	}
+	
+	/*
+	1. Функция принимает массив и выводит его на экран.
+	*/
+	
+	function showArray(array){
+		for (let item of array) {
+			document.write(item + '<br>');
+		}
+	}
+	//showArray(arr);
+	
+	/*
+	2. Функция принимает массив и выводит только четные элементы.
+	*/
+	
+	function showEvenArrayElements(array){
+		for (let element of array) {
+			if (element % 2 == 0) {
+				document.write(element + '<br>');
+			}
+		}
+	}
+	//showEvenArrayElements(arr);
+	
+	/*
+	3. Функция принимает массив и возвращает сумму всех элементов массива
+	*/
+	
+	function summArray(array){
+		let summ = 0;
+		for (let item of array) {
+			summ += item;
+		}
+		
+		return summ;
+	}
+	
+	//alert('Сумма элементов массива равна ' + summArray(arr));
+	
+	/*
+	4. Функция принимает массив и возвращает его максимальный элемент.
+	*/
+	
+	function maxArray(array){
+		let max = array[0];
+		for (let item of array) {
+			if (item > max) {
+				max = item;
+			}
+		}
+		
+		return max;
+	}
+	
+	//showArray(arr);
+	//alert('Максимум ' + maxArray(arr));
+	
+	/*
+	5. Функция добавления нового элемента в массив по указанному индексу
+	*/
+	
+	function addElement(array, element, index){
+		return array.splice(index, 0, element);
+	}
+	
+	/*showArray(arr);
+	addElement(arr, 77, 2);
+	document.write('<hr>');
+	showArray(arr);*/
+	
+	/*
+	6. Функция удаления элемента из массива по указанному индексу
+	*/
+	
+	function deleteElement(array, index){
+		return array.splice(index, 1);
+	}
+	
+	/*showArray(arr);
+	deleteElement(arr, 2);
+	document.write('<hr>');
+	showArray(arr);*/
+	
+	/*
+	Создать еще один массив из 5 случайных чисел и написать следующие функции.
+	*/
+	
+	let arr2 = [];
+	for (let i = 0; i < 5; i++) {
+		arr2.push( parseInt(Math.random() * 100) );
+	}
+	
+	/*
+	1. Функция принимает 2 массива и возвращает новый массив, в котором собраны все элементы из двух массивов без повторений.
+	*/
+	
+	function getUniqueArray(array1, array2){
+		let result = [];
+		for (let item of array1) {
+			if (!result.includes(item)) {
+				result.push(item);
+			}
+		}
+		for (let item of array2) {
+			if (!result.includes(item)) {
+				result.push(item);
+			}
+		}
+		
+		return result;
+	}
+	
+	/*showArray(arr);
+	document.write('<hr>');
+	showArray(arr2);
+	document.write('<hr>');
+	showArray( getUniqueArray(arr, arr2) );*/
+	
+	/*
+	2. Функция принимает 2 массива и возвращает новый массив, в котором собраны общие элементы (то есть элементы, которые встречаются и в первом и во втором массивах) без повторений.
+	*/
+	
+	function getCommonElements(array1, array2){
+		let result = [];
+		for (let item of array2) {
+			if (array1.includes(item) && !result.includes(item)) {
+				result.push(item);
+			}
+		}
+		
+		return result;
+	}
+	
+	/*showArray(arr);
+	document.write('<hr>');
+	showArray(arr2);
+	document.write('<hr>');
+	showArray( getCommonElements(arr, arr2) );*/
+	
+	/*
+	3. Функция принимает 2 массива и возвращает новый массив, в котором собраны все элементы из первого массива, которых нет во втором массиве. 
+	*/
+	
+	function getElements(array1, array2){
+		let result = [];
+		for (let item of array1) {
+			if (!array2.includes(item)) {
+				result.push(item);
+			}
+		}
+		
+		return result;
+	}
+	/*showArray(arr);
+	document.write('<hr>');
+	showArray(arr2);
+	document.write('<hr>');
+	showArray( getElements(arr, arr2) );*/
+	
+	/*
+	Создать массив фруктов и отсортировать его по алфавиту. 
+	*/
+	
+	let fruits = [
+		'lemon',
+		'banana',
+		'apple'
+	];
+	
+	
+	fruits.sort();
+	//showArray(fruits);
+	
+	/*
+	1. Вывод на экран с помощью document.write() в виде списка (с помощью тегов ul и li). 
+	*/
+	
+	function showFruits(array){
+		document.write('<ul>');
+		for (let item of array) {
+			document.write('<li>' + item + '</li>');
+		}
+		document.write('</ul>');
+	}
+	
+	//showFruits(fruits);
+	
+	/*
+	2. Поиск фрукта в массиве. Функция принимает название фрукта и возвращает индекс найденного элемента или -1, если не найден. Поиск должен быть нерегистрозависимым.
+	*/
+	
+	function getIndex(array, name){
+		for (let key in array) {
+			if (array[key] == name) {
+				return key;
+			}
+		}
+		
+		return -1;
+	}
+	
+	alert( getIndex(fruits, 'orange') );
+	
+	
+</script>

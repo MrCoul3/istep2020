@@ -1,35 +1,43 @@
 // Во всех заданиях обязательно использовать рекурсию. 
 
 // 1. Написать функцию возведения числа в степень. 
-// let x = prompt("введите число", 2);
-// let n = prompt("Введите степень", 3);
-// document.write(exponentiation(x, n));
-// function exponentiation(x, n) {
-//     if (n == 1) {
-//         return x;
-//     } else {
-//         return exponentiation(x, n - 1) * x;
-//     }
-// }
+
+function power(x, n) {
+    if  (n == 1) {
+        return x;
+    }
+    return power(x, n - 1) * x;
+}
+// console.log(power(2, 5));
 
 // 2. Написать функцию поиска наибольшего общего делителя. 
 
-// function NOD (x, y) {
-// 	if (y > x) return NOD(y, x);
-// 	if (y == 0) return x;
-// 	return NOD(y, x % y);
-// }
-// console.log(NOD(45, 0));
-
-// 3. Написать функцию для поиска максимальной цифры в числе.
-
-function getMaxNum(number) {
-    let lastNum = number % 10;
-
-    if (!max || ) {
-        max = lastNum
-    }
+function NOD(x, y) {
+    if (y == 0) return x;
+    // if (y > x) return NOD(y, x);
+    return NOD(y, x % y);
 }
+console.log(NOD(20, 15));          
+// 1 return NOD(15, 20 % 15); >> NOD(15, 5)
+// 2 return NOD(5, 15 % 5); >> NOD(5, 0)
+
+
+//      3. Написать функцию для поиска максимальной цифры в числе.
+
+// function getMaxNum(number, max) {
+//     let lastNum = number % 10; 
+
+//     if (!max || lastNum > max) {
+//         max = lastNum;
+//     }
+//     if (number > 9) {
+//         return getMaxNumber((number - lastNum)/10, max);
+// 		} else {
+//             return (max > number)? max: number;
+// 		}
+   
+// }
+// console.log(getMaxNum(1234 - 1, max));
 
 // 4. Написать функцию, которая определяет простое ли переданное число. 
 function simpleNum(x, i) {
@@ -51,3 +59,13 @@ function simpleNum(x, i) {
 // }
 
 // Простое число делится только на 1 и на самого себя.
+
+// 5. Написать функцию для вывода всех множителей переданного числа в возрастающем порядке.
+// Например: число 18 – множители 2 * 3 * 3.
+
+// 6. Написать функцию, которая возвращает число Фибоначчи
+// по переданному порядковому номеру.
+// Числа Фибоначчи: 1, 1, 2, 3, 5, 8, 13… Ряд основывается на
+// том, что каждое число равно сумме двух предыдущих чисел.
+// Например: порядковый номер 3 – число 2, порядковый
+// номер 6 – число 8.
