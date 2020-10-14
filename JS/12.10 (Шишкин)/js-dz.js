@@ -44,13 +44,21 @@
 // спам. Спамом считать следующие слова: 100% бесплатно,
 // увеличение продаж, только сегодня, не удаляйте, ххх.
 // Функция должна быть нечувствительна к регистру.
-// let str = "100% бесплатно";
+
+// let str = "только сегодня";
 
 // function spamCheck(str) {
     
 //     let arr = ["100% бесплатно", "увеличение продаж", "только сегодня", "не удаляйте", "ххх"];
+//     // console.log(arr[1]);
+//     for (i = 0; i < arr.length; i++) {
+//         console.log(arr[i]);
+//         n = str.includes(arr[i]);
+        
+//     }
+//     return n;
     
-//     return  result;
+    
 // }
 // console.log(spamCheck(str));
 
@@ -60,15 +68,90 @@
 // лишние символы, добавив вместо них троеточие.
 // Например: truncate(“Hello, world!”, 8) должна вернуть
 // “Hello...”.
+
+// Примечание: str.slice(start [, end]) Возвращает часть строки от start до (не включая) end.
+
+// function reduction(str, maxLength) {
+//     if (str.length > maxLength) {
+//         return (str.slice(0, (str.length - maxLength)) + "...");
+//     }
+// }
+// console.log(reduction("Hello, world!", 8));
+
 // 6. Написать функцию, которая проверяет, является ли пере-
 // данная строка палиндромом.
+
+// let str = "baab";
+
+// function isStrPalindrome(str) {
+    
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] != str[str.length - (i + 1)]) {
+//             return "Не Палиндром";
+//         } else {
+//             return "палиндром";
+//         }
+//     }
+// }
+
+// console.log(isStrPalindrome(str));
+
 // 7. Написать функцию, которая считает количество слов в
 // предложении.
+
+// let str = "Once upon a time in America";
+// function numOfWords(str) {
+//     let array = str.split(" ");
+//     return array.length;
+// }
+// console.log(numOfWords(str));
+
 // 8. Написать функцию, которая возвращает самое длинное
 // слово из предложения.
+
+// let str = "55555 4444 22 333";
+// let array = str.split(" ");
+
+
+// function maxWord(str) {
+//     let array = str.split(" ");
+//     let maxWordLength = array[0].length;
+//     let maxWord = array[0];
+//     for (let i = 1; i < array.length; i++) {
+//         if (array[i].length > maxWordLength) {
+//             maxWordLength = array[i].length;
+//             maxWord = array[i];
+//         }
+//     }
+//     return maxWord;
+// }
+
+// console.log(maxWord(str));
+
+
 // 9. Написать функцию, которая считает среднюю длину слова
 // в предложении.
+
+// let str = "1, 22, 333";
+// function averageLength(str) {
+//     let array = str.split(" ");
+//     let sumWordsLength = 0;
+//     // [1, 22, 333]
+//     for (let i = 0; i < array.length; i++) {
+//         sumWordsLength += array[i].length;
+//     }
+//     return parseInt(sumWordsLength / array.length);
+// }
+// console.log(averageLength(str));
+
 // 10. Написать функцию, которая принимает строку и символ
 // и выводит индексы, по которым находится этот символ в
 // строке. Также вывести, сколько всего раз встречается этот
 // символ в строке.
+
+let str = "Hello, world w!";
+let sym = "w"; // 7 ind
+function symbolIndex(str, sym) {
+  let ind = 0;
+}
+console.log(symbolIndex(str, sym));
