@@ -45,18 +45,19 @@
 // увеличение продаж, только сегодня, не удаляйте, ххх.
 // Функция должна быть нечувствительна к регистру.
 
-// let str = "только сегодня";
+// let str = "увеличение про";
 
 // function spamCheck(str) {
     
 //     let arr = ["100% бесплатно", "увеличение продаж", "только сегодня", "не удаляйте", "ххх"];
 //     // console.log(arr[1]);
 //     for (i = 0; i < arr.length; i++) {
-//         console.log(arr[i]);
-//         n = str.includes(arr[i]);
+//         // console.log(arr[i]);
+//         if (str.includes(arr[i])) {
+//           return true;
+//         }
         
 //     }
-//     return n;
     
     
 // }
@@ -151,7 +152,10 @@
 
 let str = "Hello, world w!";
 let sym = "w"; // 7 ind
+let arr = str.split('');
+   console.log(arr);
 function symbolIndex(str, sym) {
-  let ind = 0;
+   let arr = str.split('');
+  
 }
 console.log(symbolIndex(str, sym));

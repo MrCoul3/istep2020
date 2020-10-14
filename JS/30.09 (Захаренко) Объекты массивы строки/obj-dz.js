@@ -25,6 +25,7 @@
 //     document.write("Год выпуска: " + obj.year + " г. <br>");
 //     document.write("Средняя скорость: " + obj.averageSpeed + " km/h");
 // }
+
 // // carInfo(car);
 // let range = 1300;
 // driveTime(range);
