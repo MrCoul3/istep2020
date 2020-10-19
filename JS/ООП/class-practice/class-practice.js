@@ -93,9 +93,9 @@
 
 // Продемонстрировать работу написанных методов.
 
-let news1 = "1Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi magnam ap...";
-let news2 = "2Lorem ipsum dolor sit...";
-let news3 = "3Lorem ipsum dolor sit, amet consecte...";
+let news1 = "1Lorem ipsum dolor...";
+let news2 = "2Lorem ipsu sit...";
+let news3 = "3Lorem ipsum doe...";
 let news4 = "4Lorem4";
 let newsArray = [news1, news2, news3];
 
