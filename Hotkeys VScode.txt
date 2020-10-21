@@ -1,0 +1,3 @@
+alt+shift+A - коммент
+ctrl+shift+P - командная панель 
+(Ctrl + Alt + N) Запустить код в VSCode

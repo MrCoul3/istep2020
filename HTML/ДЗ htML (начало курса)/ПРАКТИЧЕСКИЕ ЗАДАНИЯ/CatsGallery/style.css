@@ -1,0 +1,105 @@
+ /* задаю цвет фона для всего элемента body  */
+ body {
+     background: rgb(245,245,245);
+ }
+/* оборачиваем все содержимое в тег section и задаем 
+ему относительное позиционирование, размеры и внешние отступы для 
+выравнивания по центру окна браузера   */
+ section {
+    position: relative;
+    height: 450px;
+    width: 600px;
+    margin: 50px auto 0;
+ }
+
+/* задаю границы и размеры большой рамки для картинки  */
+ .big-frame {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    margin: 0  auto;
+    background-image: url(images/cat_tied_256.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 50px;
+    
+}
+/* задаю изображеням выравнивание по центру родительского блока */
+
+
+.small-frame img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+}
+
+/* задаю размеры и стиль маленьких рамок И 
+выстраиваю их в линию свойством display   */
+
+.small-frame {
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 0; 
+    bottom: -1px;
+    border-right: none;
+}
+/* убираюю левую границу рамки у первой small-frame 
+и позиционирую остальные рамки относительно левого края <section> */
+.one {border-left: none;}
+.two  {left: 100px;}
+.three {left: 200px;}
+.four {left: 300px;}
+.five {left: 400px;}
+.six {left: 500px;}
+
+/* растягиваю чекбокс по размерам Small-frame и скрываю его */
+input[type="radio"] {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 999;
+    bottom: 0;
+    opacity: 0;
+}
+/* задаю позиционирование чекбоксов от левого края родительского 
+элемента section  */
+#check-two {left: 100px;}
+#check-three {left: 200px;}
+#check-four {left: 300px;}
+#check-five {left: 400px;}
+#check-six {left: 500px;}
+
+/*  */
+#check-one:checked ~ .big-frame {
+    background-image: url(images/cat_tied_256.png);
+}
+#check-two:checked ~ .big-frame {
+    background-image: url(images/cat_eyes_256.png);
+}
+#check-three:checked ~ .big-frame {
+    background-image: url(images/cat_purr_256.png);
+}
+#check-four:checked ~ .big-frame {
+    background-image: url(images/cat_cage_256.png);
+}
+#check-five:checked ~ .big-frame {
+    background-image: url(images/cat_clean_256.png);
+}
+#check-six:checked ~ .big-frame {
+    background-image: url(images/cat_box_256.png);
+}
+
+
+
+
+ 
+
+ 

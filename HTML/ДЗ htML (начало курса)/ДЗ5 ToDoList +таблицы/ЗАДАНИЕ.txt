@@ -1,0 +1,36 @@
+﻿1. Задача сделать мобильную версию сайта на основе макета интернет магазина "онлайн трейд"(задания начинали делать на практике). Прикрепить ссылку на фигму.
+
+2. Задания html:
+
+2.1 Исправить ошибки в листинге
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+ <body>
+  <table border="0" celpadding="0" celspacing="0" border="2">
+   <tr>
+    <td valign="top">Ut aliquip ex ea commodo.</td>
+    <td valign="top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+   </tr>
+    <td valign="botom" colspan="2">Lobortis nisl.</td>
+    <td valign="top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+   </tr>
+  </table>
+ </body>
+</html>
+
+2.2 Необходимо реализовать таблицу при помощи html http://i.imgur.com/Dkzw4DA.png. Основная сложность объединение ячеек в таблице.
+
+
+3. 
+Реализовать html-страницу со списком задач.
+Для визуального разделения списка четные и нечетные элементы имеют голубой фон с разными оттенками.
+Отмеченные элементы имеют серый фон, иконку с галочкой и
+их текст зачеркнут. Неотмеченные элементы списка отображаются
+с иконкой без галочки.
+
+Красный крестик отобразить при помощи спец-символов html (https://html5book.ru/specsimvoly-html/).
+
+Пример результата 
+http://i.imgur.com/QCOct2b.png
