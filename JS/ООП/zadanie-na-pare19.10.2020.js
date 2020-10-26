@@ -2,21 +2,19 @@
 // Дан массив let b = [‘item1’, ‘item2’, ‘item3’, ‘item4’];
 // Необходимо перенести элементы из массива b в массив a так, чтобы в массиве a элементы были в обратном порядке. Использовать метод reverse() запрещено
 
-// let a = [];
-// let b = ["item1", "item2", "item3", "item4"];
+let a = [];
+let b = ["item1", "item2", "item3", "item4"];
 
-// a[0] = b[0];
-// console.log(a[0]);
-// console.log(b.length);
-
-
+a[0] = b[0];
+console.log(a[0]);
+console.log(b.length);
 
 
-// for (let i = 1; i < b.length; i++) {
-//     a.unshift(b[i]);
-// }
+for (let i = 1; i < b.length; i++) {
+    a.unshift(b[i]);
+}
 
-// console.log(a);
+console.log(a);
 
 
 // Дан массив объектов 
@@ -91,15 +89,16 @@ class MyString {
     }
 
     ucWords(string) {
-        let newString = [];
-        let arr = string.split(" ");
-        for (let i = 0; i < arr.length; i++) {
-            let word = arr[i][0].toUpperCase() + arr[i].slice(1);
-            newString.push(word);
-        }
-        return newString.join(" ");
-    }
+    //     let newString = [];
+    //     let arr = string.split(" ");
+    //     for (let i = 0; i < arr.length; i++) {
+    //         let word = arr[i][0].toUpperCase() + arr[i].slice(1);
+    //         newString.push(word);
+    //     }
+    //     return newString.join(" ");
     
+    }
+
 }
 
 let one = new MyString();

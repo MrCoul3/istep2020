@@ -56,9 +56,9 @@ function maxArray(array) {
             max = item;
         }
     }
-
     return max;
 }
+
 // document.write("Максимальное число " + maxArray(arr));
 
 // 5. Функция добавления нового элемента в массив по указанному индексу 
