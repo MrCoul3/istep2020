@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*                                          Практическое задание №4
                                                  Модуль 2
@@ -16,6 +17,25 @@
 Создать объект такого класса и продемонстрировать работу
 метода */
 
+=======
+/*                                          Практическое задание №4
+                                                 Модуль 2
+                                ТЕМА: ОБЪЕКТ. МАССИВЫ. ОБЪЕКТ ARRAY. СТРОКИ.
+                                  ОБЪЕКТ STRING. ОБЪЕКТ DATE. ОБЪЕКТ MATH.
+                                    ВВЕДЕНИЕ В ОБЪЕКТНО-ОРИЕНТИРОВАННОЕ
+                                            ПРОГРАММИРОВАНИЕ
+ */
+/* Задание 1
+Реализовать класс PrintMaсhine, которой состоит из:
+■ размера шрифта;
+■ цвета шрифта;
+■ семейства шрифта;
+■ метода print(), который принимает текст и печатает его
+соответствующим шрифтом с помощью document.write().
+Создать объект такого класса и продемонстрировать работу
+метода */
+
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 // РЕШЕНИЕ
 /* 
 class PrintMaсhine {
@@ -30,9 +50,102 @@ class PrintMaсhine {
         document.write(`<span style='font-size: ${this.font_size}; color: ${this.font_color}; font-family: ${this.font_family} '> ${text} </span>`);
     }
 }
+<<<<<<< HEAD
 let test = new PrintMaсhine("30px", "#FF0000", "Geneva, Arial, Helvetica, sans-serif");
 console.log(test);
 console.log(test.print()); */
+=======
+
+let test = new PrintMaсhine("30px", "#FF0000", "Geneva, Arial, Helvetica, sans-serif");
+console.log(test);
+console.log(test.print()); */
+
+/* Задание 2
+Реализовать класс, описывающий новость (заголовок, текст, массив тегов, дата публикации). В классе необходимо реализовать один метод print, который выводит всю информацию в таком виде, как на рисунке 1.Обратите внимание на то, как выводится дата:
+■если с даты публикации прошло менее дня, то выводится «сегодня»;
+■если с даты публикации прошло менее недели, то выводится «N дней назад»;
+■ в остальных случаях, полная дата в формате «дд.мм.гггг».
+ */
+/* class News {
+    constructor(title, text, tegs, dateOfPub) {
+        this.title = title;
+        this.text = text;
+        this.tegs = tegs;
+        this.dateOfPub = dateOfPub;
+    }
+    set dateOfPub(value) {
+        let dateOfPubArr = value.split(".");
+        if ((dateArr[0] - dateOfPubArr[0]) < 1) {
+            this._dateOfPub = "Сегодня";
+        } else if ((dateArr[0] - datedateOfPubArr[0]) < 7) {
+            this._dateOfPub = `${dateArr[0] - dateOfPubArr[0]} дней назад`;
+        } else {
+            this._dateOfPub = value;
+        }
+
+    }
+    get dateOfPub() {
+        return this._dateOfPub;
+    }
+
+    print() {
+        document.write(`<h2>${this.title}</h2>${this.dateOfPub}<br><p>${text}</p><p>${tegArray.join(" ")}</p>`);
+    }
+}
+
+let currentDate = "19.10.2020";
+let dateOfPub = "19.10.2020";
+let dateArr = currentDate.split(".");
+let title = "Заголовок";
+let text = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi magnam aperiam aspernatur, impedit ratione tenetur deleniti ea eius est? Sint dolore in esse corrupti incidunt beatae tempore facilis. Rem, explicabo."
+let tegArray = ["#lorem", "#ipsum", "#text"];
+
+
+let oneNews = new News(title, text, tegArray, dateOfPub);
+console.log(oneNews);
+console.log(oneNews.print());
+ */
+
+/* Задание 3
+Реализовать класс, описывающий новостную ленту.
+Класс должен содержать:
+■ массив новостей;
+■ get-свойство, которое возвращает количество новостей;
+■ метод для вывода на экран всех новостей;
+■ метод для добавления новости;
+■ метод для удаления новости;
+■ метод для сортировки новостей по дате (от последних новостей до старых);
+■ метод для поиска новостей по тегу (возвращает массив новостей, в которых указан переданный в метод тег).
+
+Продемонстрировать работу написанных методов. */
+
+/* let news4 = {
+    text: "4Lorem ipsum dolor...",
+    date: "14.11.2019"
+};
+
+let newsArray = [{
+        text: "1Lorem ipsum dolor...",
+        date: "10.10.2020",
+        teg: "#one"
+    },
+    {
+        text: "2Lorem ipsum dolor...",
+        date: "11.12.2020",
+        teg: "#one"
+    },
+    {
+        text: "3Lorem ipsum dolor...",
+        date: "12.11.2020",
+        teg: "#three"
+    }
+];
+
+
+
+// console.log(newsArray[0].text);
+// set срабатывает при передаче свойства. а get при обращении к свойству
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 
 /* Задание 2
 Реализовать класс, описывающий новость (заголовок, текст, массив тегов, дата публикации). В классе необходимо реализовать один метод print, который выводит всю информацию в таком виде, как на рисунке 1.Обратите внимание на то, как выводится дата:
@@ -113,6 +226,7 @@ class NewsFeed {
     constructor(newsArray) {
         this.news = newsArray;
     }
+
     set news(value) {
         this._news = value;
         this.numOfNews = value.length;
@@ -132,6 +246,10 @@ class NewsFeed {
         let index = prompt("Укажите, какой элемент массива следует удалить?");
         newsArray.splice(index - 1, 1);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
     // sortByDate(newsArray) {
     //     for (let i = 0; i < newsArray.length; i++) {
     //         newsArray[i].date = +newsArray[i].date.split(".")[0] + +(newsArray[i].date.split(".")[1] * 30) + +(newsArray[i].date.split(".")[2] * 365);
@@ -141,9 +259,14 @@ class NewsFeed {
     filterByTegs(newsArray) {
         return newsArray.filter(item => item.teg == "#three");
     }
+
 }
 let news = new NewsFeed(newsArray);
 // console.log(news.filterByTegs(newsArray));
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
  */
 /* 
                     Практическое задание №5
@@ -171,8 +294,15 @@ Button.Добавить поле color и переопределить мето�
         document.write(`<button style=" height:${this.heigth}; width: ${this.width};">${this.text}</button>`)
     }
 }
+<<<<<<< HEAD
 let btn = new Button("100px", "30px", "label");
 btn.showBtn();
+=======
+
+let btn = new Button("100px", "30px", "label");
+btn.showBtn();
+
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 class BootstrapButton extends Button {
     constructor(color, width, heigth, text) {
         super(width, heigth, text);
@@ -182,6 +312,10 @@ class BootstrapButton extends Button {
         document.write(`<button style=" height:${this.heigth}; width: ${this.width};color: ${this.color};">${this.text}</button>`)
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 let newBtn = new BootstrapButton("#f00", "200px", "50px", "newButton");
 console.log(newBtn);
 newBtn.showBtn(); */
@@ -200,6 +334,7 @@ newBtn.showBtn(); */
 треугольник. Переопределите методы вывода и вычислений в
 классах-наследниках.
 Создайте массив с различными фигурами и выведите информацию о каждой фигуре, включая площадь и периметр. */
+<<<<<<< HEAD
 /* 
 class Figure {
     name = "";
@@ -269,6 +404,38 @@ console.log(objRectangle.getArea());
 console.log(objRectangle.getPerimeter());
 console.log(objRectangle.get());
  */
+=======
+
+
+// ?????????????????????????????????????????????????????
+/* class Figure {
+    constructor(name) {
+        this.name = name;
+    }
+    set name(name) {
+        this._name = name.trim();
+    }
+    get name() {
+        return this._name;
+    }
+    figureInfo() {
+        document.write(`сторона ${this.leftSide}`); 
+    }
+    
+}
+
+class Square extends Figure {
+    constructor(name, side) {
+        super(name);
+        this.leftSide = side;
+    }
+}
+
+
+// const square = new Figure("  Квадрат");
+// console.log(square); */
+
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 
 
 /*                          Задание 3
@@ -278,4 +445,8 @@ console.log(objRectangle.get());
 ■ метод getHtml(tagName) – для получения строки с html
 кодом, где каждый элемент массива будет обернут в указанный тег (учтите, если указывается тег li, то все элементы дополнительно необходимо обернуть в ul).
 Создайте объект класса ExtentedArray, заполните его данными и выведите на экран результаты работы методов getString()
+<<<<<<< HEAD
 и getHtml() */
+=======
+и getHtml() */
+>>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7

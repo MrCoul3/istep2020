@@ -1,0 +1,59 @@
+ol {
+    color: blue;
+}
+
+ol li:nth-child(3n) {
+    color: red;
+}
+
+ol li:nth-child(-n+2) {
+    font-size: 2em;
+}
+
+ol li:nth-child(4n) {
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+}
+
+.first-div {
+    background-color: gray;
+}
+
+.first-div p:nth-child(1) {
+    color: green;
+}
+
+.second-div p:first-child {
+    color: violet;
+}
+.second-div p:nth-child(3n) {
+    color: yellowgreen;
+}
+.second-div span {
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+input[type="tel"] {
+    border: 2px solid black;
+}
+input[type="submit"] {
+    background-color: red;
+}
+
+table {
+    border: 2px solid black;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+}
+
+.first-table thead {
+    background-color: green;
+}
+.first-table tbody {
+    color: blue;
+}
+.first-table tr:nth-child(even) {
+    background-color: gray;
+}

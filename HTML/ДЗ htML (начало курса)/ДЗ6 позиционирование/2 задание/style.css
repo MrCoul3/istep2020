@@ -1,0 +1,35 @@
+body {
+    margin: 83px 0 0 119px;
+    position: relative;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: #CFFCEC;
+    position: absolute;
+}
+
+.two {
+    top: 50px;
+    left: 50px;
+    background: #98E3C8;
+    z-index: 1;
+}
+
+.three {
+    top: 100px;
+    left: 100px;
+    background: #7DCFB2;
+    z-index: 2;
+}
+.four {
+    top: 50px;
+    left: 150px;
+    background: #98E3C8;
+    z-index: 3;
+}
+.five {
+    left: 200px;
+    z-index: 5;
+}

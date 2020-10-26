@@ -1,0 +1,26 @@
+1. Мобильная версия интернет магазина 
+https://www.figma.com/file/6Tnl3LRvIduNhw9JieqiH9/%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2-%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D0%B9-%D0%BC%D0%BE%D0%B1.-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F
+
+
+
+2.
+2.1 Исправить ошибки в листинге
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+ </head>
+ <body>
+  <table border="0" cellpadding="0" cellspacing="0">
+   <tr>
+    <td valign="top">Ut aliquip ex ea commodo.</td>
+    <td valign="top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+   </tr>
+   <tr>
+    <td valign="botom" colspan="2">Lobortis nisl.</td>
+    <td valign="top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</td>
+   </tr>
+  </table>
+ </body>
+</html>
+

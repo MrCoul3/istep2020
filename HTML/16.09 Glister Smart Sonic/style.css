@@ -326,9 +326,8 @@ input[type='radio']+label {
     overflow: hidden;
 }
 
-.proper-care__arrows {
+.proper-care__arrows {}
 
-}
 .proper-care-slider {
     justify-content: space-between;
 }
@@ -339,3 +338,123 @@ input[type='radio']+label {
 }
 
 /* End of proper-care ______________________ */
+
+
+
+
+.brochure {
+    background-color: #C0E7FF;
+}
+
+.brochure--wrap {
+    text-align: center;
+}
+
+.brochure__arrows {
+    top: 300px;
+}
+
+.leaders-opinion-video {
+    width: 988px;
+    height: 391.62px;
+    background: #C0E7FF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.materials__arrows {
+    top: 200px;
+
+}
+
+.arrow-l,
+.arrow-r {
+    cursor: pointer;
+}
+
+.materials-slider {
+    justify-content: space-between;
+    width: 1261px;
+    /* margin-left: 200px; */
+}
+
+.materials--wrap {
+    overflow: hidden;
+}
+
+.materials__item {
+    height: 229px;
+    margin-right: 29px;
+    background-repeat: no-repeat;
+}
+
+.materials__item--one {
+    width: 340px;
+    background-image: url(images/materials-img-1.png);
+}
+
+.materials__item--two {
+    width: 342px;
+    background-image: url(images/materials-img-2.png);
+}
+
+.materials__item--three {
+    width: 152px;
+    background-image: url(images/materials-img-3.png);
+}
+
+.materials__item--four {
+    width: 340px;
+    background-image: url(images/materials-img-4.png);
+}
+
+.materials__item img {
+    cursor: pointer;
+    position: relative;
+    /* right: -215px; */
+    left: 263px;
+    top: 171px;
+}
+
+.materials__item--three img {
+    left: 88px;
+
+}
+
+
+/* presentation */
+
+.download-btn {
+    width: 92px;
+    height: 39.16px;
+    background: #369BEA;
+    border-radius: 7px;
+    color: white;
+    text-align: center;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.video-collection__item {
+    width: 309px;
+    height: 173px;
+}
+
+.video-collection__item img {
+    position: relative;
+    top: 115px;
+    left: 250px;
+    cursor: pointer;
+}
+
+.video-collection__item--one {
+    background-image: url(images/video-collection-1.png);
+}
+
+.video-collection__item--two {
+    background-image: url(images/video-collection-2.png);
+}
+
+.video-collection__item--three {
+    background-image: url(images/video-collection-3.png);
+}
