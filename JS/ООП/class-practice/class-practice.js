@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /*                                          Практическое задание №4
                                                  Модуль 2
@@ -17,7 +16,6 @@
 Создать объект такого класса и продемонстрировать работу
 метода */
 
-=======
 /*                                          Практическое задание №4
                                                  Модуль 2
                                 ТЕМА: ОБЪЕКТ. МАССИВЫ. ОБЪЕКТ ARRAY. СТРОКИ.
@@ -35,7 +33,6 @@
 Создать объект такого класса и продемонстрировать работу
 метода */
 
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 // РЕШЕНИЕ
 /* 
 class PrintMaсhine {
@@ -54,9 +51,8 @@ class PrintMaсhine {
 let test = new PrintMaсhine("30px", "#FF0000", "Geneva, Arial, Helvetica, sans-serif");
 console.log(test);
 console.log(test.print()); */
-=======
 
-let test = new PrintMaсhine("30px", "#FF0000", "Geneva, Arial, Helvetica, sans-serif");
+/* let test = new PrintMaсhine("30px", "#FF0000", "Geneva, Arial, Helvetica, sans-serif");
 console.log(test);
 console.log(test.print()); */
 
@@ -145,7 +141,7 @@ let newsArray = [{
 
 // console.log(newsArray[0].text);
 // set срабатывает при передаче свойства. а get при обращении к свойству
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
+
 
 /* Задание 2
 Реализовать класс, описывающий новость (заголовок, текст, массив тегов, дата публикации). В классе необходимо реализовать один метод print, который выводит всю информацию в таком виде, как на рисунке 1.Обратите внимание на то, как выводится дата:
@@ -200,7 +196,7 @@ console.log(oneNews.print());
 ■ метод для поиска новостей по тегу (возвращает массив новостей, в которых указан переданный в метод тег).
 Продемонстрировать работу написанных методов. */
 /* https://learn.javascript.ru/datetime */
-/* let news4 = {
+let news4 = {
     text: "4Lorem ipsum dolor...",
     date: "14.11.2019"
 };
@@ -220,6 +216,7 @@ let newsArray = [{
         teg: "#three"
     }
 ];
+
 // console.log(newsArray[0].text);
 // set срабатывает при передаче свойства. а get при обращении к свойству
 class NewsFeed {
@@ -246,16 +243,8 @@ class NewsFeed {
         let index = prompt("Укажите, какой элемент массива следует удалить?");
         newsArray.splice(index - 1, 1);
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
-    // sortByDate(newsArray) {
-    //     for (let i = 0; i < newsArray.length; i++) {
-    //         newsArray[i].date = +newsArray[i].date.split(".")[0] + +(newsArray[i].date.split(".")[1] * 30) + +(newsArray[i].date.split(".")[2] * 365);
-    //         newsArray.sort((b, a) => a.date - b.date);
-    //     }
-    // }
+    
     filterByTegs(newsArray) {
         return newsArray.filter(item => item.teg == "#three");
     }
@@ -263,11 +252,8 @@ class NewsFeed {
 }
 let news = new NewsFeed(newsArray);
 // console.log(news.filterByTegs(newsArray));
-<<<<<<< HEAD
-=======
 
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
- */
+
 /* 
                     Практическое задание №5
                     Модуль 2
@@ -294,15 +280,7 @@ Button.Добавить поле color и переопределить мето�
         document.write(`<button style=" height:${this.heigth}; width: ${this.width};">${this.text}</button>`)
     }
 }
-<<<<<<< HEAD
-let btn = new Button("100px", "30px", "label");
-btn.showBtn();
-=======
 
-let btn = new Button("100px", "30px", "label");
-btn.showBtn();
-
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 class BootstrapButton extends Button {
     constructor(color, width, heigth, text) {
         super(width, heigth, text);
@@ -312,10 +290,8 @@ class BootstrapButton extends Button {
         document.write(`<button style=" height:${this.heigth}; width: ${this.width};color: ${this.color};">${this.text}</button>`)
     }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
+
 let newBtn = new BootstrapButton("#f00", "200px", "50px", "newButton");
 console.log(newBtn);
 newBtn.showBtn(); */
@@ -334,7 +310,6 @@ newBtn.showBtn(); */
 треугольник. Переопределите методы вывода и вычислений в
 классах-наследниках.
 Создайте массив с различными фигурами и выведите информацию о каждой фигуре, включая площадь и периметр. */
-<<<<<<< HEAD
 /* 
 class Figure {
     name = "";
@@ -404,7 +379,6 @@ console.log(objRectangle.getArea());
 console.log(objRectangle.getPerimeter());
 console.log(objRectangle.get());
  */
-=======
 
 
 // ?????????????????????????????????????????????????????
@@ -435,7 +409,6 @@ class Square extends Figure {
 // const square = new Figure("  Квадрат");
 // console.log(square); */
 
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
 
 
 /*                          Задание 3
@@ -445,8 +418,3 @@ class Square extends Figure {
 ■ метод getHtml(tagName) – для получения строки с html
 кодом, где каждый элемент массива будет обернут в указанный тег (учтите, если указывается тег li, то все элементы дополнительно необходимо обернуть в ul).
 Создайте объект класса ExtentedArray, заполните его данными и выведите на экран результаты работы методов getString()
-<<<<<<< HEAD
-и getHtml() */
-=======
-и getHtml() */
->>>>>>> 9511a107da03c7bd99f53cec2a1d67772414c4d7
