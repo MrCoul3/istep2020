@@ -7,16 +7,16 @@
     <title>DOM-practice</title>
     <link rel="stylesheet" href="DOM-practice.css">
 </head>
-
+<script src="DOM-practice.js"></script>
 <body>
     <!--     Задание 4
 Создать html-страницу со вкладками. С левой стороны страницы отображается несколько вкладок, по которым можно переключаться. У каждой вкладки есть свое содержимое, но в один момент
 времени отображается содержимое только активной вкладки.  -->
  <div class="wrap">
         <div class="menu">
-            <div class="btn">HTML</div>
-            <div class="btn">CSS</div>
-            <div class="btn">JS</div>
+            <div class="btn btn1" onclick="changeBtn()">HTML</div>
+            <div class="btn" onclick="this.style.background = '#0011ff'"">CSS</div>
+            <div class="btn" onclick="this.style.background = '#0011ff'"">JS</div>
         </div>
         <div class="text text-HTML">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
             стандартизированный язык разметки веб-страниц во Всемирной паутине. Код HTML интерпретируется браузерами;

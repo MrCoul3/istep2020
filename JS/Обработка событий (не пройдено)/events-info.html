@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка событий</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <input type="button" id="btn" value="кнопка">
+</body>
+
+
+<script src="events.js">
+    let btn = document.getElementById("btn");
+btn.onclick = function(event) {
+    console.log(event.type + event.currentTarget);
+    console.log(event.clientX + ":" + event.clientY);
+}
+</script>
+
+</html>

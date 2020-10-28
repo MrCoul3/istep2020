@@ -25,7 +25,7 @@ document.querySelector(".wrap").onclick = function (e) {
 ? не работает правая кнопка мыши */
 /* ------------------------------------------------------------------ */
 
- /* Задание 3 */
+/* Задание 3 */
 
 /* let p = document.getElementsByTagName("p")[0];
 document.getElementsByTagName("button")[0].onclick = function () {
@@ -34,38 +34,22 @@ document.getElementsByTagName("button")[0].onclick = function () {
 } */
 
 /* Задание 4 */
-// console.log(document.getElementsByClassName("btn").length)
-/* 
-for (let i = 0; i < document.getElementsByClassName("btn").length; i++) {
-    document.querySelectorAll(".btn")[i].onclick = function() {
-
-        this.style.background = "#0011ff";
-    } 
-} */
+// console.log(document.getElementsByClassName("btn"));
 
 
-function activateBtn() {
-    for (let i = 0; i < document.getElementsByClassName("btn").length; i++) {
-        document.querySelectorAll(".btn")[i].style.background = "#0011ff";
-    }
-    
-} 
+// function changeBtn() {
+//     for (let i = 0; i < document.getElementsByClassName("btn").length; i++) {
+//         if (document.getElementsByClassName("btn")[i].style.background != "#0011ff") {
+//             document.getElementsByClassName("btn")[i].style.background = "#0011ff";
+//         } else {
 
-/* let menuLi = document.querySelectorAll('.menu li');
-console.log(menuLi);
+//         }
+//         // console.log(document.getElementsByClassName("btn")[i]);
+//     }
+// }
+// changeBtn();
 
-for (let i = 0; i<menuLi.length; i++) {
-    menuLi[i].onmouseover = showAnimation;
-    menuLi[i].onmouseout = hideAnimation;
-
-}
-        function showAnimation() {
-            this.childNodes[1].style.marginLeft = '0';
-            this.childNodes[2].style.marginLeft = '0';
-        }
-
-     function hideAnimation(){
-        this.childNodes[1].style.marginLeft = '-100%';
-        this.childNodes[2].style.marginLeft = '-200%';
-     }
- */
+// function changeBtn() {
+//     if (document.querySelectorAll(".btn")[0].style.background = "#00aeff");
+//     document.querySelector(".btn1").style.background = "#0011ff"
+// }
