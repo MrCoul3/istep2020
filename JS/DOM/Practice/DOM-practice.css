@@ -27,7 +27,7 @@ button {
     background-color: rgba(216, 189, 189, 0.438);
     text-align: center;
 }
- */
+
 /* --------------------------------------------------- */
 
  /* Задание 3 */
@@ -64,7 +64,7 @@ button {
     width: 100px;
     height: 50px;
     background: #00aeff;
-    /* background: #0011ff; */
+     background: #0011ff; 
 }
 
 .btn:hover {
@@ -87,4 +87,4 @@ button {
 .text-JS {
     display: block;
     display: none;
-}
+} 

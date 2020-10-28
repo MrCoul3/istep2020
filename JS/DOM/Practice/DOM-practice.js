@@ -35,11 +35,37 @@ document.getElementsByTagName("button")[0].onclick = function () {
 
 /* Задание 4 */
 // console.log(document.getElementsByClassName("btn").length)
-
+/* 
 for (let i = 0; i < document.getElementsByClassName("btn").length; i++) {
     document.querySelectorAll(".btn")[i].onclick = function() {
-        document.querySelectorAll(".btn")[i].style.background = "#0011ff";
+
+        this.style.background = "#0011ff";
     } 
+} */
+
+
+function activateBtn() {
+    for (let i = 0; i < document.getElementsByClassName("btn").length; i++) {
+        document.querySelectorAll(".btn")[i].style.background = "#0011ff";
+    }
+    
+} 
+
+/* let menuLi = document.querySelectorAll('.menu li');
+console.log(menuLi);
+
+for (let i = 0; i<menuLi.length; i++) {
+    menuLi[i].onmouseover = showAnimation;
+    menuLi[i].onmouseout = hideAnimation;
+
 }
+        function showAnimation() {
+            this.childNodes[1].style.marginLeft = '0';
+            this.childNodes[2].style.marginLeft = '0';
+        }
 
-
+     function hideAnimation(){
+        this.childNodes[1].style.marginLeft = '-100%';
+        this.childNodes[2].style.marginLeft = '-200%';
+     }
+ */
