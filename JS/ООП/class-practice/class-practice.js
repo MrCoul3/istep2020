@@ -184,6 +184,7 @@ console.log(oneNews);
 console.log(oneNews.print());
  */
 
+
 /* Задание 3
 Реализовать класс, описывающий новостную ленту.
 Класс должен содержать:
@@ -195,41 +196,37 @@ console.log(oneNews.print());
 ■ метод для сортировки новостей по дате (от последних новостей до старых);
 ■ метод для поиска новостей по тегу (возвращает массив новостей, в которых указан переданный в метод тег).
 Продемонстрировать работу написанных методов. */
-/* https://learn.javascript.ru/datetime */
-let news4 = {
-    text: "4Lorem ipsum dolor...",
-    date: "14.11.2019"
-};
-let newsArray = [{
+
+
+
+/* let newsArray = [{
         text: "1Lorem ipsum dolor...",
-        date: "10.10.2020",
+        date: "2020.10.11",
         teg: "#one"
     },
     {
         text: "2Lorem ipsum dolor...",
-        date: "11.12.2020",
+        date: "2020.11.08",
         teg: "#one"
     },
     {
         text: "3Lorem ipsum dolor...",
-        date: "12.11.2020",
+        date: "2020.07.01",
         teg: "#three"
     }
 ];
 
-// console.log(newsArray[0].text);
-// set срабатывает при передаче свойства. а get при обращении к свойству
+let news4 = {
+    text: "4Lorem ipsum dolor...",
+    date: "2018.01.22"
+};
+
 class NewsFeed {
     constructor(newsArray) {
         this.news = newsArray;
     }
-
-    set news(value) {
-        this._news = value;
-        this.numOfNews = value.length;
-    }
-    get news() {
-        return this._numOfNews;
+    getName() {
+        return "Количество новостей " + newsArray.length;
     }
     printAllNews() {
         for (let i = 0; i < newsArray.length; i++) {
@@ -243,16 +240,21 @@ class NewsFeed {
         let index = prompt("Укажите, какой элемент массива следует удалить?");
         newsArray.splice(index - 1, 1);
     }
-
+    sortByDate() {
+       newsArray.sort((b, a) => Date.parse(a.date) - Date.parse(b.date));
+    }
     
     filterByTegs(newsArray) {
         return newsArray.filter(item => item.teg == "#three");
     }
-
 }
-let news = new NewsFeed(newsArray);
-// console.log(news.filterByTegs(newsArray));
 
+let news = new NewsFeed(newsArray);
+console.log(news.filterByTegs(newsArray));
+ console.log(news.getName());
+news.sortByDate();
+console.log(newsArray);
+ */
 
 /* 
                     Практическое задание №5
@@ -319,7 +321,6 @@ class Figure {
     get() {
         return this.name;
     }
-    
 }
 
 class Rectangle extends Figure {
@@ -334,6 +335,7 @@ class Rectangle extends Figure {
         return this.params[0] * 2 + this.params[1] * 2
     }
 }
+
 class Square extends Figure {
     constructor(params) {
         super(params);
@@ -353,12 +355,10 @@ class Triangle extends Figure {
         super(params);
         this.name = 'Треугольник';
     }
-
     getArea() {
         let height = this.getHeight(this.params[0], this.params[2]);
         return (height * this.params[0]) / 2;
     }
-
     getHeight(a, b) {
         return (a * b) / Math.sqrt((a ** 2 + b ** 2));
     }
@@ -380,41 +380,36 @@ console.log(objRectangle.getPerimeter());
 console.log(objRectangle.get());
  */
 
-
-// ?????????????????????????????????????????????????????
-/* class Figure {
-    constructor(name) {
-        this.name = name;
-    }
-    set name(name) {
-        this._name = name.trim();
-    }
-    get name() {
-        return this._name;
-    }
-    figureInfo() {
-        document.write(`сторона ${this.leftSide}`); 
-    }
-    
-}
-
-class Square extends Figure {
-    constructor(name, side) {
-        super(name);
-        this.leftSide = side;
-    }
-}
-
-
-// const square = new Figure("  Квадрат");
-// console.log(square); */
-
-
-
-/*                          Задание 3
+/* 
+                       Задание 3
 Реализуйте класс ExtentedArray, унаследовав его от стандартного класса Array и добавив следующие методы:
 ■ метод getString(separator) – для получения строки со
 всеми элементами массива, перечисленными через указанный разделитель: запятая, тире, пробел и т. д.;
 ■ метод getHtml(tagName) – для получения строки с html
 кодом, где каждый элемент массива будет обернут в указанный тег (учтите, если указывается тег li, то все элементы дополнительно необходимо обернуть в ul).
 Создайте объект класса ExtentedArray, заполните его данными и выведите на экран результаты работы методов getString()
+ */
+/* class Array {
+    constructor(arr) {
+        this.array = arr;
+    }
+}
+
+class ExtentedArray extends Array {
+    constructor(arr) {
+        super(arr);
+    }
+    getString(separator) {
+       console.log(this.array.join(separator));
+    }
+    getHtml(tagName) {
+       let  newArr = this.array.map(item => `<${tagName}>${item}</${tagName}>`).join(",");
+        console.log(newArr);
+    }
+}
+
+let test = new ExtentedArray([1, 2, "s", "Coul"]);
+console.log(test);
+test.getString("-");
+test.getHtml("h1");
+ */
