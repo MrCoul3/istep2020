@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</title>
+    <style>
+     button {
+     width: 100px;
+     height: 30px;
+     
+ } 
+    </style>
+</head>
+<body>
+<!-- Задание 3
+Создать html-страницу, на которой будет кнопка и текст. При
+нажатии на кнопку, текст должен скрываться. При повторном нажатии – текст должен снова отображаться.  -->
+<button>show/hide</button>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rerum?</p> 
+    
+    <script>
+let p = document.getElementsByTagName("p")[0];
+document.getElementsByTagName("button")[0].onclick = function () {
+    if (p.style.display == "none") p.style.display = "block";
+    else p.style.display = "none";
+}
+    </script>
+
+</html>

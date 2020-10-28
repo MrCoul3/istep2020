@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</title>
+    <style>
+         * {
+    margin: 0;
+}
+.wrap {
+    width: 100vw;    
+    height: 100vh;
+    background-color: rgba(216, 189, 189, 0.438);
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Задание 2
+Создать html-страницу с div, который занимает всю ширину
+и высоту экрана. При движении мышкой внутри этого div, выводить текущие координаты мышки. При клике кнопкой мыши туда
+же, выводить, какой именно кнопкой был совершен клик (правой
+или левой). -->
+    <div class="wrap">
+        <div>X=<span class="x">1</span> Y=<span class="y">1</span></div>
+        <div class="which">sd</div>
+    </div>
+</body>
+<script>
+document.oncontextmenu = function (){return false};
+
+document.querySelector(".wrap").onmousemove = function (e) {
+    // console.log(e.clientX);
+    document.querySelector(".x").innerHTML = e.clientX;
+    document.querySelector(".y").innerHTML = e.clientY;
+}
+document.querySelector(".wrap").onclick = function (e) {
+     if (e.which == 1) {
+         document.querySelector(".which").innerHTML = "Левая";
+     } else if (e.which == 3) {
+        document.querySelector(".which").innerHTML = "Правая";
+     }
+}
+? не работает правая кнопка мыши
+</script>
+
+</html>

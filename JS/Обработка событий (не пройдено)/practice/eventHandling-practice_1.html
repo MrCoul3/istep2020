@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</title>
+    <style>
+     .wrap {
+    width: 250px;
+    height: 200px;
+    background-color: rgba(216, 189, 189, 0.438);
+}
+p {
+    padding: 10px 0;
+    text-align: center;
+}
+p:nth-child(2) {
+    font-size: 30px;
+}
+button {
+    margin: 0 auto;
+    display: block;
+} 
+    </style>
+</head>
+<body>
+  <!-- Задание 1
+Создать html-страницу для генерации случайных чисел. На
+странице должна быть кнопка, при нажатии на которую случайное
+целое число от 0 до 100 выводится в div. -->
+    <div class="wrap">
+    <p>random number:</p>
+    <p>0</p>
+    <button>Generate random number</button>
+    </div>
+    <script>
+ function sendRandomNumber() {
+    document.getElementsByTagName("p")[1].innerHTML = parseInt(Math.random() * 100);
+}
+document.getElementsByTagName("button")[0].onclick = sendRandomNumber;
+ 
+    </script>
+
+</html>
