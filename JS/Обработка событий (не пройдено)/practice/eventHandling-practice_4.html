@@ -30,7 +30,9 @@
     width: 100px;
     height: 50px;
     background: #00aeff;
-     /* background: #0011ff;  */
+}
+.btn-active {
+     background: #0011ff; 
 }
 
 .btn:hover {
@@ -41,19 +43,13 @@
     padding: 5px;
     font-size: 14px;
     overflow: auto;
-}
-.text-HTML {
-    display: none;
-    display: block;
-}
-.text-CSS {
-    display: block;
     display: none;
 }
-.text-JS {
+.text-active {
     display: block;
-    display: none;
-} 
+}
+
+
     </style>
 </head>
 <body>
@@ -62,9 +58,10 @@
 времени отображается содержимое только активной вкладки.  -->
 <div class="wrap">
     <div class="menu">
-        <div class="btn btn1" onclick="changeBtn()">HTML</div>
-        <div class="btn" onclick="this.style.background = '#0011ff'"">CSS</div>
-        <div class="btn" onclick="this.style.background = '#0011ff'"">JS</div>
+        <div class="btn">HTML</div>
+        <div class="btn">CSS</div>
+        <!-- <div class="btn" onclick="this.style.background = '#0011ff'">CSS</div> -->
+        <div class="btn">JS</div>
     </div>
     <div class="text text-HTML">HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») —
         стандартизированный язык разметки веб-страниц во Всемирной паутине. Код HTML интерпретируется браузерами;
@@ -78,24 +75,30 @@
     </div>
 </div> 
     <script>
-console.log(document.getElementsByClassName("btn"));
 
-function changeBtn() {
-    for (let i = 0; i < document.getElementsByClassName("btn").length; i++) {
-        if (document.getElementsByClassName("btn")[i].style.background != "#0011ff") {
-            document.getElementsByClassName("btn")[i].style.background = "#0011ff";
-        } else {
+let btnArr = document.querySelectorAll(".btn");
+let textArr = document.querySelectorAll(".text");
+for (let elem of btnArr) {
+    // console.log(btnArr[i]);
+    elem.addEventListener("click", function() {
+        btnArr.forEach(function(item) {
+            item.classList.remove("btn-active");
+        });
+        // console.log(this);
+        this.classList.toggle("btn-active");
+    });
+};
 
-        }
-        // console.log(document.getElementsByClassName("btn")[i]);
-    }
+for (let i = 0; i < btnArr.length; i++) {
+    btnArr[i].addEventListener("click", function() {
+        // console.log(textArr[i]);
+        textArr.forEach(item => item.classList.remove("text-active"));
+        textArr[i].classList.toggle("text-active");
+    });
 }
-changeBtn();
 
-function changeBtn() {
-    if (document.querySelectorAll(".btn")[0].style.background = "#00aeff");
-    document.querySelector(".btn1").style.background = "#0011ff"
-}
+
+
     </script>
 
 </html>

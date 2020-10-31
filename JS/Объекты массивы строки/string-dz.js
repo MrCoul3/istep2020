@@ -175,9 +175,9 @@ console.log(maxWord(str)); */
 // строке. Также вывести, сколько всего раз встречается этот
 // символ в строке.
 
-/* Мое Решение 
+// Мое Решение 
 
-let str = "Hello, world wide web!";
+/* let str = "Hello, world wide web!";
 let sym = "w"; // 7 ind
 
 function symbolIndex(str, sym) {
@@ -193,7 +193,7 @@ function symbolIndex(str, sym) {
    return "количество раз: " + count;
 }
 
-console.log(symbolIndex(str, sym)); */
+console.log(symbolIndex(str, sym));  */
 
 
 /* Решение одногруппника 

@@ -2,6 +2,7 @@
 
                 // ДЕЙСТВИЯ С ЭЛЕМЕНТАМИ НА СТРАНИЦЕ
                 
+document.createElement('div'); /* создание элемента  */
 
 box.style.backgroundColor = "blue"; /* изменить свойство элемента  */
 
@@ -9,11 +10,14 @@ circle.forEach(function (item) {
         item.style.backgroundColor = "green";
     }); /* метод перебора массива элементов */
 
-document.createElement('div'); /* создание элемента  */
+
 
 
                         /* РАБОТА С КЛАССАМИ */
-div.classList.add("black"); /* добавление класса к элементу */
+elem.classList.add/remove("class") – добавить/удалить класс.
+elem.classList.toggle("class") – /* добавить класс, если его нет, иначе удалить. */
+elem.classList.contains("class") – проверка наличия класса, возвращает true/false.
+
 
 
 document.body.appendChild(div); /* добавить элемент в конец родительского элемента  */

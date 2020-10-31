@@ -19,3 +19,6 @@ string.toLowerCase() - делает все символы маленькими
 concat() - сливает указанные массивы в один общий массив. Метод применяется к одному из массивов, а в параметрах метода передаются остальные массивы для слияния. /* (var c = a.concat(b);) */
 map() - создаёт новый массив с результатом вызова указанной функции для каждого элемента массива. /* (let newArr = arr.map((item, index) => return item * 10)) */
 filter() создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции./*  (const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']; const result = words.filter(word => word.length > 6);) */
+
+// Методы массивов
+arr.forEach(function(item, i, arr) { /code });
