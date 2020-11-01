@@ -14,7 +14,8 @@ circle.forEach(function (item) {
 
 
                         /* РАБОТА С КЛАССАМИ */
-elem.classList.add/remove("class") – добавить/удалить класс.
+
+elem.classList.add/remove("class", "class2") – добавить/удалить класс.
 elem.classList.toggle("class") – /* добавить класс, если его нет, иначе удалить. */
 elem.classList.contains("class") – проверка наличия класса, возвращает true/false.
 
@@ -36,3 +37,9 @@ document.body.replaceChild(btn[1], b); /* заменить элемент. btn[1
 div.innerHTML = "<h3>Hello world!</h3>"; /* Добавить текст в тег можно вставлять с тегами */
 div.textContent = "Hello world!";  /* внутренние теги будут отображаться как текст  */
 
+/* Действия с атрибутами  */
+
+elem.hasAttribute(name) – проверяет наличие атрибута.
+elem.getAttribute(name) – получает значение атрибута.
+elem.setAttribute(name, value) – устанавливает значение атрибута.
+elem.removeAttribute(name) – удаляет атрибут.

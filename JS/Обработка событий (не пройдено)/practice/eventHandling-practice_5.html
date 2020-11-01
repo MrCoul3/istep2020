@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</title>
+    <style>
+  .news {
+      display: flex;
+      width: 400px;
+  }
+  .close {
+      width: 30px;
+      height: 30px;
+  }
+
+  .delete {
+      display: none;
+  }
+
+    </style>
+</head>
+<body>
+<!--     Задание 5
+Создать html-страницу со списком новостей. Возле каждой
+новости должна быть кнопка Удалить, при нажатии на которую
+соответствующая новость исчезает. -->
+
+
+<div class="wrap">
+    <div class="news">
+        <p>1Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, tenetur mollitia. Sapiente reiciendis tempore facilis consectetur consequuntur adipisci ut voluptate rerum, soluta doloribus modi accusamus.</p>
+        <button class="close">X</button>
+    </div>
+    <div class="news">
+        <p>2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, tenetur mollitia. Sapiente reiciendis tempore facilis consectetur consequuntur adipisci ut voluptate rerum, soluta doloribus modi accusamus.</p>
+        <button class="close">X</button>
+    </div>
+    <div class="news">
+        <p>3Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, tenetur mollitia. Sapiente reiciendis tempore facilis consectetur consequuntur adipisci ut voluptate rerum, soluta doloribus modi accusamus.</p>
+        <button class="close">X</button>
+    </div>
+    <div class="news">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, tenetur mollitia. Sapiente reiciendis tempore facilis consectetur consequuntur adipisci ut voluptate rerum, soluta doloribus modi accusamus.</p>
+        <button class="close">X</button>
+    </div>
+</div>
+
+    <script>
+
+        let btnCloseCollection = document.querySelectorAll(".close");
+        let newsCollection = document.querySelectorAll(".news");
+        for (let i = 0; i < btnCloseCollection.length; i++) {
+            btnCloseCollection[i].onclick = function() {
+                newsCollection[i].classList.add("delete");
+            }
+        }
+       
+
+
+    </script>
+
+</html>
