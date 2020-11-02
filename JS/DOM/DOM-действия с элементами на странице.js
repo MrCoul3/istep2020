@@ -4,12 +4,16 @@
                 
 document.createElement('div'); /* создание элемента  */
 
+// Работа со стилями
 box.style.backgroundColor = "blue"; /* изменить свойство элемента  */
+style.cssText -  Для задания нескольких стилей в одной строке используется специальное свойство
 
 circle.forEach(function (item) {
         item.style.backgroundColor = "green";
     }); /* метод перебора массива элементов */
-
+    
+Вычисленные стили: getComputedStyle
+let partStyle = getComputedStyle(document.querySelector("div")); console.log(partStyle.width) // установленная ширина объекта
 
 
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  Задание 7
+    Создать html-страницу с таблицей.
+При наведении мышкой на ячейку таблицы, у этой ячейки
+должен меняться фон. Учтите, что когда мышку уводят с ячейки,
+то ее фон возвращается к прежнему.
+Выполнить задание с помощью JS, а не с помощью CSS.
+     -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-practice</title>
+
+    <style>
+        table {
+            border: 1px solid grey;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid grey;
+        }
+
+        td {
+            border: 1px solid grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Timpthy</td>
+            <td>Cook</td>
+            <td>Apple</td>
+        </tr>
+        <tr>
+            <td>Larry</td>
+            <td>Page</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>Mark</td>
+            <td>Zuckerberg</td>
+            <td>Facebook</td>
+        </tr>
+    </table>
+
+    <script>
+
+
+let tdCollection = document.querySelectorAll("td, th");
+for (let elem of tdCollection) {
+    elem.addEventListener("mouseover", function() {
+        this.style.background = "red";
+    });
+    elem.addEventListener("mouseout", function() {
+        this.style.background = "";
+    });
+}
+
+
+    </script>
+
+</body>
+
+</html>

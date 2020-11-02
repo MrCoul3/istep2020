@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--   Задание 9
+    Создать html-страницу с кнопкой Like, при нажатии на которую увеличивается счетчик лайков. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-practice</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+   <button>Like <span>0</span></button>
+
+    <script>
+
+let i = 0;
+document.querySelector("button").onclick = function() {
+    document.querySelector("span").innerHTML = ++i;
+}
+    </script>
+
+</body>
+</html>

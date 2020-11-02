@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  Задание 6
+    Создать html-страницу с progressbar и кнопкой, при нажатии
+    на которую заполненность progressbar увеличивается на 5%. -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-practice</title>
+
+    <style>
+  .wrap {
+      width: 200px;
+      height: 25px;
+      border: 1px solid black;
+  }
+  .part {
+      height: 25px;
+      width: 10px;
+      background: rgb(18, 156, 133);
+  }
+    </style>
+
+</head>
+<body>
+   
+<div class="wrap">
+<div class="part"></div>
+</div>
+<button>add 5%</button>
+
+    <script>
+
+let partStyle = getComputedStyle(document.querySelector(".part"));
+document.querySelector("button").onclick = function() {
+    document.querySelector(".part").style.width = parseFloat(partStyle.width) + 10 + "px";
+}
+    </script>
+
+</body>
+</html>

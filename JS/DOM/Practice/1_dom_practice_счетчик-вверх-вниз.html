@@ -1,0 +1,68 @@
+<!-- Задание 1
+Создать html-страницу с возможностью ввода числового значения через кнопки (больше, меньше).
+Пользователь не должен иметь возможность печатать текст
+или цифры. Число изменяется только при нажатии на кнопки. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</DOM-practise>
+    </title>
+    <style>
+        .wrap {
+            display: flex;
+            width: 100px;
+            height: 80px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        span {
+            margin: auto;
+            font-size: 24px;
+        }
+        .btn-group {
+            border-left: 1px solid black;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            height: 40px;
+                    }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <span>0</span>
+        <div class="btn-group">
+            <button>&#9650;</button>
+            <button>&#9660;</button>
+        </div>
+    </div>
+
+
+
+</body>
+<script>
+let array = document.querySelectorAll("button");
+let span = document.querySelector("span");
+let count = 0;
+    array.forEach((element, i) => {
+       element.addEventListener("click", function() {
+            if (i == 0) {
+                span.innerHTML = ++count;
+            }
+            if (i == 1) {
+                span.innerHTML = --count;
+            }
+       })
+    });
+    
+</script>
+
+</html>

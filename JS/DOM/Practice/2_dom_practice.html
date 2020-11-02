@@ -1,0 +1,61 @@
+<!-- Задание 2
+Создать html-страницу с кнопкой, по нажатию на которую
+добавляются цветные блоки на страницу. По клику на сам блок,
+он должен удаляться со страницы. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</title>
+    <style>
+        .wrap {
+            width: 400px;
+            height: 200px;
+            background: rgb(216, 210, 184);
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .palette {
+            display: flex;
+            flex-wrap: wrap;
+            height: 150px;
+            background: rgb(224, 0, 0);
+            padding: 10px;
+        }
+        button {
+            margin: 20px auto;
+            display: block;
+            width: 200px;
+            height: 25px;
+        }
+        .color {
+            margin: 5px;
+            box-sizing: border-box;
+            width: 40px;
+            height: 25px;
+            background: rgb(217, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="palette">
+            <div class="color"></div>
+        </div>
+        <button>add color</button>
+    </div>
+</body>
+<script>
+    let rnd1 = parseInt(Math.random() * 250);
+    let rnd2 = parseInt(Math.random() * 250);
+    let rnd3 = parseInt(Math.random() * 250);
+    let rgb = `rgb(${rnd1}, ${rnd2}, ${rnd3})`;
+    console.log(rgb);
+    let addColorBtn = document.querySelector("button");
+    addColorBtn.addEventListener("click", )
+</script>
+
+</html>

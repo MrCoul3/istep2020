@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Задание 10
+    Создать html-страницу с меню, которое имеет выпадающие
+    списки. Список с элементами подменю должен появляться по
+    щелчку на соответствующий элемент меню. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-practice</title>
+
+    <style>
+        nav {
+            background: rgb(48, 152, 194);
+            display: flex;
+            position: relative;
+            z-index: 10;
+        }
+
+        .main-menu-btn, .menu-btn {
+            position: relative;
+            z-index: 10;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px;
+            border-right: 1px solid rgba(255, 255, 255, 0.123);
+            cursor: pointer;
+        }
+
+        span {
+            position: relative;
+            z-index: 10;
+            margin: auto;
+            color: rgb(253, 251, 251);
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+        .dropdown {
+            /* position: absolute; */
+            display: none;
+            
+          
+
+        }
+        .dropdown-active {
+            display: block;
+            position: absolute;
+            background: rgb(48, 152, 194);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="wrap">
+            <div class="main-menu-btn">
+                <span>Home</span>
+            </div>
+
+            <div class="dropdown" style="width: 64.462px;">
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <div class="main-menu-btn">
+                <span>Categories</span>
+            </div>
+
+            <div class="dropdown" style="width: 102.7px;">
+                <div class="menu-btn">
+                    <span>Dresses</span>
+                </div>
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrap">
+            <div class="main-menu-btn">
+                <span>About</span>
+            </div>
+
+            <div class="dropdown" style="width: 66.212px;">
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+                <div class="menu-btn">
+                    <span>Home</span>
+                </div>
+            </div>
+        </div>
+    
+    </nav>
+
+    <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi nesciunt illo quis cumque fugiat, nobis possimus fugit earum incidunt. Soluta at eius mollitia, tempora tenetur saepe beatae labore laudantium qui.
+    </section>
+    <script>
+
+ let menuBtn = document.querySelectorAll(".main-menu-btn");
+ let dropdwn = document.querySelectorAll(".dropdown");
+
+ for (let i = 0; i < menuBtn.length; i++) {
+    menuBtn[i].addEventListener("click", function() {
+        for (let elem of dropdwn) {
+            if (elem != dropdwn[i])
+            elem.classList.remove("dropdown-active");
+        }
+        dropdwn[i].classList.toggle("dropdown-active"); 
+    });
+ }
+
+ document.body.addEventListener("click", function() {
+    for (let elem of dropdwn) {
+            if (elem != dropdwn[i])
+            elem.classList.remove("dropdown-active");
+        }
+ })
+
+ let allBtn = document.querySelectorAll(".main-menu-btn, .menu-btn");
+ for (let i = 0; i < allBtn.length; i++) {
+    allBtn[i].addEventListener("mouseover", function(){
+        this.style.background = "#6fb4cf";
+    });
+    allBtn[i].addEventListener("mouseout", function(){
+        this.style.background = "";
+    });
+ }
+
+    </script>
+
+</body>
+
+</html>

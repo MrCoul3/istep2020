@@ -22,3 +22,5 @@ filter() создаёт новый массив со всеми элемента
 
 // Методы массивов
 arr.forEach(function(item, i, arr) { /code });
+
+for (let elem of array) { console.log(elem) }

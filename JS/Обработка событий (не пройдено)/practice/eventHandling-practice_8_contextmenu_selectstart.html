@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Задание 8
+Создать html-страницу с любым содержимым и запретить
+пользователю выделять текст и вызывать контекстное меню кликом правой кнопки.  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event-practice</title>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, vel?
+
+    <script>
+document.oncontextmenu = () => false;
+document.onselectstart = () => false;
+
+    </script>
+
+</body>
+</html>
