@@ -1,0 +1,98 @@
+<!-- Изменить  слово в тексте (покрасить в любой цвет ) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {}
+
+        .background {
+            background: rgb(153, 152, 152);
+        }
+
+        .click {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .wrap {
+            display: none;
+            margin-top: 50px;
+            width: 400px;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid black;
+            background: rgb(255, 251, 251);
+
+        }
+
+       
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        input {
+            margin-bottom: 20px;
+            width: 200px;
+        }
+
+        .close {
+            position: absolute;
+            top: 35px;
+            right: 380px;
+        }
+
+        input[type="submit"] {
+            margin: 0 auto;
+            display: block;
+            width: 200px;
+        }
+
+        .prompt {
+            top: 100px;
+            right: 563px;
+            position: absolute;
+            visibility: hidden;
+            width: 100px;
+            height: 20px;
+            color: red;
+        }
+
+        .active {
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 1 -->
+    <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perspiciatis officia reprehenderit iusto vero dolorem incidunt hic voluptatibus, dicta fugit similique, aspernatur beatae enim ipsam libero repellendus labore nam exercitationem!</div> -->
+    <!-- 2 -->
+    <button class="click">Click</button>
+    <div class="wrap">
+        <div class="container">
+            <button class="close">X</button>
+            <form action="">
+                <input type="text">
+                <div class="prompt"><span>Введите имя</span> </div>
+                <input type="tel">
+                <input type="submit">
+            </form>
+
+        </div>
+
+    </div>
+</body>
+<script src="pract02.11.js"></script>
+
+</html>
+
+<!-- // ПСЕВДОКОД ПИСАТЬ ДЛЯ СЕБЯ ПРОГРАММУ  -->

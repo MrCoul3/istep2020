@@ -72,3 +72,4 @@ btn.onclick = function(event) {
 </script> */
 
 
+!!! e.preventDefault - удалить все стандартные собыьитя 
