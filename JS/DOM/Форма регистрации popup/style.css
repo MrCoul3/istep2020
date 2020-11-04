@@ -53,7 +53,7 @@ form {
     background: rgb(255, 255, 255);
 }
 .registration {
-    /* display: none; */
+    display: none;
 }
 .registration-active {
     display: block;
@@ -131,6 +131,32 @@ input[type="text"] {
     top: 65px;
     display: none;
 }
-.ban-text-active {
+.ban-tel {
+    top: 120px;
+    display: none;
+}
+.ban-psw-length, .ban-psw-case{
+    top: 176px;
+    display: none;
+}
+.ban-text-active, .ban-tel-active, .ban-psw-active {
+    display: block;
+}
+
+.prompt {
+    position: absolute;
+    display: none;
+}
+.prompt-text {
+    top: 10px;
+}
+
+.prompt-tel {
+    top: 65px;
+}
+.prompt-psw {
+    top: 120px;
+}
+.prompt-active {
     display: block;
 }

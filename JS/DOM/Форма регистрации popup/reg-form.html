@@ -25,11 +25,17 @@
             <div class="close">close</div>
             
             <div class="wrap-input">
+                <div class="prompt prompt-text">Enter Your name</div>
                 <input type="text" >
                 <div class="ban ban-text">numbers are not allowed</div>
+                <div class="prompt prompt-tel">Enter Your telephone</div>
                 <input type="tel">
+                <div class="ban ban-tel">number only</div>
+                <div class="prompt prompt-psw">Enter Your Password</div>
                 <input type="password">
-                <input class="submit" type="submit">
+                <div class="ban ban-psw-length">Password must be more than 5 symbols</div>
+                <div class="ban ban-psw-case">the password must contain uppercase letters and numbers</div>
+                <input class="submit" type="submit" onclick="event.preventDefault()">
             </div>
         </form>
     </header>

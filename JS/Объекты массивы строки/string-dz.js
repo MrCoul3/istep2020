@@ -176,16 +176,17 @@ console.log(maxWord(str)); */
 // символ в строке.
 
 // Мое Решение 
-
-/* let str = "Hello, world wide web!";
+/* 
+ let str = "Hello, world wide web!";
 let sym = "w"; // 7 ind
 
 function symbolIndex(str, sym) {
    let count = 0;
    let arr = str.split('');
    arr.forEach(function(item, i) {
+       console.log(item);
       if (item == sym) {
-         console.log("индекс: " + i);
+        //  console.log("индекс: " + i);
          count = ++count;
       }
       
@@ -193,8 +194,8 @@ function symbolIndex(str, sym) {
    return "количество раз: " + count;
 }
 
-console.log(symbolIndex(str, sym));  */
-
+console.log(symbolIndex(str, sym));  
+ */
 
 /* Решение одногруппника 
 function showIndex(str,symbol) {
