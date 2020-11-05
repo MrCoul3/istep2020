@@ -1,0 +1,85 @@
+<!-- Задание 3
+Создать html-страницу с текстом и палитрой цветов.
+При клике на цвет палитры, должен изменяться цвет текста на
+выбранный. Для указания, какой ячейке какой цвет соответствует,
+можно использовать атрибут data-color в каждой ячейке, а потом
+с помощью JS получать необходимый цвет из этого атрибута.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Задание DOM-practice</title>
+    <style>
+        .wrap {
+            width: 400px;
+            height: 240px;
+            border: 1px solid rgba(0, 0, 0, 0.349);
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .palette {
+            display: flex;
+            flex-wrap: wrap;
+            width: 355px;
+            height: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.349);
+            margin: 5px auto;
+        }
+        .palette-element {
+            margin: 2px;
+            width: 40px;
+            height: 40px;
+            background: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="palette">
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+            <div class="palette-element"></div>
+        </div>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus, ratione, accusamus soluta
+            placeat non voluptatem dolorem animi rem, temporibus deserunt voluptatum odio minima possimus dolores
+            pariatur libero reiciendis at.</p>
+    </div>
+</body>
+<script> 
+    let paletteElements = document.querySelectorAll(".palette-element");
+    let text = document.querySelector(".text");
+    // console.log(paletteElements);
+    for (let elem of paletteElements) {
+        let rnd1 = parseInt(Math.random() * 250);
+            let rnd2 = parseInt(Math.random() * 250);
+            let rnd3 = parseInt(Math.random() * 250);
+            let rgb = `rgb(${rnd1}, ${rnd2}, ${rnd3})`;
+            elem.setAttribute("data-color", rgb);
+            let dataColor = elem.getAttribute("data-color");
+            elem.style.background = dataColor;
+            elem.addEventListener("click", function() {
+                text.style.color = dataColor;
+            });
+    }
+
+</script>
+
+</html>

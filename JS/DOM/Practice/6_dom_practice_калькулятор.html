@@ -1,0 +1,90 @@
+<!-- Задание 6
+Создать html-страницу «Калькулятор». Реализовать его функциональность. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 задание>DOM-practice</title>
+    <style>
+        .wrap {
+            width: 300px;
+            height: 380px;
+            border: 1px solid black;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.452);
+            background: rgba(255, 238, 5, 0.438);
+        }
+        input {
+            display: block;
+            width: 267px;
+            height: 40px;
+            margin: 20px auto;
+            font-size: 24px;
+        }
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+        }
+        button {
+            width: 65px;
+            height: 65px;
+            margin: 2px;
+            background: rgba(150, 148, 148, 0.671);
+            font-size: 20px;
+        }
+        
+        .button-click {
+            background: rgba(34, 33, 33, 0.884);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <input  type="text" name="" id="">
+        <div class="keyboard">
+            <button class="number" value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+            <button class="number" value="+">+</button>
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+            <button class="number" value="-">-</button>
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            <button class="number" value="*">*</button>
+            <button class="number" value="0">0</button>
+            <button class="number" value="=">=</button>
+            <button class="number" value="reset">C</button>
+            <button class="number" value="/">/</button>
+        </div>
+    </div>
+</body>
+<script>
+    let input = document.querySelector("input");
+    // console.log(input.value);
+    let buttons = document.querySelectorAll("button");
+    for (let e of buttons) {
+        let value = e.getAttribute("value");
+        e.classList.remove("button-click");
+        e.addEventListener("mousedown", () => e.classList.add("button-click"));
+        e.addEventListener("mouseup", () => e.classList.remove("button-click"));
+        e.addEventListener("click", function() {
+            input.value += value;        });
+        e.addEventListener("keyup", function(event) {
+            if (event.key === "7") {
+                
+            }
+            input.value += value;        
+        });
+    }
+    
+
+</script>
+</html>
