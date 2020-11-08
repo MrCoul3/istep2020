@@ -9,37 +9,67 @@
     <title>6 задание>DOM-practice</title>
     <style>
         .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 300px;
-            height: 380px;
+            height: 330px;
             border: 1px solid black;
             margin: 0 auto;
-            border-radius: 10px;
             box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.452);
-            background: rgba(255, 238, 5, 0.438);
+            background: #66d3e638;
         }
 
-        input {
+        .input-container {
+            margin: 10px 12px;
+
+        }
+
+        .input-history {
+            width: 245px;
+            padding-right: 15px;
+            border: none;
+            background: transparent;
+            text-align: right;
+        }
+
+        .text-input {
             display: block;
-            width: 267px;
+            width: 245px;
             height: 40px;
-            margin: 20px auto;
             font-size: 24px;
+            text-align: right;
+            padding-right: 15px;
+            outline: none;
+            border: none;
+            caret-color: transparent;
         }
 
         .keyboard {
             display: flex;
             flex-wrap: wrap;
-            width: 280px;
-            height: 280px;
-            margin: 0 auto;
+            width: 268px;
         }
 
-        button {
+        .btn {
+            display: flex;
             width: 65px;
-            height: 65px;
-            margin: 2px;
-            background: rgba(150, 148, 148, 0.671);
+            height: 45px;
+            background: transparent;
             font-size: 20px;
+            cursor: default;
+            border: 1px solid rgba(188, 198, 219, 0.384);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        span {
+            margin: auto;
+        }
+
+        .result {
+            width: 132px;
+            background: rgba(41, 199, 199, 0.404);
+
         }
 
         .button-click {
@@ -50,39 +80,36 @@
 
 <body>
     <div class="wrap">
-        <input type="text" name="" id="">
-        <div class="keyboard">
-            <button class="number" value="7">7</button>
-            <button class="number" value="8">8</button>
-            <button class="number" value="9">9</button>
-            <button class="number" value="+">+</button>
-            <button class="number" value="4">4</button>
-            <button class="number" value="5">5</button>
-            <button class="number" value="6">6</button>
-            <button class="number" value="-">-</button>
-            <button class="number" value="1">1</button>
-            <button class="number" value="2">2</button>
-            <button class="number" value="3">3</button>
-            <button class="number" value="*">*</button>
-            <button class="number" value="0">0</button>
-            <button class="number" value="=">=</button>
-            <button class="number" value="reset">C</button>
-            <button class="number" value="/">/</button>
+        <div class="input-container">
+            <input class="input-history" type="text" disabled>
+            <input class="text-input" type="text" name="" id="">
+        </div>
+        <div class="keyboard" onselectstart="return false">
+            <div class="btn procent" value="%"><span>%</span></div>
+            <div class="btn reset" value="reset"><span>C</span></div>
+            <div class="btn backspace" value=""><span>&#8678;</span></div>
+            <div class="btn division operator" value="/"><span>÷</span></div>
+            <div class="btn number" value="7"><span>7</span></div>
+            <div class="btn number" value="8"><span>8</span></div>
+            <div class="btn number" value="9"><span>9</span></div>
+            <div class="btn multiply operator" value="*"><span>x</span></div>
+            <div class="btn number" value="4"><span>4</span></div>
+            <div class="btn number" value="5"><span>5</span></div>
+            <div class="btn number" value="6"><span>6</span></div>
+            <div class="btn minus operator" value="-"><span>-</span></div>
+            <div class="btn number" value="1"><span>1</span></div>
+            <div class="btn number" value="2"><span>2</span></div>
+            <div class="btn number" value="3"><span>3</span></div>
+            <div class="btn plus operator" value="+"><span>+</span></div>
+            <div class="btn number" value="."><span>.</span></div>
+            <div class="btn number" value="0"><span>0</span></div>
+            <div class="btn result" value=""><span>=</span></div>
         </div>
     </div>
 </body>
 <script>
-    let arrNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-
-    let arr_en = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-        'u', 'v', 'w', 'x', 'y', 'z'
-    ];
-    let arr_EN = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
-        'U', 'V', 'W', 'X', 'Y', 'Z'
-    ];
-    let input = document.querySelector("input");
-    input.focus();
-    let buttons = document.querySelectorAll("button");
+    let input = document.querySelector(".text-input");
+    let buttons = document.querySelectorAll(".btn");
 
     for (let btn of buttons) {
         let value = btn.getAttribute("value");
@@ -92,15 +119,82 @@
         btn.addEventListener("click", function () {
             input.value += value;
         });
+
     }
-    input.addEventListener("keydown", function (event) {
-        for (let item of arr_en) {
-            if (input.value.includes(item) == true) {
-                input.value = input.value.replace(item, "");
-            }
+
+    document.addEventListener("keydown", function (e) {
+        if ((e.key).match(/[0-9%/*+-.]/g)) input.value += e.key;
+
+        if (event.key == "Enter" || event.key == "=") {
+            inpHistory.value = input.value;
+            input.value = eval(input.value);
+        }
+        if (e.key == "Backspace") input.value = input.value.slice(0, input.value.length - 1);
+        if (e.key == "+" || e.key == "-" || e.key == "*" || e.key == "/") {
+            oper = e.key;
+        }
+        if (e.key == "%") {
+            res = input.value;
+            val1 = parseFloat(res.substring(0, res.indexOf(oper)));
+            val2 = Math.abs(val1 * 0.01 * res.substring(res.indexOf(oper) + 1, res.length - 1));
+            input.value = `${val1}${oper}${val2}`;
         }
     });
-    
+
+    // кнопка стереть "<-"
+    let btnCE = document.querySelector(".backspace");
+    btnCE.onclick = function () {
+        input.value = input.value.slice(0, input.value.length - 1);
+    }
+
+    // кнопка сброс "C"
+    let btnReset = document.querySelector(".reset");
+    btnReset.onclick = function () {
+        input.value = "";
+        inpHistory.value = "";
+    }
+
+
+    // кнопка равно "="
+    let btnResult = document.querySelector(".result");
+    let inpHistory = document.querySelector(".input-history");
+    btnResult.addEventListener("click", function () {
+        inpHistory.value = input.value;
+        input.value = eval(input.value);
+        val1 = "";
+        val2 = "";
+        res = "";
+        // ??? как сделать , что бы ответ разделялся пробелом 1 123, 11 111, 111 111.
+        // ??? как работает inp.value = res.replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ');
+        // input.value = input.value.slice(0, 3) + " " + input.value.slice(3);
+    });
+
+    // кнопка %
+    let btnProcent = document.querySelector(".procent");
+    let btnOperators = document.querySelectorAll(".operator");
+    let res = "";
+    let val1 = "";
+    let val2 = "";
+    let oper = "";
+
+    for (let operator of btnOperators) {
+        operator.addEventListener("click", function () {
+            oper = operator.getAttribute("value");
+            console.log(oper);
+            return oper;
+        });
+    }
+
+    btnProcent.addEventListener("click", function () {
+        // val1 + val2% = val1 + val1 * val2 * 0.01
+        res = input.value;
+        val1 = parseFloat(res.substring(0, res.indexOf(oper)));
+        val2 = Math.abs(val1 * 0.01 * res.substring(res.indexOf(oper) + 1, res.length - 1));
+        input.value = `${val1}${oper}${val2}`;
+        console.log("v1=" + val1);
+        console.log("v2=" + val2);
+    });
+
 </script>
 
 </html>

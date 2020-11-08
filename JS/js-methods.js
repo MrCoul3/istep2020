@@ -25,3 +25,5 @@ filter() создаёт новый массив со всеми элемента
 arr.forEach(function(item, i, arr) { /code });
 
 for (let elem of array) { console.log(elem) }
+
+eval("1+1") //2 -вычисляет выражение "строки"

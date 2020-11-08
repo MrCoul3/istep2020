@@ -1,3 +1,6 @@
+<!-- Выведите значение и текст выбранного пункта.
+Добавьте пункт: <option value="classic">Классика</option>.
+Сделайте его выбранным. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEST</title>
     <link rel="stylesheet" href="test-style.css">
+    <style>
+        
+    </style>
 </head>
 <body>
- <div class="r">
-     <div class="t"></div>
- </div>
+    <select id="genres">
+        <option value="rock">Рок</option>
+        <option value="blues" selected>Блюз</option>
+      </select>
 </body>
 <script src="test-js.js"></script>
+<script>
+   console.log(genres.value); 
+   console.log(genres.options[1].text);
+//    option = new Option("классика", "classic", true, true);
+//    console.log(option);
+//    genres.append(option);
+   console.log(genres)
+</script>
 </html>

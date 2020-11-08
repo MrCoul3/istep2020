@@ -1,18 +1,104 @@
-
+<!-- Задание 4
+Создать html-страницу со статьей, комментариями к ней и
+формой для добавления нового комментария.
+При нажатии на кнопку Добавить комментарий форма должна
+очищаться, а комментарий добавляться к списку всех комментариев. Комментарий состоит из имени пользователя, даты и текста.  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>4.Задание DOM-practice</title>
     <style>
+        .wrap {
+            width: 500px;
+            height: 550px;
+            border: 1px solid black;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+            background: rgba(125, 236, 236, 0.089);
+        }
+        .comments {
+            height: 110px;
+            overflow: scroll;
+            
+        }
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
 
+        }
+        #name {
+            width: 300px;
+        }
+        #comment-area {
+            height: 80px;
+            resize: none;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+        legend {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        h4, p {
+            margin: 5px 0   ;
+        }
     </style>
 </head>
 <body>
     
+    <div class="wrap">
+        <h3>Title</h3>
+        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas praesentium ratione, mollitia repudiandae assumenda sunt eaque nesciunt! Repellendus assumenda, a sint in illo totam, harum, cum debitis dolores autem architecto.</span>
+        <hr>
+        <div class="comments">
+            
+        </div>
+        <hr>
+        <form id="comment-form" action="">
+            <fieldset title="Comment" form="comment-form">
+                <legend>Leave your comment</legend>
+                <!-- <h4></h4> -->
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <div class="comment-form">
+                    <label for="comment-area">Comment</label>
+                    <textarea name="comment-area" id="comment-area" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit">
+            </fieldset>
+            
+            
+        </form>
+    </div>
 </body>
 <script>
-    
+    let textarea = document.querySelector("textarea");
+    console.log(textarea.value);
+    let submit = document.querySelector("input[type='submit']");
+    console.log(submit);
+    /* let nameElem = document.createElement("h4");
+    console.log(nameElem); */
+    /* let paragrapElem = document.createElement("p");
+    console.log(paragrapElem); */
+    let commentsWindow = document.querySelector(".comments");
+    console.log(commentsWindow);
+    let nameInput = document.querySelector("#name");
+    let date = new Date();
+    let now = date.getFullYear() + "." + date.getMonth() + "." + date.getDate();
+    console.log(now);
+    submit.addEventListener("click", function(e) {
+        e.preventDefault();
+        commentsWindow.insertAdjacentHTML("afterbegin", 
+        `<h4>${nameInput.value}</h4>
+        <p>${now}</p>
+        <p>${textarea.value}</p>`);
+        nameInput.value = "";
+        textarea.value ="";
+    });
 </script>
 </html>
