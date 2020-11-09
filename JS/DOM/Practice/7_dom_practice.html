@@ -1,18 +1,64 @@
-
+<!-- Задание 7
+Создать html-страницу со списком статей.
+При прокрутке страницы вниз более чем на 100 пикселей,
+справа внизу должна появиться кнопка Вверх – для быстрого
+перехода к началу страницы. -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+        .wrap {
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: scroll;
+        }
     </style>
 </head>
+
 <body>
     
+    <div class="wrap">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
+            nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
+            inventore quae voluptatibus incidunt voluptatum modi rerum ipsum quia optio, sunt a deserunt ad nam
+            recusandae nobis voluptates veniam quod. Quibusdam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
+            nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
+            inventore quae voluptatibus incidunt voluptatum modi rerum ipsum quia optio, sunt a deserunt ad nam
+            recusandae nobis voluptates veniam quod. Quibusdam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
+            nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
+            inventore quae voluptatibus incidunt voluptatum modi rerum ipsum quia optio, sunt a deserunt ad nam
+            recusandae nobis voluptates veniam quod. Quibusdam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
+            nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
+            inventore quae voluptatibus incidunt voluptatum modi rerum ipsum quia optio, sunt a deserunt ad nam
+            recusandae nobis voluptates veniam quod. Quibusdam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
+            nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
+            inventore quae voluptatibus incidunt voluptatum modi rerum ipsum quia optio, sunt a deserunt ad nam
+recusandae nobis voluptates veniam quod. Quibusdam!</p>
+    </div>
 </body>
 <script>
-    
+    let wrap = document.querySelector(".wrap");
+    wrap.onscroll = function(e) {
+        console.log(e);
+    }
+    // wrap.addEventListener("scroll", function(e) {
+    //     // if (e.pageYOffset)
+        
+    //     console.log(scroll);
+    // });
+    // window.addEventListener("scroll", function(e) {
+    //     console.log(pageYOffset)
+    // });
+   
 </script>
+
 </html>

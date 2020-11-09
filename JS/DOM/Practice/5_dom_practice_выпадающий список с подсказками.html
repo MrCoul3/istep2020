@@ -1,0 +1,84 @@
+<!-- Задание 5
+Создать html-страницу с текстовым полем для ввода страны.
+При вводе пользователем страны, под текстовым полем должен
+появляться выпадающий список с подсказками (максимум 10 штук).
+Подсказки зависят от того, что ввел пользователь. Данные
+для подсказок храните в массиве, которые заранее создайте и
+заполните странами. При щелчке на подсказку ее текст должен
+вводится в input. -->
+
+
+<!-- Псевдокод
+    Есть массив с названиями ["первое", "второе", "попугай" ... ]
+    Есть input   
+        вводим в инпут букву "п"
+            к инпуту добавляется div с элементами массива на "п" - "первое"
+        при клике на div его содержимое переносится в input
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Задание DOM-practice</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            border: none;
+        }
+
+        input {
+            height: 20px;
+            width: 200px;
+            padding: 0;
+            border: 1px solid black;
+        }
+
+        div {
+            height: 25px;
+            width: 180px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <input type="text" value="">
+    </div>
+</body>
+<script>
+    let arr = ["Canada", "China", "Cambodga", "Chegevara", "Russia"];
+    let inp = document.querySelector("input");
+    inp.focus();
+    inp.addEventListener("keydown", function (e) {
+        arr.forEach(function (elem, ind) {
+            console.log(ind)
+                if (e.key == elem[0]) {
+                    // не получается сделать что бы сравнивать каждую последующую введенную букву
+                    let divs = "div" + ind;
+                    divs = document.createElement("div");
+                    divs.classList.add("div");
+                    console.log(divs);
+                    divs.innerHTML = elem;
+                    document.querySelector(".wrap").append(divs);
+                    divs.addEventListener("click", function(event) {
+                        console.log(event.target.innerHTML);
+                        inp.value = event.target.innerHTML;
+                        for (let el of document.querySelectorAll(".div")) {
+                            el.remove();
+                        }          
+                    });
+                }
+        });
+    });
+
+   
+</script>
+
+</html>

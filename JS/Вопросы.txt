@@ -1,0 +1,10 @@
+1. Вопрос по калькулятору (комменты в программе)
+2. Псевдокод
+3. document.fragment 
+4. можно ли делать так 
+for (let i = 0; i < 10; i++) {
+    let divs = "w" + i;
+    divs = document.createElement("div")
+    document.body.append(divs);
+}
+5. по 5 практическому как сделать elem[i]
