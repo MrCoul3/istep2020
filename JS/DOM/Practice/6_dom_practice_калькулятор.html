@@ -108,7 +108,12 @@
     </div>
 </body>
 <script>
-    
+    let keyboard = document.querySelector(".keyboard");
+    let wrap = document.querySelector(".wrap");
+    wrap.addEventListener("click", function(e) {
+        if (e.target.className.includes("btn")) console.log("W");
+    });
+
     let input = document.querySelector(".text-input");
     let buttons = document.querySelectorAll(".btn");
 
@@ -154,7 +159,6 @@
         input.value = "";
         inpHistory.value = "";
     }
-
 
     // кнопка равно "="
     let btnResult = document.querySelector(".result");
