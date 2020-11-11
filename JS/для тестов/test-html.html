@@ -15,15 +15,27 @@
 </head>
 
 <body>
-    <select id="genres">
-        <option value="rock">Рок</option>
-        <option value="blues" selected>Блюз</option>
-    </select>
+    <input id="input" type="text">
 </body>
 <script src="test-js.js"></script>
 <script>
-    
+    console.log()
 
+    input.addEventListener("input", function (e) {
+        let ivl = input.value.length;
+        for (let i = 3; i < 20; i++) {
+
+            if (ivl > i) {
+                console.log(i)
+                // console.log(inp.value.split(""));
+                // let arr = inp.value.split("");
+                // console.log(input.value.slice(0, 1))
+                let space = " ";
+                input.value = input.value.slice(0, i-2) + space + input.value.slice(i-2, ivl);
+            }
+        }
+
+    });
 </script>
 
 </html>

@@ -12,16 +12,28 @@
     <title>Document</title>
     <style>
         .wrap {
+            position: relative;
             width: 400px;
             height: 300px;
             margin: 0 auto;
             overflow: scroll;
         }
+
+        button {
+            position: absolute;
+            top: 250px;
+            right: 625px;
+            visibility: hidden;
+        }
+
+        .active {
+            visibility: visible;
+        }
     </style>
 </head>
 
 <body>
-    
+
     <div class="wrap">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
             nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
@@ -42,23 +54,26 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis omnis odit perspiciatis non porro, doloribus,
             nesciunt eius quod ad consequatur dolor temporibus sequi odio exercitationem cupiditate, velit in. Maxime
             inventore quae voluptatibus incidunt voluptatum modi rerum ipsum quia optio, sunt a deserunt ad nam
-recusandae nobis voluptates veniam quod. Quibusdam!</p>
+            recusandae nobis voluptates veniam quod. Quibusdam!</p>
+
     </div>
+    <button>Вверх</button>
 </body>
 <script>
+    let btn = document.querySelector("button");
     let wrap = document.querySelector(".wrap");
-    wrap.onscroll = function(e) {
-        console.log(e);
+    wrap.onscroll = function () {
+        //    console.log(this.scrollTop) 
+        if (this.scrollTop > 100) {
+            btn.classList.add("active");
+        }
+        if (this.scrollTop < 100) {
+            btn.classList.remove("active");
+        }
     }
-    // wrap.addEventListener("scroll", function(e) {
-    //     // if (e.pageYOffset)
-        
-    //     console.log(scroll);
-    // });
-    // window.addEventListener("scroll", function(e) {
-    //     console.log(pageYOffset)
-    // });
-   
+    btn.addEventListener("click", function () {
+        wrap.scroll(0,0);
+    })
 </script>
 
 </html>

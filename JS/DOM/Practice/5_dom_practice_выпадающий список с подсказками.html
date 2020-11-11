@@ -55,28 +55,64 @@
 <script>
     let arr = ["Canada", "China", "Cambodga", "Chegevara", "Russia"];
     let inp = document.querySelector("input");
-    inp.focus();
-    inp.addEventListener("keydown", function (e) {
-        arr.forEach(function (elem, ind) {
-            console.log(ind)
-                if (e.key == elem[0]) {
-                    // не получается сделать что бы сравнивать каждую последующую введенную букву
-                    let divs = "div" + ind;
-                    divs = document.createElement("div");
-                    divs.classList.add("div");
-                    console.log(divs);
-                    divs.innerHTML = elem;
-                    document.querySelector(".wrap").append(divs);
-                    divs.addEventListener("click", function(event) {
-                        console.log(event.target.innerHTML);
-                        inp.value = event.target.innerHTML;
-                        for (let el of document.querySelectorAll(".div")) {
-                            el.remove();
-                        }          
-                    });
-                }
-        });
-    });
+    let wrap = document.querySelector(".wrap");
+    // inp.focus();
+
+    inp.addEventListener("input", function () {
+    
+        arr.forEach(function(elem, ind) {
+            if (inp.value == elem.substring(0, inp.value.length)) {
+                let divs = "div" + ind;
+                divs = document.createElement("div");
+                divs.innerHTML = elem;
+                divs.classList.add("div");
+                wrap.append(divs);
+                
+                 
+                divs.addEventListener("click", function(event) {
+                    inp.value = event.target.innerHTML;
+                    for (let el of document.querySelectorAll(".div")) {
+                        el.remove();
+                    }      
+                });
+                
+            } 
+            
+
+           
+            
+                
+        });                        
+    });                    
+
+
+
+
+
+
+
+    // inp.addEventListener("keyup", function (e) {
+    //     arr.forEach(function (elem, ind) {
+    //         // let w = elem.slice(inp.value, inp.value.length+1);
+    //             console.log(elem.substring(inp.value-1, inp.value.length))
+    //             console.log(inp.value);
+    //             if (inp.value == elem.slice(inp.value, inp.value.length+1)) {
+    //                 let divs = "div" + ind;
+    //                 divs = document.createElement("div");
+    //                 divs.classList.add("div");
+    //                 // console.log(divs);
+    //                 divs.innerHTML = elem;
+    //                 document.querySelector(".wrap").append(divs);
+    //                 divs.addEventListener("click", function(event) {
+    //                     console.log(event.target.innerHTML);
+    //                     inp.value = event.target.innerHTML;
+    //                     for (let el of document.querySelectorAll(".div")) {
+    //                         el.remove();
+    //                     }          
+    //                 });
+    //             }
+    //     });
+    // });
 
    
 </script>
