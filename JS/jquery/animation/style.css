@@ -1,0 +1,60 @@
+/* 1/ */
+.wrap {
+    width: 600px;
+    background: rgb(243, 140, 140);
+    margin: 0 auto;
+}
+.element {
+    width: 600px;
+    background: rgb(224, 215, 215);
+    border-bottom: 1px solid black;
+}
+.text {
+    background: #fff;
+    display: none;
+}
+
+.flex-box {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+button {
+    margin-right: 10px;
+    width: 100px;
+}
+
+.prompt {
+    width: 100px;
+    height: 30px;
+    background: rgb(73, 78, 160);
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.wrapper {
+    width: 420px;
+    height: 510px;
+    border: 1px solid black;
+    margin: 100px auto;
+}
+.main {
+    height: 400px;
+    border-bottom: 1px solid black;
+   
+}
+.flex {
+    display: flex;
+}
+img {
+    width: 100%;
+    margin: auto;
+}
+
+.img-wrap {
+    display: flex;
+    width: 100px;
+    margin: 0 5px;
+    
+}
