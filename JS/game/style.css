@@ -15,7 +15,7 @@
     left: 0;
     bottom: 0;
     position: absolute;
-    width: 50px;
+    width: 100px;
     height: 50px;
     background: rgb(114, 221, 141);
 }
@@ -27,6 +27,12 @@
     height: 20px;
     border-radius: 20px;
     background: rgb(255, 218, 8);
+}
+.rub-1 {
+    top: -400px;
+}
+.rub-2 {
+    top: -200px;
 }
 .delete {
     display: none;

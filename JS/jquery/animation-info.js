@@ -8,7 +8,12 @@ https://habr.com/ru/post/38208/
 })
 
 .slideUp()
+slideToggle()
 
+
+fadeIn()
+fadeOut()
+fadeToggle()
 $('img').fadeTo("slow", 0.5) изменяет значение «opacity» до требуемого значения
 
 $('img').animate({
