@@ -40,7 +40,23 @@
 <body>
 
     <div class="wrap">
-        <span id="value">0</span>
+        <span id="value1">0</span>
+        <div class="btn-group">
+            <button>&#9650;</button>
+            <button>&#9660;</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <span id="value2">0</span>
+        <div class="btn-group">
+            <button>&#9650;</button>
+            <button>&#9660;</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <span id="value3">0</span>
         <div class="btn-group">
             <button>&#9650;</button>
             <button>&#9660;</button>
@@ -53,27 +69,34 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let array = document.querySelectorAll("button");
-        let span = document.querySelector("span");
+        let span = document.querySelectorAll("span");
 
-        array.forEach((element, i) => {
+        function counterFunc(counter, ind1, ind2){
+            array.forEach((element, i) => {
             element.addEventListener("click", function () {
-                if (i == 0) {
-                    span.innerHTML = +span.innerHTML + 1;
+                if (i == ind1) {
+                    counter.innerHTML = +counter.innerHTML + 1;
                 }
-                if (i == 1) {
-                    span.innerHTML = +span.innerHTML - 1;
+                if (i == ind2) {
+                    counter.innerHTML = +counter.innerHTML - 1;
                 }
-                setCookie(cookieName, span.innerHTML);
+                setCookie(cookieName, counter.innerHTML);
             })
-        });
+            });
+        }
+        counterFunc(span[0], 0, 1);
+        counterFunc(span[1], 2, 3);
+        counterFunc(span[2], 4, 5);
         
-        let value = document.querySelector("#value");
-
+        
+        let value1 = document.querySelector("#value1");
+        let value2 = document.querySelector("#value2");
+        let value3 = document.querySelector("#value3");
         let cookieName = "coul";
         let cookieValue = getCookie(cookieName);
-        console.log(cookieValue);
+        console.log(cookieValue); //undef
         let counterValue = (cookieValue === undefined) ? 0 : cookieValue;
-        value.innerHTML = counterValue;
+        value1.innerHTML = counterValue;
         // deleteCookie(cookieName);
 
         function getCookie(name) {

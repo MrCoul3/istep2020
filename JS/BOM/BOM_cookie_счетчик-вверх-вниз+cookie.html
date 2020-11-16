@@ -70,7 +70,7 @@
         let value = document.querySelector("#value");
 
         let cookieName = "coul";
-        let cookieValue = getCookie(cookieName);
+        let cookieValue = getCookie(cookieName); // undefined
         console.log(cookieValue);
         let counterValue = (cookieValue === undefined) ? 0 : cookieValue;
         value.innerHTML = counterValue;
