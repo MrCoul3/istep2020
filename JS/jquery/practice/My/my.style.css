@@ -1,15 +1,38 @@
 * {
     margin: 0 auto;
 }
-.rectangle {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background: rgb(38, 134, 243);
+.rect {
+    width: 100px;
+    height: 100px;
+    background: #000;
+}
+.circle {
+    background: url(1.svg);
+    width: 163px;
+    height: 163px;
+    background-repeat: no-repeat;
+}
+.move {
+    transform: translate3d(100px,0,0);
+    transition: all linear 10s;
+}
+.rotate {
+    transform:  rotateZ(20deg);
+    transition: all linear .5s;
+}
+.rotate-reverse {
+    transform:  rotateZ(0deg);
+    transition: all linear .5s;
 }
 
-button {
-    margin: 20px auto;
-    display: block;
-    
+
+
+.bear {
+    position: absolute;
+    left: 100px;
+    background-image: url(bear.png);
+    width: 280px;
+    height: 428px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }

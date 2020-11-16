@@ -10,32 +10,37 @@
     <title>TEST</title>
     <link rel="stylesheet" href="test-style.css">
     <style>
-
+        .w {
+            height: 200px;
+            width: 200px;
+            
+        }
+        .one {
+            z-index: 0;
+            position: relative;
+            background: red;
+        }
+        .two {
+            top: 100px;
+            z-index: 1;
+            position: absolute  ;
+            width: 100px;
+            height: 100px;
+            background: blue;
+        }
     </style>
 </head>
 
 <body>
-    <input id="input" type="text">
+    <div class="w one">
+        
+    </div>
+    <div class=" w two"></div>
 </body>
 <script src="test-js.js"></script>
 <script>
-    console.log()
-
-    input.addEventListener("input", function (e) {
-        let ivl = input.value.length;
-        for (let i = 3; i < 20; i++) {
-
-            if (ivl > i) {
-                console.log(i)
-                // console.log(inp.value.split(""));
-                // let arr = inp.value.split("");
-                // console.log(input.value.slice(0, 1))
-                let space = " ";
-                input.value = input.value.slice(0, i-2) + space + input.value.slice(i-2, ivl);
-            }
-        }
-
-    });
+    
+   
 </script>
 
 </html>
