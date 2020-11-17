@@ -63,18 +63,12 @@
                 if (i == 1) {
                     span.innerHTML = +span.innerHTML - 1;
                 }
-                setCookie(cookieName, span.innerHTML);
+                setCookie("coul", span.innerHTML);
             })
         });
         
         let value = document.querySelector("#value");
-
-        let cookieName = "coul";
-        let cookieValue = getCookie(cookieName); // undefined
-        console.log(cookieValue);
-        let counterValue = (cookieValue === undefined) ? 0 : cookieValue;
-        value.innerHTML = counterValue;
-        // deleteCookie(cookieName);
+        value.innerHTML = (getCookie("coul") === undefined) ? 0 : getCookie("coul");
 
         function getCookie(name) {
             let matches = document.cookie.match(new RegExp(

@@ -1,0 +1,112 @@
+<!-- Задание 1
+Создать html-страницу с возможностью ввода числового значения через кнопки (больше, меньше).
+Пользователь не должен иметь возможность печатать текст
+или цифры. Число изменяется только при нажатии на кнопки. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-practice</DOM-practise>
+    </title>
+    <style>
+        .wrap {
+            display: flex;
+            width: 100px;
+            height: 80px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        span {
+            margin: auto;
+            font-size: 24px;
+        }
+
+        .btn-group {
+            border-left: 1px solid black;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <span id="value1">0</span>
+        <div class="btn-group">
+            <button>&#9650;</button>
+            <button>&#9660;</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <span id="value2">0</span>
+        <div class="btn-group">
+            <button>&#9650;</button>
+            <button>&#9660;</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <span id="value3">0</span>
+        <div class="btn-group">
+            <button>&#9650;</button>
+            <button>&#9660;</button>
+        </div>
+    </div>
+</body>
+<script>
+    let arr = [];
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    function setCookie(name,arr) {
+        document.cookie = `${name}=${arr}`;
+    }
+
+    let array = document.querySelectorAll("button");
+    let span = document.querySelectorAll("span");
+
+    function counterFunc(counter, ind1, ind2, ind3) {
+        array.forEach((element, i) => {
+            element.addEventListener("click", function () {
+
+                if (i == ind1) {
+                    counter.innerHTML = +counter.innerHTML + 1;
+                }
+                if (i == ind2) {
+                    counter.innerHTML = +counter.innerHTML - 1;
+                }
+                arr[ind3] = counter.innerHTML;
+                setCookie("coul", arr);
+            });
+        });
+    }
+    
+    counterFunc(span[0], 0, 1, 0);
+    counterFunc(span[1], 2, 3, 1);
+    counterFunc(span[2], 4, 5, 2);
+
+    span.forEach(function(elem, i) {
+        arr.push(elem.innerHTML);
+        elem.innerHTML = getCookie("coul").split(",")[i];
+    });
+    
+});
+</script>
+</html>

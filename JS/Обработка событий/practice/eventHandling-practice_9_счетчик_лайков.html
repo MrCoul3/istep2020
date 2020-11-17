@@ -13,14 +13,34 @@
 
 </head>
 <body>
-   <button>Like <span>0</span></button>
+   <button>Like<span>0</span></button>
 
     <script>
+        let arr = [];
+document.addEventListener("DOMContentLoaded", function () {
+    let span = document.querySelector("span");
+    document.querySelector("button").onclick = function() {
+    span.innerHTML = +span.innerHTML + 1;
+    setCookie("coul", span.innerHTML);
 
-let i = 0;
-document.querySelector("button").onclick = function() {
-    document.querySelector("span").innerHTML = ++i;
-}
+    }
+    console.log(getCookie("coul"));
+    console.log(arr)
+    span.innerHTML = (getCookie("coul") === undefined) ? 0 : getCookie("coul");
+
+
+});
+
+    function setCookie(name, value) {
+    document.cookie = name + "=" + arr.push(value);
+  }
+
+  function getCookie(name) {
+    let r = document.cookie.match("(^|;) ?" + name + "=([^;]*)(;|$)");
+    if (r) return r[2];
+    else return "";
+  }
+    
     </script>
 
 </body>
