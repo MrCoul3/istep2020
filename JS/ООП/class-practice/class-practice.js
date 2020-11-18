@@ -62,7 +62,7 @@ console.log(test.print()); */
 ■если с даты публикации прошло менее недели, то выводится «N дней назад»;
 ■ в остальных случаях, полная дата в формате «дд.мм.гггг».
  */
-/* class News {
+class News {
     constructor(title, text, tegs, dateOfPub) {
         this.title = title;
         this.text = text;
@@ -99,8 +99,8 @@ let tegArray = ["#lorem", "#ipsum", "#text"];
 
 let oneNews = new News(title, text, tegArray, dateOfPub);
 console.log(oneNews);
-console.log(oneNews.print());
- */
+oneNews.print();
+
 
 /* Задание 3
 Реализовать класс, описывающий новостную ленту.
