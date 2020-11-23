@@ -40,7 +40,7 @@
 }
 
 .wrap {
-    /* top: -650px; */
+    top: -650px;
     position: relative;
     width: 600px;
     height: 600px;
