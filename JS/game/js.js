@@ -1,12 +1,8 @@
 // ВОПРОСЫ 
-// как сделать что бы игра была по центру 
 // как перезагрузить игру обнулив все счетчики без перезагрузки страницы (нужно вручную обнулять все параметры ?: или есть метод для обнуления  )
 // ТЗ
-// игра по центру 
-// когда ловится монета 2 рцбля в счетчик плюсуется 2
 // интервалы падения монет
-// по окончании игры выезжает медведь на велосипеде с текстом "Вы набрали ___ рублей, хотите получить скидку ? - "Да" "Сыграть еще" , 
-// если ДА -> ваша скидка ___% "применить" -> переброс в рсписание (при выборе даты и времени пересчитывается цена)
+
 
 
 // настройки 
@@ -16,34 +12,25 @@
 // 3 монеты скорость 6 (каждой 10)
 // 3 монеты скорость 5 
 let frame = document.querySelector(".frame");
-// корыто
 let wallet = document.querySelector(".wallet");
-// медведь
 let bear = document.querySelector(".bear");
-// счетчик score
 let score = document.querySelector(".score");
-// монеты
 let rub1 = document.querySelector(".rub-1");
 let rub2 = document.querySelector(".rub-2");
 let rub5 = document.querySelector(".rub-5");
-// звуки
 let themeSound = document.querySelector("#theme-sound");
 let catchSound = document.querySelector("#catch-sound");
 let clickSound = document.querySelector("#click-sound");
 let muteBtn = document.querySelector("#mute");
 let soundOnBtn = document.querySelector("#sound-on");
-// кнопки
 let startBtn = document.querySelector(".start-btn");
-
 let count = document.querySelector(".count");
 let flag = true;
 
-// цена занятия 
 let price = "20$";
 let course = "80";
 // __________________________________________________________
 
-// кнопка старт - начало игры 
 startBtn.addEventListener("click", function () {
     this.classList.add("animation-btn");
     start();
@@ -117,8 +104,8 @@ document.querySelectorAll(".rub").forEach(function (item) {
 frame.addEventListener("mousemove", function (e) {
     if (!flag)
         return;
-    if (e.clientX > 10 && e.clientX < 975) {
-        wallet.style.left = e.clientX - 105 + "px";
+    if (e.clientX - frame.offsetLeft > 50 && e.clientX - frame.offsetLeft < 950) {
+        wallet.style.left = e.clientX - frame.offsetLeft - 105 + "px";
     }
 });
 

@@ -1,396 +1,44 @@
-// (Ctrl + Alt + N) Запустить код в VSCode
-
-/* - - - - -  КОНСПЕКТЫ УРОКОВ - - - - - -  */
-
-
-
-// #### Конспект урока от 14.09 #####//
-//###################################//
-
-
-// ###### Функции
-
-// let yourName = prompt('Как Вас зовут?', 'Имя');
-// let yourSername = prompt('Ваша Фамилия?', 'Фамилия')
-
-// alert('Вас зовут ' + yourName);
-
-// alert(`Вы  ${yourName} ${yourSername}`);
-
-// alert(yourName + yourSername);
-
-
-
-// ###### Операторы сравнения 
-
-
-// 5 > 4 //true
-// "ананас" > "яблоко" //false
-// "2" > "12" //true 
-// undefined == null // true
-// undefined === null //false
-// null == "\n0\n" // false
-// null === +"\n0\n" // false
-
-
-//  ####   УСЛОВНЫЕ ОПЕРАТОРЫ  ##### \\
-
-// Для этого мы можем использовать оператор if и условный оператор ?, который 
-// также называют «оператор вопросительный знак».
-
-// let index = prompt("Инекс");
-// let name;
-
-// if (index === 3) {
-//     name = "Ivan"; 
-//     alert(name);
-// } 
-// else {
-//     alert(name) = "Egor";
-// }
-
-    // ---------------------------------------------
-    // if (name != "Bob") {
-    //     index = 1;
-    // } 
-    // else {
-    //     index = true;
-    // }
-
-// ---------------------------------------------
-// let age = prompt("Возраст");
-// let message;
-
-// if (age < 3) {
-//     message = 'Здравствуй, малыш!';
-//     alert(message);
-//   } else if (age < 18) {
-//     message = 'Привет!';
-//   } else if (age < 100) {
-//     message = 'Здравствуйте!';
-//   } else {
-//     message = 'Какой необычный возраст!';
-//   }
-  
-// ---------------------------------------------
-
-// ЗАДАЧИ
-
-
-// выполнится ли условие?
-// if ("0") {
-//     alert( 'Привет' );
-//   }
-  
-//   Ответ: да потому что не пустая строка.
-
-// Число 0, пустая строка "", null, undefined и NaN становятся false. Из-за этого их называют «ложными» («falsy») значениями.
-// Остальные значения становятся true, поэтому их называют «правдивыми» («truthy»).
-
-// ---------------------------------------------
-// let nameOfJS = prompt("Какое «официальное» название JavaScript?");
-
-// if (nameOfJS == "ECMAScript") {
-//     alert("Верно!");
-// } 
-// else {
-//     alert("Не знаете? ECMAScript!");
-// }
-
-// ---------------------------------------------
-// let index = prompt("Введите число");
-
-// if (index > 0) {
-//     alert(1);
-// } 
-// else if (index < 0) {
-//     alert(-1);
-// } 
-// else {
-//     alert(0);
-// }
-
-// ---------------------------------------------
-
-
-// КОРОТКАЯ ЗАПИСЬ УСЛОВИЙ if else, ОПЕРАТОР ? (ВОПРОСИТЕЛЬНЫЙ ЗНАК):
-
-// Так называемый «условный» оператор «вопросительный знак» позволяет нам сделать это более коротким и простым способом.
-// Оператор представлен знаком вопроса ?. Его также называют «тернарный», так как этот оператор, единственный в своём роде, имеет три аргумента.
-
-// Синтаксис:
-// let result = условие ? значение1 : значение2;
-
-// ПРИМЕРЫ:
-
-// let login = prompt("Введите");
-// let message = (login == 'Сотрудник') ?  'Привет' :
-// (login == 'Директор') ? 'Здравствуйте' :
-// (login == '') ? 'Нет логина' : 
-// '';
-// alert( message );
-
-// -----------
-
-// let a = 1;
-// let b = 2;
-// let result = (a + b < 4) ? "Мало" : "Много";
-// console.log(result);
-
-
-
-
-
-
-// ----------21.09 Логические операторы, циклы.-----------
-// Захаренко Сергей Олегович
-
-// Конструкция switch заменяет собой сразу несколько if.
-
-// ПРИМЕР
-// let a = 2 + 2;
-
-// switch (a) {
-//     case 3:
-//       alert( 'Маловато' );
-//       break;
-//     case 4:
-//       alert( 'В точку!' );
-//       break;
-//     case 5:
-//       alert( 'Перебор' );
-//       break;
-//     default:
-//       alert( "Нет таких значений" );
-//   }
-
-
-// ЛОГИЧЕСКИЕ ОПЕРАТОРЫ
-// И &&
-// ИЛИ ||
-// НЕ ! if (!(x>10)) - инверсия отрицание
-
-
-
-
-// ЦИКЛЫ
-
-// switch Конструкция switch заменяет собой сразу несколько if.
-// switch(x) {
-//     case 'value1':  // if (x === 'value1')
-//       ...
-//       [break]
-  
-//     case 'value2':  // if (x === 'value2')
-//       ...
-//       [break]
-  
-//     default:
-//       ...
-//       [break]
-//   }
-
-//while цикл с предусловием.
-
-// let i = 0;
-// while (i < 3) { // выводит 0, затем 1, затем 2
-//   alert( i );
-//   i++;
-// }
-
-
-
-// do while цикл с постусловием
-
-// do {
-//     // тело цикла
-//   } while (condition);
-
-
-// let i = 0;
-// do {
-//   alert( i );
-//   i++;
-// } while (i < 3);
-
-
-
-// for цикл счетчик
-
-// for (начало; условие; шаг) {
-//  ... тело цикла ...
-// }
-
-// for (let i = 0; i < 3; i++) { // выведет 0, затем 1, затем 2
-//     alert(i);
-//   }
-
-//    ### break - останавливает выполнение цикла 
-// let sum = 0;
-
-// while (true) {
-
-//   let value = +prompt("Введите число", '');
-
-//   if (!value) break; // (*)
-
-//   sum += value;
-
-// }
-// alert( 'Сумма: ' + sum );
-
-//!!!  break 2 прервет оба цикла (вложенных)
-
-// При помощи цикла for выведите чётные числа от 2 до 10.
-
-
-
-
-
-//   #### continue останавливает выполнение данной итерации 
-// for (let i = 0; i < 10; i++) {
-
-//     // если true, пропустить оставшуюся часть тела цикла
-//     if (i % 2 == 0) continue;
-  
-//     alert(i); // 1, затем 3, 5, 7, 9
-//   }
-
-
-// parseInt - преобразование к целому числу
-// parseFloat - преобразование к дробному числу
-
-
-
-// ############ ФУНКЦИИ ###################
-
-// Определить количество цифр в введенном числе. 
-// let n = prompt("Введите число", "100");
-// function getDigitAmount(n) {
-//     return n.length;
-//   }
-//   console.log(getDigitAmount(n));
-
-
-
-
-
-//                          Объекты  Массивы Строки
-
-
-// https://learn.javascript.ru/object
-
-
-
-// indexOf метод для поиска
-// arr.indexOf(item, from) ищет item, начиная с индекса from, и возвращает индекс, на котором был найден искомый элемент, в противном случае -1.
-// arr.lastIndexOf(item, from) – то же самое, но ищет справа налево.
-// arr.includes(item, from) – ищет item, начиная с индекса from, и возвращает true, если поиск успешен.
-
-// let arr = [1, 0, false];
-
-// alert( arr.indexOf(0) ); // 1
-// alert( arr.indexOf(false) ); // 2
-// alert( arr.indexOf(null) ); // -1
-
-// alert( arr.includes(1) ); // true
-
-// !!!если в массиве нет нужного элементаа то IndexOf вернет (-1)
-
-// Вызов arr.sort() сортирует массив на месте, меняя в нём порядок элементов.
-
-// Он возвращает отсортированный массив, но обычно возвращаемое значение игнорируется, так как изменяется сам arr.
-// По умолчанию элементы сортируются как строки.
-// например
-// let arr = [ 1, 2, 15 ];
-
-// // метод сортирует содержимое arr
-// arr.sort();
-
-// alert( arr );  // 1, 15, 2
-
-// Чтобы использовать наш собственный порядок сортировки, нам нужно предоставить функцию в качестве аргумента arr.sort().
-
-// Функция должна для пары значений возвращать:
-
-// function compare(a, b) {
-//     if (a > b) return 1; // если первое значение больше второго
-//     if (a == b) return 0; // если равны
-//     if (a < b) return -1; // если первое значение меньше второго
-//   }
-
-// Добавление/удаление элементов
-// Мы уже знаем методы, которые добавляют и удаляют элементы из начала или конца:
-
-// arr.push(...items) – добавляет элементы в конец,
-// arr.pop() – извлекает элемент из конца,
-// arr.shift() – извлекает элемент из начала,
-// arr.unshift(...items) – добавляет элементы в начало.
-
-
-
-
-// Объект string 
-//  можно экранировать ковычку с помощью (\") для вставки ковычек внутри ковычек 
-// \t табуляция 
-
-// let str = "Привет";
-// str[0] // П
-// str[5] // т
-// str.length = 6 длина строки 
-// последний элемент  str[str.length - 1]
-
-// let str = 30.09.2020
-// str.substring(3, 4) - берет месяц из даты (3 и 4 ) - позиции символов
-// str.substr(3, количество символов не включая указанный) есди не указать второй параметр будет до конца строки 
-
-
-
-
-
-
-// Периодический вызов функций 9если мы делаем часы нужно каждую секкунду менять цифру)
-// setTimeout(функция/код, задержка(милисек), аргумент )
-// clearTimeout - отменяет функцию
-// setInterval -повторяет функцию каждое количество сек 
-// clearInterval
-
-
-
-// Объект Math
-
-// https://learn.javascript.ru/number
-
-
-
-// let options = {
-//     width: 1024, 
-//     name: 'test'
-// };
-// delete options.width;
-// options.height = 100;
-// console.log(options);
-// console.log(Object.keys(options));
-// console.log(Object.keys(options).length);
-// for (let key in options) {
-//     console.log(key);
-//     console.log(options[key]);
-// }
-
-//!!!!!!!!!!!!!!!Задачи на понимание основ JS (с реальных собеседований)!!!!!!!!!!!
-                            
-// Какое будет выведено значение: let x = 5; alert( x++ ); ?
-// ответ 5 правильно!
-
-// Чему равно такое выражение: [ ] + false - null + true ?
-// console.log([ ] + false - null + true);
-// NaN
-
-// Что выведет этот код: let y = 1; let x = y = 2; alert(x); ?
-
-// console.log([ ] + 1 + 2);
-// alert( "1"[0] );
-                            /* DOM */
-
-                            
-
+document.addEventListener("DOMContentLoaded", function(){
+    
+});
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> 
+
+
+function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+function deleteCookie(name) {
+    setCookie(name, "", {
+        'max-age': -1
+    })
+}
+
+function setCookie(name, value, options = {}) {
+
+    options = {
+        path: '/',
+        // при необходимости добавьте другие значения по умолчанию
+        ...options
+    };
+
+    if (options.expires instanceof Date) {
+        options.expires = options.expires.toUTCString();
+    }
+
+    let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+
+    for (let optionKey in options) {
+        updatedCookie += "; " + optionKey;
+        let optionValue = options[optionKey];
+        if (optionValue !== true) {
+            updatedCookie += "=" + optionValue;
+        }
+    }
+
+    document.cookie = updatedCookie;
+}
