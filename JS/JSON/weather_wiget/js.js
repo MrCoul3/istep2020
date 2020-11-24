@@ -184,10 +184,12 @@ function deleteCookie(name) {
 }
 
 function setCookie(name, value, options = {}) {
+    let date = new Date(Date.now() + 1800e3);
 
     options = {
         path: '/',
-        'max-age': 1800
+        // 'max-age': 1800,
+        'expires': date
     };
 
     if (options.expires instanceof Date) {
