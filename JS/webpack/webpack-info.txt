@@ -1,0 +1,62 @@
+git push --set-upstream origin MCoul
+
+npmjs.com 
+
+
+
+Для любого проекта:
+    	1.nodejs установить (current vers);
+	2. В папке с проектом запустить gitbash -> npm init 	(инициализируем проект) - появится package.json;
+	3. Создать файл webpack.config.js;
+  // Если прописать в файле package.json нужные модули и запустить в консоли npm install все модули установятся автоматически, и не придется устанавливать по одному через например [npm install --save-dev @babel/core] //
+	
+
+команды для установки пакетов 
+ npm install --save-dev @babel/core
+npm install --save-dev @babel/preset-env
+
+Для проекта Шишкина 
+    1.nodejs установить (current vers)
+ 
+    npm install -открыть гибаш в проектеи запуситть строку , он загрузит инструменты из package.json их в папку проекта ()
+
+fibers 5.0.0 изменить версию
+
+    npm run serve ( если ошибка то удалить: 
+   <!--  {
+        loader: 'image-webpack-loader',
+        options: {
+          bypassOnDebug: !isProduction,
+          mozjpeg: {
+            progressive: true,
+            quality: 65,
+          },
+          optipng: {
+            enabled: false,
+          },
+          pngquant: {
+            quality: '65-90',
+            speed: 4,
+          },
+          gifsicle: {
+            interlaced: false,
+          },
+        },
+      },) -->из файла <webpack class="config js"></webpack>
+
+ctrl+c закрыть сервер 
+
+npm run serve перезапустить 
+
+local : http://localhost:3000/#  копировать в стрку браузера 
+
+npm run build ( build из package,json) -- создает сборку (папка dist)
+
+"scripts": {
+    "serve": "webpack-dev-server --progress --hide-modules --mode development",
+    "build": "webpack --progress --hide-modules --mode production"
+  },
+
+
+</body>
+</html>

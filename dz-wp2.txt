@@ -1,0 +1,2 @@
+https://webdevblog.ru/ochen-prostoe-rukovodstvo-dlya-nachinajushhih-po-webpack/
+изучить стратью. сделать пошагово настройку вебпака. результат загрузить себе в репозиторий и скинуть ссылкуна репозиторий
