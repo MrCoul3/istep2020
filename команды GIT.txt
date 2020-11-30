@@ -1,1 +1,6 @@
+git checkout -b MCoul создает ветку
+git checkout MCoul переключает векту
+
+git pull origin MCoul
+
 git push --set-upstream origin MCoul
