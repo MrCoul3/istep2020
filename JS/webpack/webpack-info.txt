@@ -8,6 +8,7 @@ npmjs.com
     	1.nodejs установить (current vers);
 	2. В папке с проектом запустить gitbash -> npm init 	(инициализируем проект) - появится package.json;
 	3. Создать файл webpack.config.js;
+
   // Если прописать в файле package.json нужные модули и запустить в консоли npm install все модули установятся автоматически, и не придется устанавливать по одному через например [npm install --save-dev @babel/core] //
 	
 
