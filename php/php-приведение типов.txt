@@ -1,0 +1,7 @@
+(int), (integer) - приведение к int
+(bool), (boolean) - приведение к bool
+(float), (double), (real) - приведение к float
+(string) - приведение к string
+(array) - приведение к array
+(object) - приведение к object
+(unset) - приведение к NULL

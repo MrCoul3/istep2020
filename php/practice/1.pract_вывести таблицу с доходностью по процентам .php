@@ -9,8 +9,8 @@ for ($i = 1; $i <= 20; $i++) {
     $a = $summ * $rate;
     $summ = $summ + $a;
     $array[] = $summ;
-    
 }
+
 echo "<pre>";
 print_r($array);
 echo "</pre>";
