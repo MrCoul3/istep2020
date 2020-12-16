@@ -1,0 +1,28 @@
+.wrap {
+    border: 1px solid black;
+    width: 500px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 50px auto;
+    width: 400px;
+}
+
+input {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    width: 300px;
+}
+label {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.password-false {
+    display: none;
+    margin-left: 20px;
+}
