@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+div {
+    margin: 0 auto;
+    width: 100px;
+    border: 1px solid black;
+    height: 100px;
+    background: rgb(197, 255, 38);
+    animation: out 1s ease;
+
+
+}
+@keyframes out {
+    /* 50% {
+        width: 200px;
+    } */
+    100% {
+        width: 100px;
+    }
+}
+
+div:hover {
+    animation: move 1s ease;
+}
+
+@keyframes move {
+    /* 50% {
+        width: 200px;
+    } */
+    100% {
+        width: 200px;
+    }
+}
+
+
+div::after {
+    animation: out 1s ease;
+
+}

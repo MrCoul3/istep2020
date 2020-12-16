@@ -23,6 +23,7 @@ echo "</pre>";
     <th>SumEnd</th>
     <th>Profit</th>
 </tr>
+
 <?php foreach ($array as $key => $value):?>
 <tr>
     <td><?=$key+1?></td>
