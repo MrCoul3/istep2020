@@ -1,4 +1,6 @@
 <?php
+$input = file_get_contents('php://input');
+$req = json_encode($input);
 $req = $_REQUEST;
 print_r($req);
 
