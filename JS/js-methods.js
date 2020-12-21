@@ -26,6 +26,8 @@ arr.forEach(function(item, i, arr) { /code });
 
 for (let elem of array) { console.log(elem) }
 
+
+
 eval("1+1") //2 -вычисляет выражение "строки"
 
 arr.push(...items) – добавляет элементы в конец,
@@ -34,3 +36,4 @@ arr.shift() – извлекает элемент из начала,
 arr.unshift(item, item2, item3) – добавляет элементы в начало.
 
 inp.focus(); - фокус на элементе при загрузке страницы 
+

@@ -57,9 +57,7 @@ document.querySelector("form").addEventListener("submit", function (e){
             return response.json();
         })
         .then((data) => {
-
-            console.log(data);
-            // let deg = data.data.fact.temp;
+            return data;
         });
 })
 
