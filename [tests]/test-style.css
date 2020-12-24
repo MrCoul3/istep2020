@@ -2,7 +2,9 @@
     margin: 0;
 }
 
-
+table {
+    width: 400px;
+}
 .grid {
     display: grid;
     grid-template-rows: repeat(3, 50px);
