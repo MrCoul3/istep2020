@@ -1,2 +1,0 @@
-{"coming":"Profit","summ":"200","comment":"Beer","currency":"RUB","data":"23.12 06:12"}
-{"coming":"Profit","summ":"200","comment":"Beer","currency":"RUB","data":"23.12 06:12"}

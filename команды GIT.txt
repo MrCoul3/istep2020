@@ -1,4 +1,11 @@
 git checkout -b MCoul создает ветку
+git checkout master
 git checkout MCoul переключает векту
 git pull origin MCoul
 git push --set-upstream origin MCoul
+
+
+перед началом новой работы git pull с мастером 
+
+git checkout -b Card/description,slider,scripts
+git push --set-upstream origin Card/description,slider,scripts
