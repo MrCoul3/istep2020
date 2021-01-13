@@ -9,3 +9,9 @@ git push --set-upstream origin MCoul
 
 git checkout -b Card/description,slider,scripts
 git push --set-upstream origin Card/description,slider,scripts
+
+ubuntu 
+sudo service mysql start
+sudo service apache2 start
+
+cd /mnt/f/www/test.local/
