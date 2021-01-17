@@ -1,0 +1,161 @@
+итсрукция по настройке
+https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
+
+1. Создание структуры директорий
+sudo mkdir -p /mnt/f/www/russian-friend.com
+
+2. Назначение прав
+sudo chown -R $USER:$USER /mnt/f/www/russian-friend.com
+
+3. Создание демо-страниц для каждого виртуального хоста
+nano /mnt/f/www/russian-friend.com/index.html
+вставить код и нажать ctrl+s и ctrl+z
+<h1>Сайт работает!</h1>
+
+4. Создание файлов нового виртуального хоста
+        Начнем с копирования файла для первого домена:
+                sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/russian-friend.com.conf
+        Откройте новый файл в редакторе с root-правами:
+                sudo nano /etc/apache2/sites-available/russian-friend.com.conf
+                или открыть файл из фаловой системы  И отредактировать вручную
+                [ C:\Users\MrCoul\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\etc\apache2\sites-available ]
+
+        -вставить код 
+
+                <VirtualHost *:80>
+    ServerAdmin admin@example.com
+    ServerName russian-friend.com
+    ServerAlias www.russian-friend.com
+    DocumentRoot /mnt/f/www/russian-friend.com
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+        <Directory /mnt/f/www/russian-friend.com>
+                AllowOverride All
+                Require all granted
+        </Directory>
+</VirtualHost>
+<IfModule mod_php7.c>
+    php_admin_value mbstring.func_overload 0
+   php_admin_value mbstring.internal_encoding cp1251
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+5.  Включение новых виртуальных хостов
+sudo a2ensite russian-friend.com
+После завершения необходимо перезапустить Apache, чтобы изменения вступили в силу:
+sudo service apache2 restart
+
+6. Настройка файла локальных хостов (опционально)
+открыть C:\Windows\System32\drivers\etc\hosts
+ввести вконце файла                127.0.0.1       russian-friend.com
+
+______________________________________________________________________________________________
+C:\Users\MrCoul\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs файлы ubuntu 
+C:\Users\MrCoul\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\etc\apache2\sites-available   
+
+
+
+
+
+
+
+
+
+
+
+/var/www/myshop.local/public_html
+/mnt/f/www/myshop.local/www
+
+
+myshop.local.conf
+
+
+
+
+
+sudo chown -R $USER:$USER /mnt/f/www/myshop.local/www
+nano /mnt/f/www/myshop.local/www/index.html
+
+НАСТРОЙКА ВИРТУАЛЬНЫХ ХОСТОВ APACHE
+
+vim /etc/apache2/sites-available/myshop.local.conf
+/etc/apache2/sites-enabled
+
+подключения виртуальных хостов
+sudo a2ensite test.local.conf
+
+sudo vim /etc/php/7.4/apache2/php.ini
+
+sudo chmod 777 -R /mnt/f/www/myshop.local
+
+
+<VirtualHost *:80>
+    ServerAdmin admin@example.com
+    ServerName myshop.local
+    ServerAlias www.myshop.local
+    DocumentRoot /mnt/d/www/myshop.local/www
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+        <Directory /mnt/f/www/myshop.local/www>
+                AllowOverride All
+                Require all granted
+        </Directory>
+</VirtualHost>
+<IfModule mod_php7.c>
+    php_admin_value mbstring.func_overload 0
+   php_admin_value mbstring.internal_encoding cp1251
+</IfModule>
+
+
+
+ЛОГ настройки с Иваном 
+
+
+
+sudo apt update
+sudo apt install apache2
+ sudo service apache2 status
+ sudo service apache2 restart
+ sudo apt install mysql-server
+ sudo service mysql start
+ sudo service mysql status
+  sudo mysql_secure_installation
+   mysql -u root -p
+   sudo mysql
+   mysql -u dbuser -p
+   cOwQ1zPqyUjw
+    USE mysql
+     mysql -u dd -p
+     sudo apt install php libapache2-mod-php php-mysql php-xml php-curl
+     sudo a2enmod rewrite
+     sudo service apache2 restart
+     sudo apt install vim
+     sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/myshop.local.conf
+     vim /etc/apache2/sites-available/myshop.local.conf
+     sudo vim /etc/apache2/sites-available/test.local.conf
+      sudo a2ensite test.local.conf
+      sudo service apache2 restart
+      sudo chmod 777 -R /mnt/f/www/test.local
+       mysql service start
+       sudo service apache2 start
+       $ sudo service mysql start
+       sudo vim /etc/php/7.4/apache2/php.ini
+        sudo service apache2 restart
+sudo chmod 777 -R /mnt/f/www/test.local
+vim /var/log/apache2/error.log
+sudo vim /etc/apache2/sites-available/test.local.conf
+ sudo apt install php-mbstring
+ sudo service apache2 restart
+
+  cd /mnt/f/www/test.local
+  vim .gitignore
+  $ git init
+  git config user.name "MrCoul"
+   git config user.email ivanovnvnv@gmail.com
+    git add .
+    git remote add origin https://gitlab.com/ddfirst/starway-site.git
+    git pull origin master
+     git config core.filemode false
+     git fetch --all
+     git reset --hard origin/master

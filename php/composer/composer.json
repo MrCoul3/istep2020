@@ -1,0 +1,9 @@
+{
+    "name": "mrcoul/myshop",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Base\\": "Base"
+        }
+    }
+}

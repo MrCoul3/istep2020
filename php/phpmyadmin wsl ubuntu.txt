@@ -1,0 +1,25 @@
+установка php myadmin На wsl ubuntu
+
+Инструкция
+https://help.ubuntu.ru/wiki/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D0%BE_ubuntu_server/%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F_lamp/phpmyadmin
+1. Сначала обновите индекс пакетов сервера:
+    $ sudo apt update 
+2. Для запуска установки запустите команду:
+   sudo apt-get install phpmyadmin
+    asd8731ds^8243#Asf!
+
+По запросу выберите какой web сервер будет настроен для phpMyAdmin. В этом разделе предполагается использование в качестве web сервера Apache2.
+
+Далее производим настройку apache для обеспечения работы phpMyAdmin.
+Начиная с ubuntu 13.10 необходимо выполнить команды в терминале:
+
+sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+sudo a2enconf phpmyadmin
+sudo /etc/init.d/apache2 reload
+
+http://localhost/phpmyadmin
+На странице входа введите root и пароль   asd8731ds^8243#Asf!
+
+
+команды 
+удалить phpmyadmin      sudo apt-get purge phpmyadmin

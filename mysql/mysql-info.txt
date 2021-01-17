@@ -34,7 +34,22 @@ SELECT * FROM `product` WHERE name LIKE 'p%'; - все что начинаетс
 SELECT count(*) FROM `product`;
 
 
+-----JOIN
 
+inner join 
+SELECT u.id, u.name, d.name AS d_name FROM users u INNER JOIN departmens d ON u.d_id = d.id
+
+LEFT JOIN
+SELECT u.id, u.name, d.name AS d_name FROM users u LEFT JOIN departmens d ON u.d_id = d.id
+SELECT u.id, u.name, d.name AS d_name FROM users u LEFT JOIN departmens d ON u.d_id = d.id WHERE d.id IS NULL
+
+RIGHT JOIN
+SELECT u.id, u.name, d.name AS d_name FROM users u RIGHT JOIN departmens d ON u.d_id = d.id 
+
+можно инвертировать запрос
+SELECT u.id, u.name, d.name AS d_name FROM departmens d LEFT JOIN users u ON u.d_id = d.id
+
+-----------------
 LIMIT 2 ограничивает количество получаемых элементов 
 
 

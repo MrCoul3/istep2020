@@ -1,0 +1,19 @@
+COmposer - менеджер пакетов для связвывания классов в пространстве имен. ( автолоадинг классов в проекте )
+Для установки composer необходимо
+для win скачать установочник с сайта https://getcomposer.org/download/ - при установке выбрать путь к php файлу openservera (php 7.4)
+запустить консоль openservera , выбрать директорию проекта - ввести composer init - появится файл composer.json
+его необходимо отредактировать 
+{
+    "name": "mrcoul/myshop", где myshop директория проекта 
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Base\\": "Base"  // base папка с классами которые нужно связать 
+        }
+    }
+}
+
+потом ввести cpomposer install - для установки папки vendor 
+в файле myshop/run.php прописать require "vendor/autoload.php";
+
+vendor не заливать в git )прописать в .gitignore
