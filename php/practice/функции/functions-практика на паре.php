@@ -14,6 +14,7 @@ function getPassHash($userPassword)
     $hashString = $userPassword . $sold;
     return md5($hashString);
 }
+
 function saveRes($req)
 {
     $string = '';

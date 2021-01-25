@@ -23,9 +23,9 @@ $(document).ready(function () {
             paletteElement.classList.add("palette-element");
 
             if (this.type === "RGB") {
-                paletteElement.style.background = `rgb(${this.code})`
+                paletteElement.style.background = `rgb(${this.code})`;
             } else if (this.type === "RGBA") {
-                paletteElement.style.background = `rgba(${this.code})`
+                paletteElement.style.background = `rgba(${this.code})`;
             } else if (this.type === "HEX") {
                 paletteElement.style.background = this.code;
             }

@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    block sharedVars
+    head
+        title #{pageTitle}
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(charset='utf-8')
+    body#mysite(class=`${bodyAdditionClass}`)
+        include login-form.pug
+        include register-form.pug
+        header.header
+            div.header__overhead
+                div.social-net-btns
+                    a(href="/").social-net-btns__elem.social-net-btns__elem--instagram
+                    a(href="/").social-net-btns__elem.social-net-btns__elem--tiktok
+                a(href="") 
+                    img(src="images/icons/logo.svg", alt="logo")    
+                div.service-btns 
+                    div.btn-change-lang
+                        div.lang-changer
+                            div.lang-changer__elem.lang-changer__elem--btn-rus
+                            div.lang-changer__elem.lang-changer__elem--btn-en
+                    div.btn-login Войти
+                    div.user-login 
+                        img(src="images/icons/user-ico.svg", alt="")
+                        p Иван Иванов
+                        img(src="images/icons/user-arrow.svg", alt="")
+                        div.user-login-menu 
+            div.header__lower
+        main(class=`${pageAdditionClass}`)
+            block content

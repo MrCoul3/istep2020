@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&display=swap');
+
+
+#mysite {
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+    h2 {
+        margin: 0;
+        font-size: 28px;
+    }
+    h3 {
+        margin: 0;
+        color: black;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .button {
+        font-size: 22px;
+        font-family: 'Exo 2', sans-serif;
+        font-weight: bold;
+        color: white;
+        border-radius: 9px;
+        outline: none;
+        border: none;
+    }
+
+
+    .decor-line {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .header {
+        &__overhead {
+            background-image: url("/images/common/Lang-School.png");
+            background-repeat: no-repeat;
+            background-position-x: 92px;
+            background-position-y: 8px;
+            height: 144px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .social-net-btns {
+                display: flex;
+                width: 159px;
+
+                &__elem {
+                    display: block;
+                    width: 37px;
+                    height: 37px;
+                    background-repeat: no-repeat;
+
+                    &--instagram {
+                        background-image: url("/images/icons/insta-icon.svg");
+                        margin-right: 14px;
+                    }
+
+                    &--tiktok {
+                        background-image: url("/images/icons/tiktok.svg");
+                    }
+                }
+            }
+
+            .service-btns {
+                display: flex;
+                align-items: center;
+
+                .btn-change-lang {
+                    position: relative;
+                    background-image: url("/images/icons/btn-change-lang-russian.svg");
+                    width: 41px;
+                    height: 14px;
+                    margin-right: 22px;
+                    cursor: pointer;
+
+
+                    .lang-changer {
+                        display: none;
+                        position: absolute;
+                        width: 45px;
+                        height: 35px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+                        top: 18px;
+
+                        &__elem {
+                            width: 41px;
+                            height: 14px;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            margin-left: 2px;
+
+                            &--btn-rus {
+                                background-image: url("/images/icons/btn-change-lang-russian.svg");
+                                background-position-x: 0px;
+                                margin-top: 2px;
+                                margin-bottom: 2px;
+                            }
+
+                            &--btn-en {
+                                background-image: url("/images/icons/btn-change-lang-english.svg");
+                            }
+                        }
+                    }
+
+                    .lang-changer-active {
+                        display: block;
+                    }
+                }
+
+                .btn-login {
+                    // display: none;
+                    font-size: 14px;
+                    line-height: 22px;
+                    width: 96px;
+                    height: 28px;
+                    border: 2px solid #006660;
+                    box-sizing: border-box;
+                    border-radius: 30px;
+                    text-align: center;
+                    cursor: pointer;
+
+                    -moz-user-select: none;
+                    -khtml-user-select: none;
+                    -webkit-user-select: none;
+                    user-select: none;
+                }
+                .btn-login-hide {
+                    display: none;
+                }
+                .user-login {
+                    // display: flex;
+                    display: none;
+                    width: 96px;
+                    cursor: pointer;
+                    p {
+                        font-size: 12px;
+                        display: inline;
+                        margin: 0 5px;
+                    }
+                }
+                .user-login-active {
+                    display: flex;
+
+                }
+            }
+        }
+    }
+
+}
