@@ -1,0 +1,81 @@
+3 Написать запрос вставки данных в табличку User.
+Использовать запрос 10 раз.
+
+INSERT INTO `user` (`id`, `Name`) VALUES (NULL, 'Nik'), (NULL, 'Den'),(NULL, 'Max'), (NULL, 'Coul'), (NULL, 'Poul'), (NULL, 'John'), (NULL, 'Ivan'), (NULL, 'Nik'), (NULL, 'Jorg'), (NULL, 'Ringo');
+
+4. Написать запрос вставки данных в табличку Cart.
+
+Использовать запрос 10 раз.
+INSERT INTO `cart` (`id`, `user_id`, `product_id`) VALUES (NULL, '2', '4'), (NULL, '3', '3'), (NULL, '4', '5'), (NULL, '5', '4'), (NULL, '7', '2'), (NULL, '6', '5'), (NULL, '7', '8'), (NULL, '5', '5'), (NULL, '2', '4'), (NULL, '3', '2');
+
+5. Написать запросы для вывода:
+a) Всех пользователей;
+
+SELECT Name FROM `user` WHERE 1
+
+b) Всех записей в корзине (выводить всю информацию
+о пользователе, всю информацию о продукте, всю
+информацию о категории);
+
+SELECT * FROM product 
+INNER JOIN cart ON product.id = cart.product_id 
+INNER JOIN user ON user.id = cart.user_id 
+INNER JOIN category ON product.id_category = category.id
+
+c) Все записи в корзине (вывести имя пользователя,
+название категории и название продукта);
+
+SELECT user.Name AS user_name, category.Name AS category_name, product.Name AS produc_name 
+FROM product 
+INNER JOIN cart ON product.id = cart.product_id
+INNER JOIN user ON user.id = cart.user_id
+INNER JOIN category ON product.id_category = category.id
+
+d)Всех продуктов, выбранных в корзине одним пользователем (выводить всю информацию о пользователе, продукт и категорию);
+
+SELECT user.id, user.Name, product.Name AS prod_name, category.Name AS category_name
+FROM user 
+INNER JOIN cart ON user.id = cart.user_id
+INNER JOIN product ON product.id = cart.product_id
+INNER JOIN category ON product.id_category = category.id
+WHERE user.id = 1
+
+e) Названий категорий, продукты которых добавлены
+в корзину одним пользователем;
+
+SELECT user.id, user.Name, category.Name AS category_name
+FROM user 
+INNER JOIN cart ON user.id = cart.user_id
+INNER JOIN product ON product.id = cart.product_id
+INNER JOIN category ON product.id_category = category.id
+
+
+
+f) Информацию о всех пользователях, которые купили
+один продукт; 
+
+SELECT user.id, user.Name, product.Name
+FROM user 
+INNER JOIN cart ON user.id = cart.user_id
+INNER JOIN product ON product.id = cart.product_id
+WHERE product.Name = 'iphone'
+
+g) Информацию о категории, продуктов которой нет
+у пользователя в корзине.
+
+вариант 1 
+
+SELECT category.id AS Category_id, category.Name AS Category_name, product.id AS Products
+FROM category 
+LEFT JOIN  product ON product.id_category = category.id
+WHERE product.id IS NULL
+
+вариант 2 
+
+SELECT category.id AS Category_id, category.Name AS Category_name, COUNT(product.id) AS Products
+FROM category 
+LEFT JOIN  product ON product.id_category = category.id
+GROUP BY category.id
+HAVING Products = 0
+
+

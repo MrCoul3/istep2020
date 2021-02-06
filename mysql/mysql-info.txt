@@ -24,7 +24,9 @@ SELECT * FROM `product` ORDER BY price; отсортировать по возр
 
 
 подзапрос
-SELECT name FROM users WHERE position_id IN 
+SELECT name 
+FROM users 
+WHERE position_id IN 
 (SELECT id FROM positions WHERE salary > 50000);
 
 регулярные выраженгия 
@@ -48,6 +50,15 @@ SELECT u.id, u.name, d.name AS d_name FROM users u RIGHT JOIN departmens d ON u.
 
 можно инвертировать запрос
 SELECT u.id, u.name, d.name AS d_name FROM departmens d LEFT JOIN users u ON u.d_id = d.id
+
+SELECT products.id, products.name, quantity.quantity, stores.name AS shop_name FROM products INNER JOIN quantity ON products.id = quantity.product_id INNER JOIN stores ON stores.id = quantity.store_id WHERE quantity.quantity > 0
+
+SELECT  products.id, products.name,  sum(quantity.quantity) AS sum_quantity 
+FROM products 
+INNER JOIN quantity ON products.id = quantity.product_id
+GROUP BY  products.id
+
+
 
 -----------------
 LIMIT 2 ограничивает количество получаемых элементов 
