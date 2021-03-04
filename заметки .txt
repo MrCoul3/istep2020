@@ -1,8 +1,0 @@
-git push --set-upstream origin MCoul
-
-
-
-
-https://www.php.net/manual/ru/language.basic-syntax.phptags.php
-
-psr php тандарт написания 
