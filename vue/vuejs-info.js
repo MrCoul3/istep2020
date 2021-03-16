@@ -281,6 +281,7 @@ methods: {
             responseData: []
         },
         methods: {
+            
             request() {
                 axios.post('handle.php', JSON.stringify(this.inputData))
                     .then((response) => {
