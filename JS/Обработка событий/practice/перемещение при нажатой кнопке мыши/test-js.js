@@ -1,50 +1,42 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // --------------------- РАБОЧИЙ ПРИМЕР С МЯЧОМ --------------------- \\
+    // https://learn.javascript.ru/drag-and-drop
+    var ball = document.getElementById('ball');
+    ball.onmousedown = function(e) {
 
-    let frame = document.querySelector(".frame");
-    let ball = document.querySelector("#ball");
-    let moveMode = false;
+        var coords = getCoords(ball);
+        var shiftX = e.pageX - coords.left;
+        var shiftY = e.pageY - coords.top;
 
-    ball.addEventListener("mousedown", function (e) {
-        moveMode = true;
-    });
-    ball.addEventListener("mouseup", function (e) {
-        moveMode = false;
-    });
+        ball.style.position = 'absolute';
+        document.body.appendChild(ball);
+        moveAt(e);
+        ball.style.zIndex = 1000; // над другими элементами
+        function moveAt(e) {
+            ball.style.left = e.pageX - shiftX + 'px';
+            ball.style.top = e.pageY - shiftY + 'px';
+        }
+        document.onmousemove = function(e) {
+            moveAt(e);
+        };
 
-    frame.addEventListener("mousemove", function (e) {
-        if (!moveMode) return;
-        ball.style.left = e.clientX - 20 - frame.offsetLeft + "px";
-        ball.style.top = e.clientY - 20 - frame.offsetTop + "px";
+        ball.onmouseup = function() {
+            document.onmousemove = null;
+            ball.onmouseup = null;
+        };
 
-    });
-
-
-    rect.addEventListener("mousedown", function (e) {
-        moveMode = true;
-    });
-    rect.addEventListener("mouseup", function (e) {
-        moveMode = false;
-    });
-
-    // frame.addEventListener("mousemove", function (e) {
-    //     if (!moveMode) return;
-    //     // console.log(rect.offsetLeft)
-    //     console.log(e.pageX)
-
-    //     rect.style.left = e.clientX - 10  - frame.offsetLeft + "px";
-    //     rect.style.top = e.clientY  -10 - frame.offsetTop + "px";
-        
-
-    // });
-    rect.addEventListener("mousemove", function (e) {
-    
-        console.log(e.pageX  - frame.offsetLeft)
-        
-        
-
-    });
-
-
+    }
+    ball.ondragstart = function() {
+        return false;
+    };
+    function getCoords(elem) {   // кроме IE8-
+        var box = elem.getBoundingClientRect();
+        return {
+            top: box.top + pageYOffset,
+            left: box.left + pageXOffset
+        };
+    }
+    // ---------------------------------------------------------------\\
 
 });

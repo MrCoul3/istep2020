@@ -8,3 +8,12 @@ $file = file_get_contents('json.txt', "r");
 
 $arr = json_decode($file);
 
+
+<?php if (...):;?>
+    <div></div>
+<?php endif;?>
+
+<?php if ($dec[$k] -> coming === 'Expenses'):
+    $sumexp += $dec[$k] -> summ;?>
+
+<?php endif;?>

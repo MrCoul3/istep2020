@@ -12,5 +12,6 @@
 3. Реализовать фронтенд для формы
 4. Реализовать бекенд для формы используя апи bitrix
 
+
 https://dev.1c-bitrix.ru/api_help/iblock/classes/ciblockelement/add.php
 https://dev.1c-bitrix.ru/api_help/main/reference/cfile/makefilearray.php

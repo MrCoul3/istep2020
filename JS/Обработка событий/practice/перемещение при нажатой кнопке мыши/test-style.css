@@ -1,12 +1,4 @@
-.frame {
-    position: relative;
-    width: 800px;
-    height: 500px;
-    margin: 0 auto;
-    display: block;
-    border: 2px solid green;
-}
-
+/*---------------------РАБОЧИЙ ПРИМЕР С МЯЧОМ---------------*/
 #ball {
     left: 0;
     top: 0;
@@ -17,12 +9,5 @@
     background-size: contain;
     position: absolute;
 }
+/* ------------------------------------------------------*/
 
-#rect {
-    position: absolute;
-    top: 0;
-    left: 100px;
-    width: 100px;
-    height: 100px;
-    background: blue;
-}
