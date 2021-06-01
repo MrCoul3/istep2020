@@ -1,5 +1,19 @@
 установка php myadmin На wsl ubuntu
 
+sudo systemctl restart apache2
+sudo systemctl restart mysql
+установить пароль Для root 
+mysql -u root -p
+ use mysql;
+UPDATE user SET Password=532256 WHERE User=’root’;
+
+Чтобы впервые установить пароль MySQL используйте в консоли команду mysqladmin как показано далее:
+mysqladmin -u root password newpass
+
+Для изменения (обновления) пароля root воспользуйтесь следующей командой:
+mysqladmin -u root -p oldpassword newpass
+
+
 Инструкция
 https://help.ubuntu.ru/wiki/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE_%D0%BF%D0%BE_ubuntu_server/%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F_lamp/phpmyadmin
 1. Сначала обновите индекс пакетов сервера:
@@ -7,6 +21,10 @@ https://help.ubuntu.ru/wiki/%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%
 2. Для запуска установки запустите команду:
    sudo apt-get install phpmyadmin
     asd8731ds^8243#Asf!
+
+
+Внимание:
+Во время первого диалога apache2 подсвечен, но не выбран. Если вы не нажмёте Пробел для выбора Apache, установщик не переместит необходимые файлы в процессе установки. Нажмите Пробел, Tab, а затем Enter для выбора Apache.
 
 По запросу выберите какой web сервер будет настроен для phpMyAdmin. В этом разделе предполагается использование в качестве web сервера Apache2.
 
@@ -20,6 +38,10 @@ sudo /etc/init.d/apache2 reload
 http://localhost/phpmyadmin
 На странице входа введите root и пароль   asd8731ds^8243#Asf!
 
+войти в phpmyadmin можно создав нового пользователя 
+CREATE USER 'mrcoul'@'localhost' IDENTIFIED BY '532256';
+GRANT ALL PRIVILEGES ON *.* TO 'mrcoul'@'localhost';
+FLUSH PRIVILEGES;
 
 команды 
 удалить phpmyadmin      sudo apt-get purge phpmyadmin

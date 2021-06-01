@@ -22,6 +22,8 @@ ORDER BY elem ASC /DESC СОРТИРУЕТ В ПРЯМОМ / ОБРАТНОМ П
 SELECT * FROM `product` ORDER BY price; отсортировать по возрастанию
 
 
+DELETE FROM `bookstime` WHERE `id` IN (SELECT `idFromBookstime` FROM `bookstime-gmt`)
+"UPDATE `bookstime` SET `payment` = 'payed' WHERE IN (SELECT `idFromBookstime` FROM `bookstime-gmt` )"
 
 подзапрос
 SELECT name 

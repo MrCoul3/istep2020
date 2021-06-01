@@ -13,7 +13,14 @@ COmposer - менеджер пакетов для связвывания кла�
     }
 }
 
-потом ввести cpomposer install - для установки папки vendor 
+потом ввести composer install - для установки папки vendor 
 в файле myshop/run.php прописать require "vendor/autoload.php";
 
 vendor не заливать в git )прописать в .gitignore
+
+sudo a2ensite  000-default.conf
+sudo a2dissite example.com.conf
+
+systemctl reload apache2
+systemctl reload mysql
+

@@ -1,35 +1,44 @@
 итсрукция по настройке
 https://www.digitalocean.com/community/tutorials/apache-ubuntu-14-04-lts-ru
 
+adduser mrcoul
+usermod -aG sudo mrcoul
+
 1. Создание структуры директорий
 sudo mkdir -p /mnt/f/www/russian-friend.com
+sudo mkdir -p /var/www/rusfriend.com/www
 
 2. Назначение прав
 sudo chown -R $USER:$USER /mnt/f/www/russian-friend.com
+sudo chown -R $USER:$USER /var/www/rusfriend.com/www
 
 3. Создание демо-страниц для каждого виртуального хоста
 nano /mnt/f/www/russian-friend.com/index.html
+nano  /var/www/rusfriend.com/www/index.html
 вставить код и нажать ctrl+s и ctrl+z
 <h1>Сайт работает!</h1>
 
 4. Создание файлов нового виртуального хоста
         Начнем с копирования файла для первого домена:
-                sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/russian-friend.com.conf
+                sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/rusfriend.com.conf
+
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/rusfriend.com.conf
         Откройте новый файл в редакторе с root-правами:
-                sudo nano /etc/apache2/sites-available/russian-friend.com.conf
+                sudo nano /etc/apache2/sites-available/rusfriend.com.conf
+                sudo nano /etc/apache2/sites-available/rusfriend.com.conf
                 или открыть файл из фаловой системы  И отредактировать вручную
                 [ C:\Users\MrCoul\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs\etc\apache2\sites-available ]
 
         -вставить код 
 
                 <VirtualHost *:80>
-    ServerAdmin admin@example.com
-    ServerName russian-friend.com
-    ServerAlias www.russian-friend.com
-    DocumentRoot /mnt/f/www/russian-friend.com
+    ServerAdmin mr.coul@inbox.ru
+    ServerName rusfriend.com
+    ServerAlias www.rusfriend.com
+    DocumentRoot /var/www/rusfriend.com/www
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-        <Directory /mnt/f/www/russian-friend.com>
+        <Directory /var/www/rusfriend.com/www>
                 AllowOverride All
                 Require all granted
         </Directory>
@@ -41,14 +50,34 @@ nano /mnt/f/www/russian-friend.com/index.html
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 
+-------------------------------------------------------------
+<VirtualHost *:80>
+    ServerAdmin mr.coul@inbox.ru
+    ServerName rusfriend.com
+    ServerAlias www.rusfriend.com
+    DocumentRoot /var/www/rusfriend.com/www
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+
 5.  Включение новых виртуальных хостов
 sudo a2ensite russian-friend.com
+sudo a2ensite rusfriend.com.conf
 После завершения необходимо перезапустить Apache, чтобы изменения вступили в силу:
 sudo service apache2 restart
+
+certbot --apache -d rusfriend.com -d www.rusfriend.com
 
 6. Настройка файла локальных хостов (опционально)
 открыть C:\Windows\System32\drivers\etc\hosts
 ввести вконце файла                127.0.0.1       russian-friend.com
+
+SSL сертификат
+certbot --apache -d rusfriend.com -d www.rusfriend.com
+ufw delete allow 80/tcp
+sudo ufw allow 80/tcp
 
 ______________________________________________________________________________________________
 C:\Users\MrCoul\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu20.04onWindows_79rhkp1fndgsc\LocalState\rootfs файлы ubuntu 

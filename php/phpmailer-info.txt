@@ -1,0 +1,7 @@
+Установка библиотеки PHPMailer
+composer require phpmailer/phpmailer
+https://codernotes.ru/articles/php/otpravka-pisem-s-pomoshhyu-phpmailer.html
+https://habr.com/ru/post/544376/
+https://mxtoolbox.com/ReverseLookup.aspx проверка PTR 
+
+Отправка писем через Google имеет один нюанс: нужно в аккаунте google разрешить доступ ненадежным приложениям. Для этого нужно зайти в свой аккаунт https://myaccount.google.com, перейти в безопасность, зайти в раздел "Ненадежные приложения, у которых есть доступ к аккаунту" и там переключить в "Разрешено".  https://myaccount.google.com/u/0/lesssecureapps.
