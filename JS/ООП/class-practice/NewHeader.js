@@ -11,4 +11,4 @@ class NewHeader extends Header {
     }
 }
 
-exports = {NewHeader}
+exports = { NewHeader }

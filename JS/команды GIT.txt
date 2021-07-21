@@ -1,0 +1,25 @@
+git checkout -b MCoul создает ветку
+git checkout master
+git checkout MCoul переключает векту
+git pull origin  main MCoul
+git push --set-upstream origin MCoul
+
+
+перед началом новой работы git pull с мастером 
+
+git checkout -b Card/description,slider,scripts
+git push --set-upstream origin Card/description,slider,scripts
+
+ubuntu 
+sudo service mysql start
+sudo service mysql restart
+sudo service apache2 start
+
+cd /mnt/f/www/test.local/
+
+git rm -r --cached .idea исключить папку из репозитория и добавить в gitignore
+
+
+
+Для тех, кто использует токен доступа и среду Windows, есть простой способ сделать это:
+Меню Пуск → Диспетчер учетных данных → Windows Учетные данные → найдите строку (Git: https://whatever/your-repository/url) → изменить, имя пользователя "PersonalAccessToken" и пароль -ваш токен доступа.
